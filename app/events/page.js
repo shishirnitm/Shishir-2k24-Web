@@ -28,7 +28,22 @@ export default function Events() {
           <div className=" w-1/2 font-blogger">showing all events</div>
           <div className=" w-1/2 text-end"><u>filters</u></div>
         </div>
-        <div className="w-5/6 h-[250px]">
+        <div className="flex flex-col w-5/6 space-y-5">
+          <EventCard eName="Model United Nations" 
+                     eTime="10:30am" 
+                     eDesc="A model united nations where a parliament is simulated"
+                     eButton="exhibition"
+          />
+          <EventCard eName="Prom Night" 
+                     eTime="10:30pm" 
+                     eDesc="Haha you wish"
+                     eButton="exhibition"
+          />
+          <EventCard eName="Ballroom Dance" 
+                     eTime="10:30am" 
+                     eDesc="Ball dance supremecy"
+                     eButton="exhibition"
+          />
           <EventCard eName="Model United Nations" 
                      eTime="10:30am" 
                      eDesc="A model united nations where a parliament is simulated"
