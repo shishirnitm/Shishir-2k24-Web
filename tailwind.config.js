@@ -9,7 +9,9 @@ module.exports = {
     fontFamily: {
       bukhari: ["Bukhari", "sans-serif"],
       bernier: ["Bernier", "sans-serif"],
-      antonio: ["Antonio", "sans-serif"]
+      antonio: ["Antonio", "sans-serif"],
+      blogger: ["BloggerSans", "sans"],
+      bloggerBold: ["BloggerBold", "sans"],
     },
     extend: {
       backgroundImage: {
