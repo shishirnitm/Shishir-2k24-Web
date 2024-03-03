@@ -3,7 +3,7 @@ import "../events.css";
 export default function EventCard(props) {
   return (
     <>
-        <div className=" h-48 w-screen">
+        <div className="h-48">
         <div className="absolute w-5/6 h-44 bg-black translate-x-2 translate-y-2 rounded-sm">
             <div className="relative flex flex-col h-44 border-black border-[1px] rounded-sm bg-white -translate-x-2 -translate-y-2 ">
                 <div className="flex h-1/3 px-3">
