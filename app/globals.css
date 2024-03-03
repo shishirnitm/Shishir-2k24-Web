@@ -11,3 +11,8 @@
   font-family: "Bernier";
   src: url("../public/fonts/BERNIERDistressed-Regular.ttf");
 }
+
+@font-face {
+  font-family: "Antonio";
+  src: url("../public/fonts/Antonio-VariableFont_wght.ttf");
+}

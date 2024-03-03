@@ -1,0 +1,17 @@
+.background {
+    background: url(grain\ texture\ top\ \(1\).png), lightgray 50% / cover no-repeat;
+    width: 428px;
+    height: 798px;
+    flex-shrink: 0;
+}
+
+.textStroke{
+    color: #FDF6E9;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #E03932;
+    font-family: Antonio;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70.764px; /* 116.352% */
+}
