@@ -8,7 +8,7 @@ export default function EventCard(props) {
             <div className="relative flex flex-col h-44 border-black border-[1px] rounded-sm bg-white -translate-x-2 -translate-y-2 ">
                 <div className="flex h-1/3 px-3">
                     <div className="font-bloggerBold text-[22px] self-end">{props.eName}</div>
-                    <div className="border-dotted border-b-2 border-black w-auto grow mb-2"></div>
+                    <div className="border-dotted border-b-2 border-black w-auto mx-1 grow mb-2"></div>
                     <div className="font-blogger text-lg self-end">{props.eTime}</div>
                 </div>
                 <div className="flex h-1/3 px-3">
