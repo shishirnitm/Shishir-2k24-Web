@@ -1,0 +1,24 @@
+{
+    "committees": [
+        {
+            "key": "1",
+            "title": "UNSC ( UNITED NATIONS SECURITY COUNCIL )",
+            "description": "Discussing on the current situation in Europe as a consequence of the Russian Invasion in Europe"
+        },
+        {
+            "key": "2",
+            "title": "G20",
+            "description": "Discussing the ballooning global debt in the global South"
+        },
+        {
+            "key": "3",
+            "title": "Lok Sabha",
+            "description": "Debating the structure of J&K Conduct of Election Rules, 1965 with special reference to intial assembly election post abrogation of Article 370"
+        },
+        {
+            "key": "4",
+            "title": "IPC ( International Press Corps )",
+            "description": "Discussing on the current situation in Europe as a consequence of the Russian Invasion in Europe"
+        }
+    ]
+}
