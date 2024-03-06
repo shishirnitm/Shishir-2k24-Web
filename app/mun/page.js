@@ -1,6 +1,14 @@
 import "./mun.css"
 import Committee from "./components/committee";
-import committeesData from "./committeesData.json"
+import committeesData from "./committeesData.json";
+
+import unLogo from "../../public/mun/unLogo.svg";
+import unLogoText from "../../public/mun/unLogoText.svg";
+import ipc from "../../public/mun/ipc.png";
+import unsc from "../../public/mun/unsc.png";
+import lokSabha from "../../public/mun/lokSabha.png";
+
+import Image from "next/image";
 
 const Mun = () => {
     return (
@@ -15,7 +23,8 @@ const Mun = () => {
 
                 <div className=" mun-des mt-20">
                     <div className=" font-bernier text-[#E03932] text-[40px] text-justify leading-none ">WELCOME TO THE NIT MEGHALAYA MUN!</div>
-                    <div className=" font-bloggerBold text-[#186B80] text-[20px] my-4 ">Back in 2023, a group of spirited debate enthusiasts sparked the flame of the NITM MUN, and boy, did it shine bright! From its very inception, it was clear: this wasn't just any parliament; it was a spectacular spectacle like no other. The success of our very first edition spoke volumes – with over 80 delegates diving headfirst into the fray, it was clear that something special was brewing. So here with are with the 2024 Ultimate Edition og NIT MUN</div>
+                    <div className=" font-bloggerBold text-[#186B80] text-[20px] my-4 ">Back in 2023, a group of spirited debate enthusiasts sparked the flame of the NITM MUN, and boy, did it shine bright! From its very inception, it was clear: this wasn't just any parliament; it was a spectacular spectacle like no other.</div>
+                    <div className=" font-bloggerBold text-[#186B80] text-[20px] my-4 ">The success of our very first edition spoke volumes – with over 80 delegates diving headfirst into the fray, it was clear that something special was brewing. So here with are with the 2024 Ultimate Edition og NIT MUN</div>
                 </div>
 
                 <div className=" mt-10 ">
@@ -38,8 +47,44 @@ const Mun = () => {
                 </div>
 
                 <div className="mun-follow mt-10">
-                    <div className=" text-[20px] text-[#186B80]">Follow us on <span className=" font-bloggerBold">Instagram</span> for <span className=" font-bloggerBold">daily updates</span> and <span className=" font-bloggerBold">behind-the-scenes</span> glimpses!</div>
+                    <div className=" font-blogger text-[20px] text-[#186B80]">Follow us on <span className=" font-bloggerBold">Instagram</span> for <span className=" font-bloggerBold">daily updates</span> and <span className=" font-bloggerBold">behind-the-scenes</span> glimpses!</div>
                     <div className="text-[#E03932] text-center">Button here*</div>
+                </div>
+
+
+                <div className="mun-logos-1 mt-10">
+                    <Image
+                        priority
+                        src={unLogo}
+                        alt="Learn more about Committee"
+                        className="h-28"
+                    />
+                    <Image
+                        priority
+                        src={unLogoText}
+                        alt="Learn more about Committee"
+                        className="h-28"
+                    />
+                </div>
+                <div className="mun-logos-2 mt-4">
+                    <Image
+                        priority
+                        src={ipc}
+                        alt="Learn more about Committee"
+                        className=""
+                    />
+                    <Image
+                        priority
+                        src={lokSabha}
+                        alt="Learn more about Committee"
+                        className="h-28"
+                    />
+                    <Image
+                        priority
+                        src={unsc}
+                        alt="Learn more about Committee"
+                        className="h-28"
+                    />
                 </div>
 
             </div>
