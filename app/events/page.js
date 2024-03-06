@@ -1,14 +1,26 @@
+"use client";
 import "./events.css";
 import EventCard from "./components/eventCard";
-
+import React, {useEffect, useState} from "react";
 export default function Events() {
+  const [selFilters, setSelFilters] = useState([]);
+  const [filteredItems, setFilteredItems] = useState(items);
+  let filters = ["free registration", "exclusive entry", "free for all", "registration"];
+  
+  const allEvents = [
+    {eName:"A", eDesc:"Lorem Ipsum", eTime:"1", eType:"exhibition", eLink:"https://www.youtube.com/"},
+    {eName:"B", eDesc:"Lorem Ipsum", eTime:"2", eType:"exhibition", eLink:"https://www.youtube.com/"},
+    {eName:"C", eDesc:"Lorem Ipsum", eTime:"3", eType:"exhibition", eLink:"https://www.youtube.com/"},
+    {eName:"D", eDesc:"Lorem Ipsum", eTime:"4", eType:"exhibition", eLink:"https://www.youtube.com/"},
+    {eName:"E", eDesc:"Lorem Ipsum", eTime:"5", eType:"exhibition", eLink:"https://www.youtube.com/"},
+  ]
   return (
     <>
       <div className="background bg-[#FDF6E9] h-full w-screen flex flex-col items-center ">
         <div className="flex justify-center textStroke w-5/6 h-36 mt-20">
           <div className="w-80">EXPLORE THE SHISHIR EVENTS !</div>
         </div>
-        <div className="flex justify-center font-bernier text-justify text-[#E03932] text-[40px] w-5/6 ">
+        <div className="flex justify-center font-bernier text-justify text-[#E03932] text-[42px] w-5/6 ">
             <div className="w-80">FREE AND EXCLUSIVE</div>
         </div>
         <div className="border-[1px] w-80 h-40 border-black mt-10 flex flex-col items-center">
@@ -29,26 +41,29 @@ export default function Events() {
           <div className=" w-1/2 text-end"><u>filters</u></div>
         </div>
         <div className="flex flex-col w-5/6 space-y-5">
-          <EventCard eName="Model United Nations" 
+          {allEvents.map((prop)=>(
+            <EventCard key={prop.eName} eName={prop.eName} eTime={prop.eTime} eLink={prop.eLink} eDesc={prop.eDesc} eType={prop.eType}/>
+          ))}
+          {/* <EventCard eName="Model United Nations" 
                      eTime="10:30am" 
                      eDesc="A model united nations where a parliament is simulated"
-                     eButton="exhibition"
+                     eType="exhibition"
           />
           <EventCard eName="Prom Night" 
                      eTime="10:30pm" 
                      eDesc="Haha you wish"
-                     eButton="exhibition"
+                     eType="exhibition"
           />
           <EventCard eName="Ballroom Dance" 
                      eTime="10:30am" 
                      eDesc="Ball dance supremecy"
-                     eButton="exhibition"
+                     eType="exhibition"
           />
           <EventCard eName="Model United Nations" 
                      eTime="10:30am" 
                      eDesc="A model united nations where a parliament is simulated"
-                     eButton="exhibition"
-          />
+                     eType="exhibition"
+          /> */}
         </div>
         
       </div>
