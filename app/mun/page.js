@@ -8,17 +8,22 @@ import ipc from "../../public/mun/ipc.png";
 import unsc from "../../public/mun/unsc.png";
 import lokSabha from "../../public/mun/lokSabha.png";
 
+import Button from "../components/Button";
+
 import Image from "next/image";
+
 
 const Mun = () => {
     return (
         <>
             <div className="background bg-[#FDF6E9] h-full w-screen flex flex-col leading-tight ">
                 <div className="flex flex-col text-[#E03932] mt-20 ">
-                    <div className=" font-bernier text-[40px] text-justify ">NIT MEGHALAYA MUN</div>
+                    <div className=" font-bernier text-[40px] ">NIT MEGHALAYA MUN</div>
                     <div className=" textStroke ">WHERE PASSION MEETS PURPOSE</div>
                     <div className=" font-bloggerBold text-[#186B80] text-[20px] my-4">Empowering Young Minds, Fostering Global Solutions.</div>
-                    <div className="text-center">Button here*</div>
+                    {/* <div className="text-center">Button here*</div> */}
+                    <Button text="follow on instagram" link="https://www.instagram.com/nitm_mun/"/>
+
                 </div>
 
                 <div className=" mun-des mt-20">
@@ -47,8 +52,9 @@ const Mun = () => {
                 </div>
 
                 <div className="mun-follow mt-10">
-                    <div className=" font-blogger text-[20px] text-[#186B80]">Follow us on <span className=" font-bloggerBold">Instagram</span> for <span className=" font-bloggerBold">daily updates</span> and <span className=" font-bloggerBold">behind-the-scenes</span> glimpses!</div>
-                    <div className="text-[#E03932] text-center">Button here*</div>
+                    <div className=" mb-2 font-blogger text-[20px] text-[#186B80]">Follow us on <span className=" font-bloggerBold">Instagram</span> for <span className=" font-bloggerBold">daily updates</span> and <span className=" font-bloggerBold">behind-the-scenes</span> glimpses!</div>
+                    <Button text="follow on instagram" link="https://www.instagram.com/nitm_mun/" />
+                    {/* <div className="text-[#E03932] text-center">Button here*</div> */}
                 </div>
 
 
