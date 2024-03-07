@@ -63,13 +63,13 @@ const Mun = () => {
                         priority
                         src={unLogo}
                         alt="Learn more about Committee"
-                        className="h-28"
+                        className="h-28 w-auto"
                     />
                     <Image
                         priority
                         src={unLogoText}
                         alt="Learn more about Committee"
-                        className="h-28"
+                        className="h-100 w-auto "
                     />
                 </div>
                 <div className="mun-logos-2 mt-4">
@@ -83,13 +83,13 @@ const Mun = () => {
                         priority
                         src={lokSabha}
                         alt="Learn more about Committee"
-                        className="h-28"
+                        className="h-28 w-auto"
                     />
                     <Image
                         priority
                         src={unsc}
                         alt="Learn more about Committee"
-                        className="h-28"
+                        className="h-28 w-auto"
                     />
                 </div>
 
