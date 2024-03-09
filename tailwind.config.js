@@ -6,6 +6,11 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    colors: {
+      primaryRed: "#E03932",
+      primaryBlue: "#186B80",
+      white: "#FFFFFF",
+    },
     fontFamily: {
       bukhari: ["Bukhari", "sans-serif"],
       bernier: ["Bernier", "sans-serif"],
