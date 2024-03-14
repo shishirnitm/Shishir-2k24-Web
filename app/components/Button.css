@@ -1,0 +1,29 @@
+.btn {
+  width: calc(100% - 4px);
+  font-size: 24px;
+  text-align: center;
+  display: inline-block;
+  font-weight: bold;
+  background-color: #FDF6E9;
+  color: #E03932;
+  border: 3.5px solid #E03932;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -o-border-radius: 9px;
+  border-radius: 9px;
+  box-shadow: 4px 4px #E03932;
+  cursor: pointer;
+}
+
+.btn:active {
+  box-shadow: none;
+  position: relative;
+  top: 4px;
+  left: 4px;
+}
+
+.arrow-container {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1rem;
+}
