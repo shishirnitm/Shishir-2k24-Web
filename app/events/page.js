@@ -1,18 +1,17 @@
 "use client";
 import "./events.css";
 import EventCard from "./components/eventCard";
-import React, {useEffect, useState} from "react";
 export default function Events() {
-  const [selFilters, setSelFilters] = useState([]);
-  const [filteredItems, setFilteredItems] = useState(items);
-  let filters = ["free registration", "exclusive entry", "free for all", "registration"];
-  
   const allEvents = [
-    {eName:"A", eDesc:"Lorem Ipsum", eTime:"1", eType:"exhibition", eLink:"https://www.youtube.com/"},
-    {eName:"B", eDesc:"Lorem Ipsum", eTime:"2", eType:"exhibition", eLink:"https://www.youtube.com/"},
-    {eName:"C", eDesc:"Lorem Ipsum", eTime:"3", eType:"exhibition", eLink:"https://www.youtube.com/"},
-    {eName:"D", eDesc:"Lorem Ipsum", eTime:"4", eType:"exhibition", eLink:"https://www.youtube.com/"},
-    {eName:"E", eDesc:"Lorem Ipsum", eTime:"5", eType:"exhibition", eLink:"https://www.youtube.com/"},
+    {eName:"Cultural Exibition", eDesc:"Lorem Ipsum venti polar cancer seventi michu leo barash monue vin quell lia", eTime:"Daily 10:00 - 16:00", eType:"Register", eRule: "https://drive.google.com/file/d/1v0E1Iln72s7U9Xod34bFEJVU6yF_lrcF/view?usp=drive_link", eLink:"https://docs.google.com/forms/d/e/1FAIpQLSe_NLNNNQT0ZaLHKf82YRO-ujXWDJf9dVoqpw4yQjWqw_L_rg/viewform?usp=sf_link"},
+    {eName:"Food Fest", eDesc:"Lorem Ipsum venti polar cancer seventi michu leo barash monue vin quell lia", eTime:"5th April 10:00 - 16:00", eType:"Register", eRule:"https://drive.google.com/file/d/1v0fw7EkJeM_g-q0QYhTrm9AhP1rhAjhw/view?usp=drive_link" , eLink:"https://docs.google.com/forms/d/e/1FAIpQLSczwSLtkojjFykl5C_XUmaMMElk4SM44Y5vhmwfQUa_rzd4aA/viewform?usp=sf_link"},
+    {eName:"BGMI", eDesc:"Lorem Ipsum venti polar cancer seventi michu leo barash monue vin quell lia", eTime:"TBA", eType:"Register", eRule:"https://drive.google.com/file/d/1c7Zd7B6dtAF94QE858pHnosOCQqOJRVK/view?usp=drive_link" , eLink:"https://docs.google.com/forms/d/1NrAeFo95HouDi9QMxiW4b--AUPcSPT1htcTPcqIrA2E/edit"},
+    {eName:"Valorant", eDesc:"Lorem Ipsum venti polar cancer seventi michu leo barash monue vin quell lia", eTime:"TBA", eType:"Register", eRule:"https://drive.google.com/file/d/1uToud7TRkrAikPY4ADTjOs9prnfm3-nd/view?usp=drive_link" ,eLink:"https://docs.google.com/forms/d/1LAeVQh-WPL2qxJroKADj0ps8cuqM_Nn2VTE8Zbe7NX0/edit"},
+    {eName:"Battle of the Bands", eDesc:"Lorem Ipsum venti polar cancer seventi michu leo barash monue vin quell lia", eTime:"TBA", eType:"Register", eRule:"" ,eLink:""},
+    {eName:"Panache", eDesc:"Lorem Ipsum venti polar cancer seventi michu leo barash monue vin quell lia", eTime:"TBA", eType:"Register", eRule:"https://docs.google.com/document/d/1pvjSEPHQi8cI_tFzj9ZV1_fAgLYLXSGf-e7xpfzEsAQ/edit?usp=drive_link" ,eLink:"https://docs.google.com/forms/d/1-AsqBBHDRzm7qyZwLiJH82wVu1hZaRPi3Bu01cS9Kw4/edit"},
+    {eName:"", eDesc:"Lorem Ipsum venti polar cancer seventi michu leo barash monue vin quell lia", eTime:"", eType:"Register", eRule:"" ,eLink:""},
+    {eName:"", eDesc:"Lorem Ipsum venti polar cancer seventi michu leo barash monue vin quell lia", eTime:"", eType:"Register", eRule:"" ,eLink:""},
+    {eName:"", eDesc:"Lorem Ipsum venti polar cancer seventi michu leo barash monue vin quell lia", eTime:"", eType:"Register", eRule:"" ,eLink:""},
   ]
   return (
     <>
@@ -42,28 +41,8 @@ export default function Events() {
         </div>
         <div className="flex flex-col w-5/6 space-y-5">
           {allEvents.map((prop)=>(
-            <EventCard key={prop.eName} eName={prop.eName} eTime={prop.eTime} eLink={prop.eLink} eDesc={prop.eDesc} eType={prop.eType}/>
+            <EventCard key={prop.eName} eName={prop.eName} eTime={prop.eTime} eRule={prop.eRule} eLink={prop.eLink} eDesc={prop.eDesc} eType={prop.eType}/>
           ))}
-          {/* <EventCard eName="Model United Nations" 
-                     eTime="10:30am" 
-                     eDesc="A model united nations where a parliament is simulated"
-                     eType="exhibition"
-          />
-          <EventCard eName="Prom Night" 
-                     eTime="10:30pm" 
-                     eDesc="Haha you wish"
-                     eType="exhibition"
-          />
-          <EventCard eName="Ballroom Dance" 
-                     eTime="10:30am" 
-                     eDesc="Ball dance supremecy"
-                     eType="exhibition"
-          />
-          <EventCard eName="Model United Nations" 
-                     eTime="10:30am" 
-                     eDesc="A model united nations where a parliament is simulated"
-                     eType="exhibition"
-          /> */}
         </div>
         
       </div>

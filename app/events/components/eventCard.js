@@ -18,7 +18,7 @@ export default function EventCard(props) {
                     <div className="w-1/2"><a href={props.eLink}><button><div className="yellowButton" >{props.eType}</div></button></a></div>
                     <div className="w-1/2"><div className="flex justify-end font-bloggerBold">
                         <div className="flex -translate-x-2">
-                        learn more 
+                            <a href={props.eRule}>learn more </a>                       
                         <div className="translate-x-2 translate-y-1">
                             <svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="Group 1000004275">
