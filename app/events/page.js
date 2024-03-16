@@ -2,10 +2,19 @@
 import "./events.css";
 import EventCard from "./components/eventCard";
 export default function Events() {
-  const allEvents = [
+  const allEvents = [ 
+    {eName:"Panache", 
+    eDesc:"At the runway showdown, students from diverse backgrounds compete fiercely, strutting with confidence to captivate the audience and judges.", 
+    eTime:"TBA", 
+    eDay:"Daily",
+    eVenue:"Pandal",
+    eType:"Register", 
+    eRule:"https://docs.google.com/document/d/1pvjSEPHQi8cI_tFzj9ZV1_fAgLYLXSGf-e7xpfzEsAQ" ,
+    eLink:"https://docs.google.com/forms/d/1-AsqBBHDRzm7qyZwLiJH82wVu1hZaRPi3Bu01cS9Kw4"},
+    
     
     {eName:"Cultural Exibition", 
-    eDesc:"Lorem Ipsum venti polar cancer seventi michu leo barash monue vin quell lia", 
+    eDesc:"A celebration of culture providing a lens into the diversity, heritage, and creativity of different cultures. Students exhibit artifacts, crafts, traditions, arts and customs that represent their cultural background.", 
     eTime:"10:00 - 16:00", 
     eDay:"Daily",
     eVenue:"On-campus Stalls",
@@ -15,15 +24,31 @@ export default function Events() {
     
     
     {eName:"Food Fest", 
-    eDesc:"Lorem Ipsum venti polar cancer seventi michu leo barash monue vin quell lia", 
+    eDesc:"Savour the Flavour: Join us for a feast of delectable delights at the ultimate Food Fest - where taste meets tradition in every bite.", 
     eTime:"10:00 - 16:00", 
     eDay:"Daily",
     eVenue:"On-campus Stalls",
     eType:"Register", 
-    eType:"Register", 
     eRule:"https://drive.google.com/file/d/1v0fw7EkJeM_g-q0QYhTrm9AhP1rhAjhw/view?usp=drive_link" , 
     eLink:"https://docs.google.com/forms/d/e/1FAIpQLSczwSLtkojjFykl5C_XUmaMMElk4SM44Y5vhmwfQUa_rzd4aA/viewform?usp=sf_link"},
+        
     
+    {eName:"Battle of the Bands", 
+    eDesc:"Get ready for the ultimate clash of musical talent at the Battle of the Bands! College students armed with guitars, drums, and boundless energy will light up the stage with their unique sounds.", 
+    eTime:"TBA", 
+    eDay:"TBA",
+    eVenue:"Pandal",
+    eType:"Register", 
+    eRule:"https://docs.google.com/document/d/19ujbhvh-RWhsT7PhAAA6LQ_MXHrPZQ-QrzX7reswLBQ/edit?usp=drive_link" ,
+    eLink:"https://docs.google.com/forms/d/1edCZy1w6DyS7v489WJLtzP69cISXiF3OO39mW-g0zAs"},
+
+    
+    {eName:"Shimmer", 
+    eDesc:"Freshers bring youthful energy and creativity to the stage, showcasing their individuality with nervous excitement. Dressed to impress in trendy outfits, they exude confidence, each aiming to leave a lasting impression.", 
+    eTime:"TBA", 
+    eType:"Register",
+    eRule:"https://drive.google.com/file/d/11Dkl8qWrK-T09EnJvXC8udV_23M7Mi4f/view?usp=drive_link" ,
+    eLink:""},
     
     {eName:"BGMI", 
     eDesc:"Lorem Ipsum venti polar cancer seventi michu leo barash monue vin quell lia", 
@@ -39,30 +64,6 @@ export default function Events() {
     eType:"Register", 
     eRule:"https://drive.google.com/file/d/1uToud7TRkrAikPY4ADTjOs9prnfm3-nd/view?usp=drive_link" ,
     eLink:"https://docs.google.com/forms/d/1LAeVQh-WPL2qxJroKADj0ps8cuqM_Nn2VTE8Zbe7NX0"},
-    
-    
-    {eName:"Battle of the Bands", 
-    eDesc:"Lorem Ipsum venti polar cancer seventi michu leo barash monue vin quell lia", 
-    eTime:"TBA", 
-    eType:"Register", 
-    eRule:"https://docs.google.com/document/d/19ujbhvh-RWhsT7PhAAA6LQ_MXHrPZQ-QrzX7reswLBQ/edit?usp=drive_link" ,
-    eLink:"https://docs.google.com/forms/d/1edCZy1w6DyS7v489WJLtzP69cISXiF3OO39mW-g0zAs"},
-    
-    
-    {eName:"Panache", 
-    eDesc:"At the runway showdown, students from diverse backgrounds compete fiercely, strutting with confidence to captivate the audience and judges.", 
-    eTime:"TBA", 
-    eType:"Register", 
-    eRule:"https://docs.google.com/document/d/1pvjSEPHQi8cI_tFzj9ZV1_fAgLYLXSGf-e7xpfzEsAQ" ,
-    eLink:"https://docs.google.com/forms/d/1-AsqBBHDRzm7qyZwLiJH82wVu1hZaRPi3Bu01cS9Kw4"},
-   
-    
-    {eName:"Shimmer", 
-    eDesc:"Freshers bring youthful energy and creativity to the stage, showcasing their individuality with nervous excitement. Dressed to impress in trendy outfits, they exude confidence, each aiming to leave a lasting impression.", 
-    eTime:"TBA", 
-    eType:"Register",
-    eRule:"https://drive.google.com/file/d/11Dkl8qWrK-T09EnJvXC8udV_23M7Mi4f/view?usp=drive_link" ,
-    eLink:""},
     
     
     {eName:"Krigg", 
@@ -100,7 +101,7 @@ export default function Events() {
         </div>
         <div className="border-dotted border-y-4 border-[#4EB7B4] w-full h-8 mt-10"></div>
         <div className="flex justify-center font-bernier text-justify text-[#E03932] text-[32px] w-5/6 mt-10">
-            <div className="w-80">EVENTS ARE DISPLAYED IN CHRONOLOGICAL ORDER</div>
+            <div className="w-80">EVENTS ARE DISPLAYED BY POPULARITY!</div>
         </div>
         <div className="flex border-[1px] border-black bg-white w-5/6 h-12 my-8 px-4 items-center">
           <div className=" w-1/2 font-blogger">showing all events</div>
