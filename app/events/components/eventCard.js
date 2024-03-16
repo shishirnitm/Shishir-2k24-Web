@@ -3,18 +3,16 @@ import "../events.css";
 export default function EventCard(props) {
   return (
     <>
-        <div className="h-48">
-        <div className="absolute w-5/6 h-44 bg-black translate-x-2 translate-y-2 rounded-sm z-10">
-            <div className="eCard relative flex flex-col h-44 border-black border-[1px] rounded-sm background bg-white -translate-x-2 -translate-y-2 ">
-                <div className="flex h-1/3 px-3">
-                    <div className="font-bloggerBold text-[22px] self-end">{props.eName}</div>
-                    <div className="border-dotted border-b-2 border-black w-auto mx-1 grow mb-2"></div>
-                    <div className="font-blogger text-lg self-end">{props.eTime}</div>
+        <div className="h-60">
+        <div className="absolute w-5/6 h-60 bg-[#000000] translate-x-2 translate-y-2 rounded-sm z-10">
+            <div className="eCard relative flex flex-col h-60 border-black border-[3px] rounded-sm background bg-white -translate-x-2 -translate-y-2 ">
+                <div className="bg-[#F5E074] border-black border-b-[3px] flex h-1/5 px-3">
+                    <div className="font-bloggerBold text-[24px] self-center">{props.eName}</div>
                 </div>
-                <div className="flex h-1/3 px-3">
-                    <div className="font-blogger text-lg">{props.eDesc}</div>
+                <div className="flex h-3/5 px-3">
+                    <div className="font-blogger text-sm">{props.eDesc}</div>
                 </div>
-                <div className="flex h-1/3 px-3 items-start pt-1">
+                <div className="flex h-1/5 px-3 items-start pt-1">
                     <div className="w-1/2"><a href={props.eLink}><button><div className="yellowButton" >{props.eType}</div></button></a></div>
                     <div className="w-1/2"><div className="flex justify-end font-bloggerBold">
                         <div className="flex -translate-x-2">

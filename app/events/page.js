@@ -3,15 +3,77 @@ import "./events.css";
 import EventCard from "./components/eventCard";
 export default function Events() {
   const allEvents = [
-    {eName:"Cultural Exibition", eDesc:"Lorem Ipsum venti polar cancer seventi michu leo barash monue vin quell lia", eTime:"Daily 10:00 - 16:00", eType:"Register", eRule: "https://drive.google.com/file/d/1v0E1Iln72s7U9Xod34bFEJVU6yF_lrcF/view?usp=drive_link", eLink:"https://docs.google.com/forms/d/e/1FAIpQLSe_NLNNNQT0ZaLHKf82YRO-ujXWDJf9dVoqpw4yQjWqw_L_rg/viewform?usp=sf_link"},
-    {eName:"Food Fest", eDesc:"Lorem Ipsum venti polar cancer seventi michu leo barash monue vin quell lia", eTime:"5th April 10:00 - 16:00", eType:"Register", eRule:"https://drive.google.com/file/d/1v0fw7EkJeM_g-q0QYhTrm9AhP1rhAjhw/view?usp=drive_link" , eLink:"https://docs.google.com/forms/d/e/1FAIpQLSczwSLtkojjFykl5C_XUmaMMElk4SM44Y5vhmwfQUa_rzd4aA/viewform?usp=sf_link"},
-    {eName:"BGMI", eDesc:"Lorem Ipsum venti polar cancer seventi michu leo barash monue vin quell lia", eTime:"TBA", eType:"Register", eRule:"https://drive.google.com/file/d/1c7Zd7B6dtAF94QE858pHnosOCQqOJRVK/view?usp=drive_link" , eLink:"https://docs.google.com/forms/d/1NrAeFo95HouDi9QMxiW4b--AUPcSPT1htcTPcqIrA2E/edit"},
-    {eName:"Valorant", eDesc:"Lorem Ipsum venti polar cancer seventi michu leo barash monue vin quell lia", eTime:"TBA", eType:"Register", eRule:"https://drive.google.com/file/d/1uToud7TRkrAikPY4ADTjOs9prnfm3-nd/view?usp=drive_link" ,eLink:"https://docs.google.com/forms/d/1LAeVQh-WPL2qxJroKADj0ps8cuqM_Nn2VTE8Zbe7NX0/edit"},
-    {eName:"Battle of the Bands", eDesc:"Lorem Ipsum venti polar cancer seventi michu leo barash monue vin quell lia", eTime:"TBA", eType:"Register", eRule:"" ,eLink:""},
-    {eName:"Panache", eDesc:"Lorem Ipsum venti polar cancer seventi michu leo barash monue vin quell lia", eTime:"TBA", eType:"Register", eRule:"https://docs.google.com/document/d/1pvjSEPHQi8cI_tFzj9ZV1_fAgLYLXSGf-e7xpfzEsAQ/edit?usp=drive_link" ,eLink:"https://docs.google.com/forms/d/1-AsqBBHDRzm7qyZwLiJH82wVu1hZaRPi3Bu01cS9Kw4/edit"},
-    {eName:"", eDesc:"Lorem Ipsum venti polar cancer seventi michu leo barash monue vin quell lia", eTime:"", eType:"Register", eRule:"" ,eLink:""},
-    {eName:"", eDesc:"Lorem Ipsum venti polar cancer seventi michu leo barash monue vin quell lia", eTime:"", eType:"Register", eRule:"" ,eLink:""},
-    {eName:"", eDesc:"Lorem Ipsum venti polar cancer seventi michu leo barash monue vin quell lia", eTime:"", eType:"Register", eRule:"" ,eLink:""},
+    
+    {eName:"Cultural Exibition", 
+    eDesc:"Lorem Ipsum venti polar cancer seventi michu leo barash monue vin quell lia", 
+    eTime:"Daily 10:00 - 16:00", 
+    eType:"Register", 
+    eRule: "https://drive.google.com/file/d/1v0E1Iln72s7U9Xod34bFEJVU6yF_lrcF/view?usp=drive_link", 
+    eLink:"https://docs.google.com/forms/d/e/1FAIpQLSe_NLNNNQT0ZaLHKf82YRO-ujXWDJf9dVoqpw4yQjWqw_L_rg/viewform?usp=sf_link"},
+    
+    
+    {eName:"Food Fest", 
+    eDesc:"Lorem Ipsum venti polar cancer seventi michu leo barash monue vin quell lia", 
+    eTime:"5th April 10:00 - 16:00", 
+    eType:"Register", 
+    eRule:"https://drive.google.com/file/d/1v0fw7EkJeM_g-q0QYhTrm9AhP1rhAjhw/view?usp=drive_link" , 
+    eLink:"https://docs.google.com/forms/d/e/1FAIpQLSczwSLtkojjFykl5C_XUmaMMElk4SM44Y5vhmwfQUa_rzd4aA/viewform?usp=sf_link"},
+    
+    
+    {eName:"BGMI", 
+    eDesc:"Lorem Ipsum venti polar cancer seventi michu leo barash monue vin quell lia", 
+    eTime:"TBA", 
+    eType:"Register", 
+    eRule:"https://drive.google.com/file/d/1c7Zd7B6dtAF94QE858pHnosOCQqOJRVK/view?usp=drive_link" , 
+    eLink:"https://docs.google.com/forms/d/1NrAeFo95HouDi9QMxiW4b--AUPcSPT1htcTPcqIrA2E"},
+    
+    
+    {eName:"Valorant", 
+    eDesc:"Lorem Ipsum venti polar cancer seventi michu leo barash monue vin quell lia", 
+    eTime:"TBA", 
+    eType:"Register", 
+    eRule:"https://drive.google.com/file/d/1uToud7TRkrAikPY4ADTjOs9prnfm3-nd/view?usp=drive_link" ,
+    eLink:"https://docs.google.com/forms/d/1LAeVQh-WPL2qxJroKADj0ps8cuqM_Nn2VTE8Zbe7NX0"},
+    
+    
+    {eName:"Battle of the Bands", 
+    eDesc:"Lorem Ipsum venti polar cancer seventi michu leo barash monue vin quell lia", 
+    eTime:"TBA", 
+    eType:"Register", 
+    eRule:"https://docs.google.com/document/d/19ujbhvh-RWhsT7PhAAA6LQ_MXHrPZQ-QrzX7reswLBQ/edit?usp=drive_link" ,
+    eLink:"https://docs.google.com/forms/d/1edCZy1w6DyS7v489WJLtzP69cISXiF3OO39mW-g0zAs"},
+    
+    
+    {eName:"Panache", 
+    eDesc:"At the runway showdown, students from diverse backgrounds compete fiercely, strutting with confidence to captivate the audience and judges. Adorned in unique ensembles, they showcase themes from classic elegance to avant-garde innovation, making the runway a canvas for self-expression.", 
+    eTime:"TBA", 
+    eType:"Register", 
+    eRule:"https://docs.google.com/document/d/1pvjSEPHQi8cI_tFzj9ZV1_fAgLYLXSGf-e7xpfzEsAQ" ,
+    eLink:"https://docs.google.com/forms/d/1-AsqBBHDRzm7qyZwLiJH82wVu1hZaRPi3Bu01cS9Kw4"},
+   
+    
+    {eName:"Shimmer", 
+    eDesc:"Freshers bring youthful energy and creativity to the stage, showcasing their individuality with nervous excitement. Dressed to impress in trendy outfits, they exude confidence, each aiming to leave a lasting impression.", 
+    eTime:"TBA", 
+    eType:"Register",
+    eRule:"https://drive.google.com/file/d/11Dkl8qWrK-T09EnJvXC8udV_23M7Mi4f/view?usp=drive_link" ,
+    eLink:""},
+    
+    
+    {eName:"Krigg", 
+    eDesc:"KRIGG events bring joyous energy and camaraderie to campus, offering a playful escape from academic rigors. With themed games and friendly competitions, students bond over laughter and merriment, fostering connections beyond the classroom.", 
+    eTime:"TBA", 
+    eType:"Register", 
+    eRule:"" ,
+    eLink:""},
+    
+    
+    {eName:"Symphony", 
+    eDesc:"Symphony is a Music competition event in singing and instrumental performances open to all students.  ", 
+    eTime:"29th March", 
+    eType:"Register", 
+    eRule:"https://docs.google.com/document/d/19ujbhvh-RWhsT7PhAAA6LQ_MXHrPZQ-QrzX7reswLBQ" ,
+    eLink:"https://docs.google.com/forms/d/1ZSGP6z1AXi25kNSmjBJxqYsSscIm3WD8pggKsplyyf0"},
   ]
   return (
     <>
