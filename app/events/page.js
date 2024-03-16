@@ -6,7 +6,9 @@ export default function Events() {
     
     {eName:"Cultural Exibition", 
     eDesc:"Lorem Ipsum venti polar cancer seventi michu leo barash monue vin quell lia", 
-    eTime:"Daily 10:00 - 16:00", 
+    eTime:"10:00 - 16:00", 
+    eDay:"Daily",
+    eVenue:"On-campus Stalls",
     eType:"Register", 
     eRule: "https://drive.google.com/file/d/1v0E1Iln72s7U9Xod34bFEJVU6yF_lrcF/view?usp=drive_link", 
     eLink:"https://docs.google.com/forms/d/e/1FAIpQLSe_NLNNNQT0ZaLHKf82YRO-ujXWDJf9dVoqpw4yQjWqw_L_rg/viewform?usp=sf_link"},
@@ -14,7 +16,10 @@ export default function Events() {
     
     {eName:"Food Fest", 
     eDesc:"Lorem Ipsum venti polar cancer seventi michu leo barash monue vin quell lia", 
-    eTime:"5th April 10:00 - 16:00", 
+    eTime:"10:00 - 16:00", 
+    eDay:"Daily",
+    eVenue:"On-campus Stalls",
+    eType:"Register", 
     eType:"Register", 
     eRule:"https://drive.google.com/file/d/1v0fw7EkJeM_g-q0QYhTrm9AhP1rhAjhw/view?usp=drive_link" , 
     eLink:"https://docs.google.com/forms/d/e/1FAIpQLSczwSLtkojjFykl5C_XUmaMMElk4SM44Y5vhmwfQUa_rzd4aA/viewform?usp=sf_link"},
@@ -45,7 +50,7 @@ export default function Events() {
     
     
     {eName:"Panache", 
-    eDesc:"At the runway showdown, students from diverse backgrounds compete fiercely, strutting with confidence to captivate the audience and judges. Adorned in unique ensembles, they showcase themes from classic elegance to avant-garde innovation, making the runway a canvas for self-expression.", 
+    eDesc:"At the runway showdown, students from diverse backgrounds compete fiercely, strutting with confidence to captivate the audience and judges.", 
     eTime:"TBA", 
     eType:"Register", 
     eRule:"https://docs.google.com/document/d/1pvjSEPHQi8cI_tFzj9ZV1_fAgLYLXSGf-e7xpfzEsAQ" ,
@@ -103,7 +108,7 @@ export default function Events() {
         </div>
         <div className="flex flex-col w-5/6 space-y-5">
           {allEvents.map((prop)=>(
-            <EventCard key={prop.eName} eName={prop.eName} eTime={prop.eTime} eRule={prop.eRule} eLink={prop.eLink} eDesc={prop.eDesc} eType={prop.eType}/>
+            <EventCard key={prop.eName} eName={prop.eName} eTime={prop.eTime} eRule={prop.eRule} eLink={prop.eLink} eDesc={prop.eDesc} eType={prop.eType} eVenue={prop.eVenue} eDay={prop.eDay}/>
           ))}
         </div>
         
