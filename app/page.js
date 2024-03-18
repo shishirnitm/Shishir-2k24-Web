@@ -87,11 +87,11 @@ export default function Home() {
         >
           <div className="w-[80vw] mt-6">
             Enjoy music, dance, shows, and fun at{" "}
-            <span className="text-primaryRed">Shishir</span> - NIT Meghalaya's
+            <span className="text-primaryRed">Shishir</span> - NIT Meghalaya&apos;s
             yearly culture fest. <br /> <br /> Come to the beautiful Bijni
-            Complex in Shillong's hills from{" "}
+            Complex in Shillong&apos;s hills from{" "}
             <span className="text-primaryRed">April 4th-6th</span> for an
-            amazing time celebrating Meghalaya's rich{" "}
+            amazing time celebrating Meghalaya&apos;s rich{" "}
             <span className="text-primaryRed">culture</span> and warm
             hospitality.
             <br /> <br /> Make special memories at Shishir!
@@ -191,7 +191,7 @@ export default function Home() {
             Purchase your entry ticket offline / online through our secure
             website. <br />
             <span className="font-medium italic">
-              Limited tickets available! So, Don't miss out!
+              Limited tickets available! So, Don&apos;t miss out!
             </span>
           </div>
         </div>

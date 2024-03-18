@@ -1,5 +1,5 @@
 import "./mun.css"
-import Committee from "./components/committee";
+
 import committeesData from "./committeesData.json";
 
 import nitMunLogo from "../../public/mun/nitMunLogo.png";
@@ -10,14 +10,21 @@ import unsc from "../../public/mun/unsc.png";
 import lokSabha from "../../public/mun/lokSabha.png";
 
 import Button from "../components/Button";
+import Committee from "./components/committee";
+
 
 import Image from "next/image";
+
+export const metadata = {
+    title: "NITM MUN | Shishir 2024 | Model United Nations",
+    description: "Developed by the Web Dev Team at NITM (2024)",
+};
 
 const Mun = () => {
     return (
         <>
-            <Image 
-                src={nitMunLogo} 
+            <Image
+                src={nitMunLogo}
                 alt="NITM MUN logo"
                 width="0"
                 height="0"
@@ -30,19 +37,19 @@ const Mun = () => {
                     <div className=" textStroke ">WHERE PASSION MEETS PURPOSE</div>
                     <div className=" font-bloggerBold text-[#186B80] text-[20px] my-4">Empowering Young Minds, Fostering Global Solutions.</div>
                     {/* <div className="text-center">Button here*</div> */}
-                    <Button text="follow on instagram" link="https://www.instagram.com/nitm_mun/"/>
+                    <Button text="follow on instagram" link="https://www.instagram.com/nitm_mun/" />
 
                 </div>
 
                 <div className=" mun-des mt-20">
                     <div className=" font-bernier text-[#E03932] text-[40px] text-justify leading-none ">Welcome to the NIT Meghalaya MUN!</div>
-                    <div className=" font-bloggerBold text-[#186B80] text-[20px] my-4 ">Back in 2023, a group of spirited debate enthusiasts sparked the flame of the NITM MUN, and boy, did it shine bright! From its very inception, it was clear: this wasn't just any parliament; it was a spectacular spectacle like no other.</div>
-                    <div className=" font-bloggerBold text-[#186B80] text-[20px] my-4 ">The success of our very first edition spoke volumes – with over 80 delegates diving headfirst into the fray, it was clear that something special was brewing. So here with are with the 2024 Ultimate Edition og NIT MUN</div>
+                    <div className=" font-bloggerBold text-[#186B80] text-[20px] my-4 ">Back in 2023, a group of spirited debate enthusiasts sparked the flame of the NITM MUN, and boy, did it shine bright! From its very inception, it was clear: this wasn&apos;t just any parliament; it was a spectacular spectacle like no other.</div>
+                    <div className=" font-bloggerBold text-[#186B80] text-[20px] my-4 ">The success of our very first edition spoke volumes – with over 80 delegates diving headfirst into the fray, it was clear that something special was brewing. So here with are with the 2024 Ultimate Edition of NIT MUN</div>
                 </div>
 
                 <div className=" mt-10 ">
                     <div className=" font-bernier text-[#E03932] text-[40px] text-justify leading-none ">NITM MUN X MMUN</div>
-                    <div className=" font-blogger text-[#186B80] text-[20px] my-4 ">In collaboration with <span className="font-bloggerBold">MMUN</span>, recognized by the <span className="font-bloggerBold">UNHCR and UNIC, NITM MUN</span> aims to empower Meghalaya's youth, fostering leadership and advocating for global solutions.</div>
+                    <div className=" font-blogger text-[#186B80] text-[20px] my-4 ">In collaboration with <span className="font-bloggerBold">MMUN</span>, recognized by the <span className="font-bloggerBold">UNHCR and UNIC, NITM MUN</span> aims to empower Meghalaya&apos;s youth, fostering leadership and advocating for global solutions.</div>
                     <div className=" font-bloggerBold text-[#186B80] text-[20px] my-4 ">Join us in our mission for change.</div>
                 </div>
 
