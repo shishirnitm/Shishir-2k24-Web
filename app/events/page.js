@@ -33,7 +33,7 @@ export default function Events() {
             <div className=" w-1/2 font-blogger">event categories</div>
             <div className=" w-1/2 text-end"><u>filters</u></div>
           </div>
-          <div className="flex flex-wrap w-full gap-x-2 space-y-2 place-items-start text-center">
+          <div className="flex flex-wrap w-full gap-x-2 space-y-2 place-items-start text-center text-sm">
             <div className="rounded-2xl border-[1px] border-black font-blogger px-2 h-7 self-end"><button onClick={()=>{setCategory("all")}}>All</button></div>
             <div className="rounded-2xl border-[1px] border-black font-blogger px-2 h-7"><button onClick={()=>{setCategory("Main")}}>Main</button></div>
             <div className="rounded-2xl border-[1px] border-black font-blogger px-2 h-7"><button onClick={()=>{setCategory("Music")}}>Music</button></div>
