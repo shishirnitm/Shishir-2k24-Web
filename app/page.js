@@ -272,8 +272,8 @@ export default function Home() {
         </div>
         <div className="pt-5">
           <div className="flex w-screen overflow-scroll ">
-            {posters.map((img) => (
-              <div className="pl-10">
+            {posters.map((img, index) => (
+              <div key={index} className="pl-10">
                 <Poster img={img} />
               </div>
             ))}
@@ -402,8 +402,8 @@ export default function Home() {
           </div>
         </div>
         <div className="flex w-screen overflow-scroll pt-10 pb-10 items-center">
-          {galleryImages.map((img) => (
-            <div className="pl-2">
+          {galleryImages.map((img, index) => (
+            <div key={index} className="pl-2">
               <Gallery img={img} />
             </div>
           ))}
