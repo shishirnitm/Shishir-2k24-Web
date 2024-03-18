@@ -7,7 +7,8 @@ export const allEvents = [
     eType:"Register", 
     eRule:"https://docs.google.com/document/d/1pvjSEPHQi8cI_tFzj9ZV1_fAgLYLXSGf-e7xpfzEsAQ" ,
     eLink:"https://docs.google.com/forms/d/1-AsqBBHDRzm7qyZwLiJH82wVu1hZaRPi3Bu01cS9Kw4",
-    category:"Main"},
+    category:"Main",
+    id:1},
         
     
     {eName:"Battle of the Bands", 
@@ -18,7 +19,8 @@ export const allEvents = [
     eType:"Register", 
     eRule:"https://docs.google.com/document/d/19ujbhvh-RWhsT7PhAAA6LQ_MXHrPZQ-QrzX7reswLBQ/edit?usp=drive_link" ,
     eLink:"https://docs.google.com/forms/d/1edCZy1w6DyS7v489WJLtzP69cISXiF3OO39mW-g0zAs",
-    category:"Music"},
+    category:"Music",
+    id:2},
     
     
     {eName:"Cultural Exibition", 
@@ -29,7 +31,8 @@ export const allEvents = [
     eType:"Register", 
     eRule: "https://drive.google.com/file/d/1v0E1Iln72s7U9Xod34bFEJVU6yF_lrcF/view?usp=drive_link", 
     eLink:"https://docs.google.com/forms/d/e/1FAIpQLSe_NLNNNQT0ZaLHKf82YRO-ujXWDJf9dVoqpw4yQjWqw_L_rg/viewform?usp=sf_link",
-    category:"EBSB"},
+    category:"EBSB",
+    id:3},
     
     
     {eName:"Food Fest", 
@@ -40,7 +43,8 @@ export const allEvents = [
     eType:"Register", 
     eRule:"https://drive.google.com/file/d/1v0fw7EkJeM_g-q0QYhTrm9AhP1rhAjhw/view?usp=drive_link" , 
     eLink:"https://docs.google.com/forms/d/e/1FAIpQLSczwSLtkojjFykl5C_XUmaMMElk4SM44Y5vhmwfQUa_rzd4aA/viewform?usp=sf_link",
-    category:"EBSB"},
+    category:"EBSB",
+    id:4},
     
     
     {eName:"Symphony", 
@@ -51,7 +55,8 @@ export const allEvents = [
     eType:"Register", 
     eRule:"https://docs.google.com/document/d/19ujbhvh-RWhsT7PhAAA6LQ_MXHrPZQ-QrzX7reswLBQ" ,
     eLink:"https://docs.google.com/forms/d/1ZSGP6z1AXi25kNSmjBJxqYsSscIm3WD8pggKsplyyf0",
-    category:"Music"},
+    category:"Music",
+    id:5},
 
 
     {eName:"Spic Macay", 
@@ -62,7 +67,8 @@ export const allEvents = [
     eType:"Register", 
     eRule:"" ,
     eLink:"",
-    category:"Music"},
+    category:"Music",
+    id:6},
 
     
     {eName:"Shimmer", 
@@ -73,7 +79,8 @@ export const allEvents = [
     eDay:"TBA",
     eRule:"https://drive.google.com/file/d/11Dkl8qWrK-T09EnJvXC8udV_23M7Mi4f/view?usp=drive_link" ,
     eLink:"",
-    category:"Main"},
+    category:"Main",
+    id:7},
 
     {eName:"Open Mic", 
     eDesc:"Embark on a re-telling session of prose, poem, storytelling, stand-up comedy, jokes, quotes, their life journey, experiences, etc, along with the crowd for a light-hearted engaging experience", 
@@ -83,7 +90,8 @@ export const allEvents = [
     eType:"Register", 
     eRule:"" ,
     eLink:"",
-    category:"Literary"},
+    category:"Literary",
+    id:8},
 
 
     {eName:"Extempore Speech", 
@@ -94,7 +102,8 @@ export const allEvents = [
     eType:"Register", 
     eRule:"" ,
     eLink:"",
-    category:"Literary"},
+    category:"Literary",
+    id:9},
 
     
     {eName:"Treasure Hunt", 
@@ -105,7 +114,8 @@ export const allEvents = [
     eType:"Register", 
     eRule:"" ,
     eLink:"",
-    category:"Literary"},
+    category:"Literary",
+    id:10},
 
 
     {eName:"The Laughing Summit", 
@@ -116,7 +126,8 @@ export const allEvents = [
     eType:"Register", 
     eRule:"" ,
     eLink:"",
-    category:"TF"},
+    category:"TF",
+    id:11},
 
 
     {eName:"Flash Mob", 
@@ -127,7 +138,8 @@ export const allEvents = [
     eType:"Register", 
     eRule:"" ,
     eLink:"",
-    category:"DandD"},
+    category:"DandD",
+    id:12},
 
 
     {eName:"Step Up Dance Competition", 
@@ -138,7 +150,8 @@ export const allEvents = [
     eType:"Register", 
     eRule:"" ,
     eLink:"",
-    category:"DandD"},
+    category:"DandD",
+    id:13},
 
 
     {eName:"Prom Night", 
@@ -149,7 +162,8 @@ export const allEvents = [
     eType:"Register", 
     eRule:"" ,
     eLink:"",
-    category:"DandD"},
+    category:"DandD",
+    id:14},
 
 
     {eName:"Short Film", 
@@ -160,7 +174,8 @@ export const allEvents = [
     eType:"Register", 
     eRule:"" ,
     eLink:"",
-    category:"DandD"},
+    category:"DandD",
+    id:15},
 
 
     {eName:"Drama Play", 
@@ -171,7 +186,8 @@ export const allEvents = [
     eType:"Register", 
     eRule:"" ,
     eLink:"",
-    category:"DandD"},
+    category:"DandD",
+    id:16},
 
 
     {eName:"Tug of war", 
@@ -182,7 +198,8 @@ export const allEvents = [
     eType:"Register", 
     eRule:"" ,
     eLink:"",
-    category:"Krigg"},
+    category:"Krigg",
+    id:17},
 
 
     {eName:"Dumb Charades", 
@@ -193,7 +210,8 @@ export const allEvents = [
     eType:"Register", 
     eRule:"" ,
     eLink:"",
-    category:"Krigg"},
+    category:"Krigg",
+    id:18},
 
 
     {eName:"Musical Chair", 
@@ -204,7 +222,8 @@ export const allEvents = [
     eType:"Register", 
     eRule:"" ,
     eLink:"",
-    category:"Krigg"},
+    category:"Krigg",
+    id:19},
 
 
     {eName:"Rangoli", 
@@ -215,7 +234,8 @@ export const allEvents = [
     eType:"Register", 
     eRule:"" ,
     eLink:"",
-    category:"Krigg"},
+    category:"Krigg",
+    id:20},
 
 
     {eName:"Snakes and Ladders", 
@@ -226,7 +246,8 @@ export const allEvents = [
     eType:"Register", 
     eRule:"" ,
     eLink:"",
-    category:"Krigg"},
+    category:"Krigg",
+    id:21},
 
     
     {eName:"BGMI", 
@@ -237,7 +258,8 @@ export const allEvents = [
     eType:"Register", 
     eRule:"https://drive.google.com/file/d/1c7Zd7B6dtAF94QE858pHnosOCQqOJRVK/view?usp=drive_link" , 
     eLink:"https://docs.google.com/forms/d/1NrAeFo95HouDi9QMxiW4b--AUPcSPT1htcTPcqIrA2E",
-    category:"Gaming"},
+    category:"Gaming",
+    id:22},
     
     
     {eName:"Valorant", 
@@ -248,7 +270,8 @@ export const allEvents = [
     eType:"Register", 
     eRule:"https://drive.google.com/file/d/1uToud7TRkrAikPY4ADTjOs9prnfm3-nd/view?usp=drive_link" ,
     eLink:"https://docs.google.com/forms/d/1LAeVQh-WPL2qxJroKADj0ps8cuqM_Nn2VTE8Zbe7NX0",
-    category:"Gaming"},
+    category:"Gaming",
+    id:23},
 
     
   ];
