@@ -16,6 +16,13 @@ import mainEvents from "../public/home/main_events.svg";
 import dontMiss from "../public/home/dont_miss.svg";
 import battleBands from "../public/home/battle_bands.svg";
 import promNight from "../public/home/prom_night.svg";
+import cheese from "../public/home/cheese.svg";
+import gallery from "../public/home/gallery.svg";
+import map from "../public/home/map.svg";
+
+//TODO: Replace with final images later
+import gallery1 from "../public/home/gallery1.png";
+import gallery2 from "../public/home/gallery2.png";
 
 //TODO: Replace with actual guests later
 import godfather from "../public/home/godfather.png";
@@ -28,8 +35,13 @@ import Button from "./components/Button";
 import "./home.css";
 import Guest from "./components/Guest";
 import Poster from "./components/Poster";
+import Gallery from "./components/Gallery";
 
 const posters = [promNight, battleBands];
+const galleryImages = [gallery1, gallery2];
+
+// Needs refactoring, too many lines in a single file...
+// My own eyes hurt reading this shit
 
 export default function Home() {
   return (
@@ -99,7 +111,7 @@ export default function Home() {
         </div>
         <div
           id="home"
-          className="font-blogger flex flex-row justify-center text-md font-semibold text-primaryBlue bg-transparent"
+          className="font-blogger flex flex-row justify-center text-lg font-semibold text-primaryBlue bg-transparent"
         >
           <div className="w-[80vw] mt-6">
             Enjoy music, dance, shows, and fun at{" "}
@@ -361,30 +373,73 @@ export default function Home() {
             className="w-[100vw]  h-auto"
           />
         </div>
-        {/* <div id="home" className="text-center pt-24">
-          <div>This is the Shishir Home Page</div>
-          <div>Welcome one and all!!!</div>
+        <div id="home" className="pt-5 w-screen flex justify-end">
+          <Image
+            src={cheese}
+            width="0"
+            height="0"
+            sizes="100vw"
+            className="w-[25vw] h-auto translate-x-4 "
+          />
         </div>
-        <div id="home" className="text-center pt-24">
-          <div>This is the Shishir Home Page</div>
-          <div>Welcome one and all!!!</div>
+        <div id="home" className="pt-5 flex w- flex-row justify-center">
+          <Image
+            src={gallery}
+            width="0"
+            height="0"
+            sizes="100vw"
+            className="w-[85vw]  h-auto"
+          />
         </div>
-        <div id="home" className="text-center pt-24">
-          <div>This is the Shishir Home Page</div>
-          <div>Welcome one and all!!!</div>
+        <div
+          id="home"
+          className="font-blogger flex flex-col items-center justify-center font-semibold text-primaryBlue bg-transparent"
+        >
+          <div className="text-lg font-semibold w-[85vw] mt-8">
+            View last year&apos;s{" "}
+            <span className="font-black">best moments</span> captured by the
+            talented photography team and other attendees.
+          </div>
         </div>
-        <div id="home" className="text-center pt-24">
-          <div>This is the Shishir Home Page</div>
-          <div>Welcome one and all!!!</div>
+        <div className="flex w-screen overflow-scroll pt-10 pb-10 items-center">
+          {galleryImages.map((img) => (
+            <div className="pl-2">
+              <Gallery img={img} />
+            </div>
+          ))}
         </div>
-        <div id="home" className="text-center pt-24">
-          <div>This is the Shishir Home Page</div>
-          <div>Welcome one and all!!!</div>
+        <div id="home" className="w-[100vw] flex justify-center">
+          <div className="w-[85vw]">
+            <Button text="View Full Gallery" link="..." />
+          </div>
         </div>
-        <div id="home" className="text-center pt-24">
-          <div>This is the Shishir Home Page</div>
-          <div>Welcome one and all!!!</div>
-        </div> */}
+        <div id="home" className="pt-20 flex flex-row justify-center">
+          <Image
+            src={aboutSeparator}
+            width="0"
+            height="0"
+            sizes="100vw"
+            className="w-[100vw]  h-auto"
+          />
+        </div>
+        <div id="home" className="flex w- flex-row justify-center">
+          <Image
+            src={map}
+            width="0"
+            height="0"
+            sizes="100vw"
+            className="w-[100vw]  h-auto"
+          />
+        </div>
+        <div id="home" className="pb-20 flex flex-row justify-center">
+          <Image
+            src={howToSeparator}
+            width="0"
+            height="0"
+            sizes="100vw"
+            className="w-[100vw]  h-auto"
+          />
+        </div>
       </div>
     </>
   );
