@@ -12,6 +12,10 @@ import howTo from "../public/home/how_to.svg";
 import howToSeparator from "../public/home/how-separator.svg";
 import meet from "../public/home/meet.svg";
 import speaker from "../public/home/speakers.svg";
+import mainEvents from "../public/home/main_events.svg";
+import dontMiss from "../public/home/dont_miss.svg";
+import battleBands from "../public/home/battle_bands.svg";
+import promNight from "../public/home/prom_night.svg";
 
 //TODO: Replace with actual guests later
 import godfather from "../public/home/godfather.png";
@@ -23,6 +27,9 @@ import Button from "./components/Button";
 
 import "./home.css";
 import Guest from "./components/Guest";
+import Poster from "./components/Poster";
+
+const posters = [promNight, battleBands];
 
 export default function Home() {
   return (
@@ -225,6 +232,64 @@ export default function Home() {
           />
         </div>
         <div id="home" className="pt-5 w-screen flex justify-end">
+          <Image
+            src={mainEvents}
+            width="0"
+            height="0"
+            sizes="100vw"
+            className="w-[25vw] h-auto translate-x-4 "
+          />
+        </div>
+        <div id="home" className="pt-5 flex w- flex-row justify-center">
+          <Image
+            src={dontMiss}
+            width="0"
+            height="0"
+            sizes="100vw"
+            className="w-[85vw]  h-auto"
+          />
+        </div>
+        <div
+          id="home"
+          className="font-blogger flex flex-col items-center justify-center font-semibold text-primaryBlue bg-transparent"
+        >
+          <div className="text-lg font-semibold w-[85vw] mt-8">
+            Handpicked events for you! These are our most popular and in-demand
+            events. Grab your seat and enjoy the show ~
+          </div>
+        </div>
+        <div className="pt-5">
+          <div className="flex w-screen overflow-scroll ">
+            {posters.map((img) => (
+              <div className="pl-10">
+                <Poster img={img} />
+              </div>
+            ))}
+          </div>
+        </div>
+        <div
+          id="home"
+          className="font-blogger flex flex-col items-center justify-center font-semibold text-primaryBlue bg-transparent"
+        >
+          <div className="text-lg font-semibold w-[85vw] mt-8">
+            Looking for more events to join? You can..
+          </div>
+        </div>
+        <div id="home" className="pt-5 w-[100vw] flex justify-center">
+          <div className="w-[85vw]">
+            <Button text="Explore Events" link="..." />
+          </div>
+        </div>
+        <div id="home" className="pt-24 flex flex-row justify-center">
+          <Image
+            src={separator}
+            width="0"
+            height="0"
+            sizes="100vw"
+            className="w-[100vw]  h-auto"
+          />
+        </div>
+        <div id="home" className="pt-16 w-screen] flex justify-end">
           <Image
             src={speaker}
             width="0"
