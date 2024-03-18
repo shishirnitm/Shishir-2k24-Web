@@ -6,7 +6,8 @@ export const allEvents = [
     eVenue:"Pandal",
     eType:"Register", 
     eRule:"https://docs.google.com/document/d/1pvjSEPHQi8cI_tFzj9ZV1_fAgLYLXSGf-e7xpfzEsAQ" ,
-    eLink:"https://docs.google.com/forms/d/1-AsqBBHDRzm7qyZwLiJH82wVu1hZaRPi3Bu01cS9Kw4"},
+    eLink:"https://docs.google.com/forms/d/1-AsqBBHDRzm7qyZwLiJH82wVu1hZaRPi3Bu01cS9Kw4",
+    category:"Main"},
         
     
     {eName:"Battle of the Bands", 
@@ -16,7 +17,8 @@ export const allEvents = [
     eVenue:"Pandal",
     eType:"Register", 
     eRule:"https://docs.google.com/document/d/19ujbhvh-RWhsT7PhAAA6LQ_MXHrPZQ-QrzX7reswLBQ/edit?usp=drive_link" ,
-    eLink:"https://docs.google.com/forms/d/1edCZy1w6DyS7v489WJLtzP69cISXiF3OO39mW-g0zAs"},
+    eLink:"https://docs.google.com/forms/d/1edCZy1w6DyS7v489WJLtzP69cISXiF3OO39mW-g0zAs",
+    category:"Music"},
     
     
     {eName:"Cultural Exibition", 
@@ -26,7 +28,8 @@ export const allEvents = [
     eVenue:"On-campus Stalls",
     eType:"Register", 
     eRule: "https://drive.google.com/file/d/1v0E1Iln72s7U9Xod34bFEJVU6yF_lrcF/view?usp=drive_link", 
-    eLink:"https://docs.google.com/forms/d/e/1FAIpQLSe_NLNNNQT0ZaLHKf82YRO-ujXWDJf9dVoqpw4yQjWqw_L_rg/viewform?usp=sf_link"},
+    eLink:"https://docs.google.com/forms/d/e/1FAIpQLSe_NLNNNQT0ZaLHKf82YRO-ujXWDJf9dVoqpw4yQjWqw_L_rg/viewform?usp=sf_link",
+    category:"EBSB"},
     
     
     {eName:"Food Fest", 
@@ -36,7 +39,8 @@ export const allEvents = [
     eVenue:"On-campus Stalls",
     eType:"Register", 
     eRule:"https://drive.google.com/file/d/1v0fw7EkJeM_g-q0QYhTrm9AhP1rhAjhw/view?usp=drive_link" , 
-    eLink:"https://docs.google.com/forms/d/e/1FAIpQLSczwSLtkojjFykl5C_XUmaMMElk4SM44Y5vhmwfQUa_rzd4aA/viewform?usp=sf_link"},
+    eLink:"https://docs.google.com/forms/d/e/1FAIpQLSczwSLtkojjFykl5C_XUmaMMElk4SM44Y5vhmwfQUa_rzd4aA/viewform?usp=sf_link",
+    category:"EBSB"},
     
     
     {eName:"Symphony", 
@@ -46,7 +50,19 @@ export const allEvents = [
     eVenue:"Pandal",
     eType:"Register", 
     eRule:"https://docs.google.com/document/d/19ujbhvh-RWhsT7PhAAA6LQ_MXHrPZQ-QrzX7reswLBQ" ,
-    eLink:"https://docs.google.com/forms/d/1ZSGP6z1AXi25kNSmjBJxqYsSscIm3WD8pggKsplyyf0"},
+    eLink:"https://docs.google.com/forms/d/1ZSGP6z1AXi25kNSmjBJxqYsSscIm3WD8pggKsplyyf0",
+    category:"Music"},
+
+
+    {eName:"Spic Macay", 
+    eDesc:"Symphony is a Music competition event in singing and instrumental performances open to all students.  ", 
+    eTime:"TBA", 
+    eDay:"29th March",
+    eVenue:"Pandal",
+    eType:"Register", 
+    eRule:"" ,
+    eLink:"",
+    category:"Music"},
 
     
     {eName:"Shimmer", 
@@ -56,7 +72,162 @@ export const allEvents = [
     eVenue:"TBA",
     eDay:"TBA",
     eRule:"https://drive.google.com/file/d/11Dkl8qWrK-T09EnJvXC8udV_23M7Mi4f/view?usp=drive_link" ,
-    eLink:""},
+    eLink:"",
+    category:"Main"},
+
+    {eName:"Open Mic", 
+    eDesc:"Embark on a re-telling session of prose, poem, storytelling, stand-up comedy, jokes, quotes, their life journey, experiences, etc, along with the crowd for a light-hearted engaging experience", 
+    eTime:"TBA", 
+    eVenue:"Pandal",
+    eDay:"TBA",
+    eType:"Register", 
+    eRule:"" ,
+    eLink:"",
+    category:"Literary"},
+
+
+    {eName:"Extempore Speech", 
+    eDesc:"Watch as challengers up to the take deliver impromptu speeches on randomized drawn topics within a limited timeframe & swiftly organize their thoughts, employing improvisational skills, coherence, and persuasion.", 
+    eTime:"TBA", 
+    eVenue:"Pandal",
+    eDay:"TBA",
+    eType:"Register", 
+    eRule:"" ,
+    eLink:"",
+    category:"Literary"},
+
+    
+    {eName:"Treasure Hunt", 
+    eDesc:"Let's hunt! Observe as teams decipher clues, solve puzzles, and navigate through various locations to find hidden treasures or objects by employing strategy, teamwork, and problem-solving skills to outwit opponents and locate the ultimate prize.", 
+    eTime:"TBA", 
+    eVenue:"Pandal",
+    eDay:"TBA",
+    eType:"Register", 
+    eRule:"" ,
+    eLink:"",
+    category:"Literary"},
+
+
+    {eName:"The Laughing Summit", 
+    eDesc:"Get ready to embark on a laughter-filled journey as we bring you The Laughing Summit an electrifying evening of stand-up comedy tailored specifically for National Institute of Technology Meghalaya. ", 
+    eTime:"TBA", 
+    eVenue:"Pandal",
+    eDay:"TBA",
+    eType:"Register", 
+    eRule:"" ,
+    eLink:"",
+    category:"TF"},
+
+
+    {eName:"Flash Mob", 
+    eDesc:"Get ready for a burst of spontaneous fun! Picture a lively public square filled with students coming together for an impromptu flashmob extravaganza! They'll showcase their talent through choreographed performances, all to kick off the most epic cultural fest of the year! ", 
+    eTime:"TBA", 
+    eVenue:"Pandal",
+    eDay:"TBA",
+    eType:"Register", 
+    eRule:"" ,
+    eLink:"",
+    category:"DandD"},
+
+
+    {eName:"Step Up Dance Competition", 
+    eDesc:"Dancers can showcase their skills in solo, duo, trio, and group categories, covering everything from traditional to contemporary styles. Join us as students express themselves and compete against participants from colleges far and wide!", 
+    eTime:"TBA", 
+    eVenue:"Pandal",
+    eDay:"TBA",
+    eType:"Register", 
+    eRule:"" ,
+    eLink:"",
+    category:"DandD"},
+
+
+    {eName:"Prom Night", 
+    eDesc:"It's a classy affair where students come together in stylish themed attire for an evening of elegance and celebration. From dancing to socializing, there's plenty of fun to be had as you create unforgettable memories with friends. ", 
+    eTime:"TBA", 
+    eVenue:"Pandal",
+    eDay:"TBA",
+    eType:"Register", 
+    eRule:"" ,
+    eLink:"",
+    category:"DandD"},
+
+
+    {eName:"Short Film", 
+    eDesc:"Lights, camera, action! Dive into the world of short films where students from all departments and years come together to unleash their creativity! In just a brief span of time, we'll take you on a journey of storytelling, messages, and wild ideas. ", 
+    eTime:"TBA", 
+    eVenue:"Pandal",
+    eDay:"TBA",
+    eType:"Register", 
+    eRule:"" ,
+    eLink:"",
+    category:"DandD"},
+
+
+    {eName:"Drama Play", 
+    eDesc:"Join us at NIT Meghalaya for an engaging drama performance! Our talented students bring to life captivating stories filled with emotions, conflicts, and relationships. Get ready to be moved and inspired as you witness their remarkable acting skills unfold on stage.", 
+    eTime:"TBA", 
+    eVenue:"Pandal",
+    eDay:"TBA",
+    eType:"Register", 
+    eRule:"" ,
+    eLink:"",
+    category:"DandD"},
+
+
+    {eName:"Tug of war", 
+    eDesc:"", 
+    eTime:"TBA", 
+    eVenue:"Pandal",
+    eDay:"TBA",
+    eType:"Register", 
+    eRule:"" ,
+    eLink:"",
+    category:"Krigg"},
+
+
+    {eName:"Dumb Charades", 
+    eDesc:"", 
+    eTime:"TBA", 
+    eVenue:"Pandal",
+    eDay:"TBA",
+    eType:"Register", 
+    eRule:"" ,
+    eLink:"",
+    category:"Krigg"},
+
+
+    {eName:"Musical Chair", 
+    eDesc:"", 
+    eTime:"TBA", 
+    eVenue:"Pandal",
+    eDay:"TBA",
+    eType:"Register", 
+    eRule:"" ,
+    eLink:"",
+    category:"Krigg"},
+
+
+    {eName:"Rangoli", 
+    eDesc:"", 
+    eTime:"TBA", 
+    eVenue:"Pandal",
+    eDay:"TBA",
+    eType:"Register", 
+    eRule:"" ,
+    eLink:"",
+    category:"Krigg"},
+
+
+    {eName:"Snakes and Ladders", 
+    eDesc:"", 
+    eTime:"TBA", 
+    eVenue:"Pandal",
+    eDay:"TBA",
+    eType:"Register", 
+    eRule:"" ,
+    eLink:"",
+    category:"Krigg"},
+
     
     {eName:"BGMI", 
     eDesc:"Compete in Battle Grounds Mobile India to claim the title of the best team!", 
@@ -65,7 +236,8 @@ export const allEvents = [
     eDay:"TBA",
     eType:"Register", 
     eRule:"https://drive.google.com/file/d/1c7Zd7B6dtAF94QE858pHnosOCQqOJRVK/view?usp=drive_link" , 
-    eLink:"https://docs.google.com/forms/d/1NrAeFo95HouDi9QMxiW4b--AUPcSPT1htcTPcqIrA2E"},
+    eLink:"https://docs.google.com/forms/d/1NrAeFo95HouDi9QMxiW4b--AUPcSPT1htcTPcqIrA2E",
+    category:"Gaming"},
     
     
     {eName:"Valorant", 
@@ -75,13 +247,8 @@ export const allEvents = [
     eDay:"TBA",
     eType:"Register", 
     eRule:"https://drive.google.com/file/d/1uToud7TRkrAikPY4ADTjOs9prnfm3-nd/view?usp=drive_link" ,
-    eLink:"https://docs.google.com/forms/d/1LAeVQh-WPL2qxJroKADj0ps8cuqM_Nn2VTE8Zbe7NX0"},
+    eLink:"https://docs.google.com/forms/d/1LAeVQh-WPL2qxJroKADj0ps8cuqM_Nn2VTE8Zbe7NX0",
+    category:"Gaming"},
+
     
-    
-    {eName:"Krigg", 
-    eDesc:"KRIGG events bring joyous energy and camaraderie to campus, offering a playful escape from academic rigors. With themed games and friendly competitions, students bond over laughter and merriment, fostering connections beyond the classroom.", 
-    eTime:"TBA", 
-    eType:"Register", 
-    eRule:"" ,
-    eLink:""},
   ];
