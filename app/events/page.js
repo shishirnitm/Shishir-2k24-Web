@@ -41,6 +41,14 @@ export default function Events() {
     eType:"Register", 
     eRule:"https://docs.google.com/document/d/19ujbhvh-RWhsT7PhAAA6LQ_MXHrPZQ-QrzX7reswLBQ/edit?usp=drive_link" ,
     eLink:"https://docs.google.com/forms/d/1edCZy1w6DyS7v489WJLtzP69cISXiF3OO39mW-g0zAs"},
+    
+    
+    {eName:"Symphony", 
+    eDesc:"Symphony is a Music competition event in singing and instrumental performances open to all students.  ", 
+    eTime:"29th March", 
+    eType:"Register", 
+    eRule:"https://docs.google.com/document/d/19ujbhvh-RWhsT7PhAAA6LQ_MXHrPZQ-QrzX7reswLBQ" ,
+    eLink:"https://docs.google.com/forms/d/1ZSGP6z1AXi25kNSmjBJxqYsSscIm3WD8pggKsplyyf0"},
 
     
     {eName:"Shimmer", 
@@ -51,7 +59,7 @@ export default function Events() {
     eLink:""},
     
     {eName:"BGMI", 
-    eDesc:"Lorem Ipsum venti polar cancer seventi michu leo barash monue vin quell lia", 
+    eDesc:"Compete in Battle Grounds Mobile India to claim the title of the best team!", 
     eTime:"TBA", 
     eType:"Register", 
     eRule:"https://drive.google.com/file/d/1c7Zd7B6dtAF94QE858pHnosOCQqOJRVK/view?usp=drive_link" , 
@@ -59,7 +67,7 @@ export default function Events() {
     
     
     {eName:"Valorant", 
-    eDesc:"Lorem Ipsum venti polar cancer seventi michu leo barash monue vin quell lia", 
+    eDesc:"Tactics, strategy, aim and teamwork. Show yours skills and your composure in the Squad-based Tactical Shooter Valorant.", 
     eTime:"TBA", 
     eType:"Register", 
     eRule:"https://drive.google.com/file/d/1uToud7TRkrAikPY4ADTjOs9prnfm3-nd/view?usp=drive_link" ,
@@ -72,14 +80,6 @@ export default function Events() {
     eType:"Register", 
     eRule:"" ,
     eLink:""},
-    
-    
-    {eName:"Symphony", 
-    eDesc:"Symphony is a Music competition event in singing and instrumental performances open to all students.  ", 
-    eTime:"29th March", 
-    eType:"Register", 
-    eRule:"https://docs.google.com/document/d/19ujbhvh-RWhsT7PhAAA6LQ_MXHrPZQ-QrzX7reswLBQ" ,
-    eLink:"https://docs.google.com/forms/d/1ZSGP6z1AXi25kNSmjBJxqYsSscIm3WD8pggKsplyyf0"},
   ]
   return (
     <>
