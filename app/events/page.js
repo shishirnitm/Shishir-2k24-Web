@@ -33,34 +33,12 @@ export default function Events() {
           <div className=" w-1/2 text-end"><u>filters</u></div>
         </div> */}
         <div className="flex flex-col w-5/6 space-y-5">
-          {category=="all" && allEvents.map((prop)=>(
+          {category=="all" && (allEvents.map((prop)=>(
             <EventCard key={prop.eName} eName={prop.eName} eTime={prop.eTime} eRule={prop.eRule} eLink={prop.eLink} eDesc={prop.eDesc} eType={prop.eType} eVenue={prop.eVenue} eDay={prop.eDay}/>
-          ))
-        // : category=="Music"? allEvents.map((prop)=>(
-        //   prop.category=="Music"? <EventCard key={prop.eName} eName={prop.eName} eTime={prop.eTime} eRule={prop.eRule} eLink={prop.eLink} eDesc={prop.eDesc} eType={prop.eType} eVenue={prop.eVenue} eDay={prop.eDay}/>:<div></div>
-        // ))
-        // :category=="Gaming"? allEvents.map((prop)=>(
-        //   prop.category=="Gaming"? <EventCard key={prop.eName} eName={prop.eName} eTime={prop.eTime} eRule={prop.eRule} eLink={prop.eLink} eDesc={prop.eDesc} eType={prop.eType} eVenue={prop.eVenue} eDay={prop.eDay}/>:<div></div>
-        // ))
-        // :category=="Literary"? allEvents.map((prop)=>(
-        //   prop.category=="Literary"? <EventCard key={prop.eName} eName={prop.eName} eTime={prop.eTime} eRule={prop.eRule} eLink={prop.eLink} eDesc={prop.eDesc} eType={prop.eType} eVenue={prop.eVenue} eDay={prop.eDay}/>:<div></div>
-        // ))
-        // :category=="EBSB"? allEvents.map((prop)=>(
-        //   prop.category=="EBSB"? <EventCard key={prop.eName} eName={prop.eName} eTime={prop.eTime} eRule={prop.eRule} eLink={prop.eLink} eDesc={prop.eDesc} eType={prop.eType} eVenue={prop.eVenue} eDay={prop.eDay}/>:<div></div>
-        // ))
-        // :category=="DandD"? allEvents.map((prop)=>(
-        //   prop.category=="DandD"? <EventCard key={prop.eName} eName={prop.eName} eTime={prop.eTime} eRule={prop.eRule} eLink={prop.eLink} eDesc={prop.eDesc} eType={prop.eType} eVenue={prop.eVenue} eDay={prop.eDay}/>:<div></div>
-        // ))
-        // :category=="Photography"? allEvents.map((prop)=>(
-        //   prop.category=="Photography"? <EventCard key={prop.eName} eName={prop.eName} eTime={prop.eTime} eRule={prop.eRule} eLink={prop.eLink} eDesc={prop.eDesc} eType={prop.eType} eVenue={prop.eVenue} eDay={prop.eDay}/>:<div></div>
-        // ))
-        // :category=="Main"? allEvents.map((prop)=>(
-        //   prop.category=="Main"? <EventCard key={prop.eName} eName={prop.eName} eTime={prop.eTime} eRule={prop.eRule} eLink={prop.eLink} eDesc={prop.eDesc} eType={prop.eType} eVenue={prop.eVenue} eDay={prop.eDay}/>:<div></div>
-        // ))
-        // :category=="TF"? allEvents.map((prop)=>(
-        //   prop.category=="TF"? <EventCard key={prop.eName} eName={prop.eName} eTime={prop.eTime} eRule={prop.eRule} eLink={prop.eLink} eDesc={prop.eDesc} eType={prop.eType} eVenue={prop.eVenue} eDay={prop.eDay}/>:<div></div>
-        // )):<div></div>
-        }
+          )))}
+          {category=="Music" && (allEvents.map((prop)=>(
+            prop.category=="Music"&&(<EventCard key={prop.eName} eName={prop.eName} eTime={prop.eTime} eRule={prop.eRule} eLink={prop.eLink} eDesc={prop.eDesc} eType={prop.eType} eVenue={prop.eVenue} eDay={prop.eDay}/>)
+          )))}
         </div>
         
       </div>
