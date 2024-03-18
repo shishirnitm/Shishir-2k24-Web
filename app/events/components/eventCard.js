@@ -3,9 +3,9 @@ import "../events.css";
 export default function EventCard(props) {
   return (
     <>
-        <div className="h-60" key={props.eName}>
-        <div className="absolute w-5/6 h-60 bg-[#000000] translate-x-2 translate-y-2 rounded-sm z-10">
-            <div className="eCard relative flex flex-col h-60 border-black border-[3px] rounded-sm background bg-white -translate-x-2 -translate-y-2 ">
+        <div className=" h-80" key={props.eName}>
+        <div className="absolute w-5/6 h-72 bg-[#000000] translate-x-2 translate-y-2 rounded-sm z-10">
+            <div className="eCard relative flex flex-col h-72 border-black border-[3px] rounded-sm background bg-white -translate-x-2 -translate-y-2 ">
                 <div className="bg-[#F5E074] border-black border-b-[3px] flex h-1/5 px-3">
                     <div className="font-bloggerBold text-[24px] self-center">{props.eName}</div>
                 </div>

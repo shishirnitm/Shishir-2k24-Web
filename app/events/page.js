@@ -44,8 +44,44 @@ export default function Events() {
             <div className="rounded-2xl border-[1px] border-black font-blogger px-2 h-7 col-span-2"><button onClick={()=>{setCategory("DandD")}}>Dance and Drama Club</button></div>
             <div className="rounded-2xl border-[1px] border-black font-blogger px-2 h-7 col-span-2"><button onClick={()=>{setCategory("Photography")}}>Photography Club</button></div>
           </div>
-          
         </div>
+
+        {category=="all" && (
+        <div className="font-bernier text-3xl pb-5">ALL EVENTS</div>
+        )}
+
+        {category=="Music" && (
+        <div className="font-bernier text-3xl pb-5">MUSIC CLUB EVENTS</div>
+        )}
+        
+        {category=="Main" && (
+        <div className="font-bernier text-3xl pb-5">MAIN EVENTS</div>
+        )}
+        
+        {category=="EBSB" && (
+        <div className="font-bernier text-3xl pb-5">EBSB CLUB EVENTS</div>
+        )}
+        
+        {category=="Literary" && (
+        <div className="font-bernier text-3xl pb-5">LITERARY CLUB EVENTS</div>
+        )}
+        
+        {category=="Krigg" && (
+        <div className="font-bernier text-3xl pb-5">KRIGG EVENTS</div>
+        )}
+        
+        {category=="TF" && (
+        <div className="font-bernier text-3xl pb-5">TASK FORCE CLUB EVENTS</div>
+        )}
+        
+        {category=="DandD" && (
+        <div className="font-bernier text-3xl pb-5">DANCE AND DRAMA CLUB EVENTS</div>
+        )}
+        
+        {category=="Photography" && (
+        <div className="font-bernier text-3xl pb-5">PHOTOGRAPHY CLUB EVENTS</div>
+        )}
+
         <div className="flex flex-col w-5/6 space-y-5">
           {category=="all" && (allEvents.map((prop)=>(
             <EventCard key={prop.eName} eName={prop.eName} eTime={prop.eTime} eRule={prop.eRule} eLink={prop.eLink} eDesc={prop.eDesc} eType={prop.eType} eVenue={prop.eVenue} eDay={prop.eDay}/>
@@ -78,7 +114,7 @@ export default function Events() {
             prop.category=="Photography"&&(<EventCard key={prop.eName} eName={prop.eName} eTime={prop.eTime} eRule={prop.eRule} eLink={prop.eLink} eDesc={prop.eDesc} eType={prop.eType} eVenue={prop.eVenue} eDay={prop.eDay}/>)
           )))}
         </div>
-        
+        <div className="h-40"></div>
       </div>
     </>
   );
