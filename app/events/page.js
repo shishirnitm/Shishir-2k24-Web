@@ -103,10 +103,10 @@ export default function Events() {
         <div className="flex justify-center font-bernier text-justify text-[#E03932] text-[32px] w-5/6 mt-10">
             <div className="w-80">EVENTS ARE DISPLAYED BY POPULARITY!</div>
         </div>
-        <div className="flex border-[1px] border-black bg-white w-5/6 h-12 my-8 px-4 items-center">
+        {/* <div className="flex border-[1px] border-black bg-white w-5/6 h-12 my-8 px-4 items-center">
           <div className=" w-1/2 font-blogger">showing all events</div>
           <div className=" w-1/2 text-end"><u>filters</u></div>
-        </div>
+        </div> */}
         <div className="flex flex-col w-5/6 space-y-5">
           {allEvents.map((prop)=>(
             <EventCard key={prop.eName} eName={prop.eName} eTime={prop.eTime} eRule={prop.eRule} eLink={prop.eLink} eDesc={prop.eDesc} eType={prop.eType} eVenue={prop.eVenue} eDay={prop.eDay}/>
