@@ -32,12 +32,12 @@ export default function EventCard(props) {
                     </div>
                     <div className="flex items-start pt-1 h-1/2 w-full">
                         <div className="w-2/3 flex space-x-2"><a href={props.eLink}><button><div className="yellowButton" >{props.eType}</div></button></a>
-                            <div className="yellowButton" >{props.eDay}</div>
+                            <div className=" rounded-2xl px-2 border-black border-[1px] bg-white" >{props.eDay}</div>
                         </div>
                         <div className="w-1/3">
                             <div className="flex justify-end font-bloggerBold">
                                 <div className="flex -translate-x-2">
-                                <a href={props.eRule}>learn more </a>                       
+                                <a href={props.eRule}>rulebook </a>                       
                                     <div className="translate-x-2 translate-y-1">
                                     <svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g id="Group 1000004275">
