@@ -7,6 +7,12 @@ import munTag from "../public/mun-tag.svg";
 import separator from "../public/home-separator-1.svg";
 import aboutSeparator from "../public/home/about-separator.svg";
 import about from "../public/home/about.svg";
+import attention from "../public/home/attention.svg";
+import howTo from "../public/home/how_to.svg";
+import howToSeparator from "../public/home/how-separator.svg";
+
+import Button from "./components/Button";
+
 import "./home.css";
 
 export default function Home() {
@@ -81,11 +87,11 @@ export default function Home() {
         >
           <div className="w-[80vw] mt-6">
             Enjoy music, dance, shows, and fun at{" "}
-            <span className="text-primaryRed">Shishir</span> - NIT Meghalaya's
+            <span className="text-primaryRed">Shishir</span> - NIT Meghalaya&apos;s
             yearly culture fest. <br /> <br /> Come to the beautiful Bijni
-            Complex in Shillong's hills from{" "}
+            Complex in Shillong&apos;s hills from{" "}
             <span className="text-primaryRed">April 4th-6th</span> for an
-            amazing time celebrating Meghalaya's rich{" "}
+            amazing time celebrating Meghalaya&apos;s rich{" "}
             <span className="text-primaryRed">culture</span> and warm
             hospitality.
             <br /> <br /> Make special memories at Shishir!
@@ -140,9 +146,74 @@ export default function Home() {
             className="w-[100vw]  h-auto"
           />
         </div>
-        <div id="home" className="text-center pt-24 bg-transparent">
-          <div>This is the Shishir Home Page</div>
-          <div>Welcome one and all!!!</div>
+        <div id="home" className="pt-5 w-screen flex justify-end">
+          <Image
+            src={attention}
+            width="0"
+            height="0"
+            sizes="100vw"
+            className="w-[25vw] h-auto translate-x-4 "
+          />
+        </div>
+        <div id="home" className="pt-5 flex flex-row justify-center">
+          <Image
+            src={howTo}
+            width="0"
+            height="0"
+            sizes="100vw"
+            className="w-[85vw]  h-auto"
+          />
+        </div>
+        <div
+          id="home"
+          className="font-blogger flex flex-col items-center justify-center text-md font-semibold text-primaryBlue bg-transparent"
+        >
+          <div className="text-2xl font-bloggerBold w-[85vw] mt-8">
+            NIT Meghalaya Students:
+          </div>
+          <div className="text-lg font-blogger w-[85vw]">
+            Flash your college ID card at the entry gate to gain free access.
+          </div>
+        </div>
+        <div id="home" className="pt-5 w-[100vw] flex justify-center">
+          <div className="w-[85vw]">
+            <Button text="Explore Events" link="..." />
+          </div>
+        </div>
+        <div
+          id="home"
+          className="font-blogger flex flex-col pt-5 items-center justify-center text-md font-semibold text-primaryBlue bg-transparent"
+        >
+          <div className="text-2xl font-bloggerBold w-[85vw] mt-8">
+            Other Students:
+          </div>
+          <div className="text-lg font-blogger w-[85vw]">
+            Purchase your entry ticket offline / online through our secure
+            website. <br />
+            <span className="font-medium italic">
+              Limited tickets available! So, Don&apos;t miss out!
+            </span>
+          </div>
+        </div>
+        <div id="home" className="pt-5 w-[100vw] flex justify-center">
+          <div className="w-[85vw]">
+            <Button text="Get Your Ticket" link="..." />
+          </div>
+        </div>
+        <div
+          id="home"
+          className="pt-2 pb-20 w-[100vw] flex justify-center font-blogger text-primaryBlue underline"
+        >
+          <div>Learn more: why are we charging you?</div>
+        </div>
+        <div id="home" className="pb-4 flex flex-row justify-center">
+          <Image
+            src={howToSeparator}
+            width="0"
+            height="0"
+            sizes="100vw"
+            className="w-[100vw]  h-auto"
+          />
         </div>
         {/* <div id="home" className="text-center pt-24">
           <div>This is the Shishir Home Page</div>
