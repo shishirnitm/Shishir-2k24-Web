@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Bukhari";
+  src: url("../public/fonts/BukhariScript-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Bernier";
+  src: url("../public/fonts/BERNIERDistressed-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Antonio";
+  src: url("../public/fonts/Antonio-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "BloggerSans";
+  src: url("../public/fonts/Blogger_Sans.otf");
+}
+
+@font-face {
+  font-family: "BloggerBold";
+  src: url("../public/fonts/Blogger_Sans-Bold.otf");
+}
