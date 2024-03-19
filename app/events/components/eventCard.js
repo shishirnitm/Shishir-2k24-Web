@@ -41,7 +41,8 @@ export default function EventCard(props) {
                         </div>
                         <div className="w-1/3">
                             <div className="flex justify-end font-bloggerBold">
-                                {props.eRule && (<div className="flex -translate-x-2">
+                                {props.eRule && (<div className="flex -translate-x-2
+                                lg:text-xl">
                                 <a href={props.eRule}>rulebook </a>                       
                                     <div className="translate-x-2 translate-y-1">
                                     <svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
