@@ -3,17 +3,22 @@ import "../events.css";
 export default function EventCard(props) {
   return (
     <>
-        <div className="h-60">
-        <div className="absolute w-5/6 h-60 bg-[#000000] translate-x-2 translate-y-2 rounded-sm z-10">
-            <div className="eCard relative flex flex-col h-60 border-black border-[3px] rounded-sm background bg-white -translate-x-2 -translate-y-2 ">
+        <div className=" h-80" key={props.eName}>
+        <div className="absolute w-5/6 h-72 bg-[#000000] translate-x-2 translate-y-2 rounded-sm z-10">
+            <div className="eCard relative flex flex-col h-72 border-black border-[3px] rounded-sm background bg-white -translate-x-2 -translate-y-2 ">
                 <div className="bg-[#F5E074] border-black border-b-[3px] flex h-1/5 px-3">
-                    <div className="font-bloggerBold text-[24px] self-center">{props.eName}</div>
+                    <div className="font-bloggerBold text-[24px] self-center
+                    xl:text-3xl">{props.eName}</div>
                 </div>
                 <div className="flex h-2/5 px-3 py-2">
-                    <div className="font-blogger text-sm">{props.eDesc}</div>
+                    <div className="font-blogger text-sm
+                    sm:text-lg
+                    lg:text-2xl">{props.eDesc}</div>
                 </div>
                 <div className="flex flex-col h-2/5 px-3 items-start pt-1">
-                    <div className="flex h-1/2 font-blogger items-center space-x-2">
+                    <div className="flex h-1/2 font-blogger items-center space-x-2
+                    sm:text-lg
+                    xl:text-2xl">
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="Group 1000004361">
                         <rect id="Rectangle 108" x="0.5" y="0.5" width="31" height="31" rx="3.5" stroke="#3F362B" stroke-opacity="0.7" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="4 4"/>
@@ -31,12 +36,13 @@ export default function EventCard(props) {
 
                     </div>
                     <div className="flex items-start pt-1 h-1/2 w-full">
-                        <div className="w-2/3 flex space-x-2"><a href={props.eLink}><button><div className="yellowButton" >{props.eType}</div></button></a>
+                        <div className="w-2/3 flex space-x-2">{props.eLink && (<a href={props.eLink}><button><div className="yellowButton" >{props.eType}</div></button></a>)}
                             <div className=" rounded-2xl px-2 border-black border-[1px] bg-white" >{props.eDay}</div>
                         </div>
                         <div className="w-1/3">
                             <div className="flex justify-end font-bloggerBold">
-                                <div className="flex -translate-x-2">
+                                {props.eRule && (<div className="flex -translate-x-2
+                                lg:text-xl">
                                 <a href={props.eRule}>rulebook </a>                       
                                     <div className="translate-x-2 translate-y-1">
                                     <svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -46,7 +52,7 @@ export default function EventCard(props) {
                                     </g>
                                     </svg>
                                     </div>
-                                </div>
+                                </div>)}
                         
                             </div>
                         </div>

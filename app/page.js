@@ -46,7 +46,7 @@ const galleryImages = [gallery1, gallery2];
 export default function Home() {
   return (
     <>
-      <div className="h-screen overflow-scroll ">
+      <div className="">
         <div id="splash">
           <div id="splash-inner" className="text-red-700 text-center font-bold">
             Welcome to Shishir 2024!
@@ -54,50 +54,70 @@ export default function Home() {
         </div>
         {/** Felt lazy to search and download all the fonts,
          * and then style them so... I just used svg images :P */}
-        <div id="home" className="pt-5 w-fit">
+        <div id="home" className="xs:pt-5 w-fit sm:pt-10 md:pt-24">
           <Image
             src={munTag}
             width="0"
             height="0"
             sizes="100vw"
-            className="w-[25vw] h-auto -translate-x-4"
+            className="w-[25vw] h-auto -translate-x-4 md:translate-x-0 md:w-[10vw]"
           />
         </div>
-        <div id="home" className="w-screen flex flex-row justify-center">
-          <Image
-            src={welcome}
-            width="0"
-            height="0"
-            sizes="100vw"
-            className="w-[95vw] h-auto "
-          />
+        <div className="flex flex-col md:flex-row md:items-center md:space-x-2 md:pl-16 md:p-16">
+          <div>
+            <div
+              id="home"
+              className="w-screen md:w-[50vw] flex flex-row md:justify-start justify-center"
+            >
+              <Image
+                src={welcome}
+                width="0"
+                height="0"
+                sizes="100vw"
+                className="w-[95vw] h-auto md:w-[50vw]"
+              />
+            </div>
+            <div
+              id="home"
+              className="pt-2 flex flex-row justify-center md:justify-start md:pt-10"
+            >
+              <Image
+                src={shishir}
+                width="0"
+                height="0"
+                sizes="100vw"
+                className="w-[95vw] h-auto md:w-[60vw]"
+              />
+            </div>
+          </div>
+          <div id="home" className="pt-2 flex flex-row justify-center">
+            <Image
+              src={mascot}
+              width="0"
+              height="0"
+              sizes="100vw"
+              className="w-[99vw]  h-auto"
+            />
+          </div>
         </div>
-        <div id="home" className="pt-2 flex flex-row justify-center">
-          <Image
-            src={shishir}
-            width="0"
-            height="0"
-            sizes="100vw"
-            className="w-[95vw] h-auto"
-          />
-        </div>
-        <div id="home" className="pt-2 flex flex-row justify-center">
-          <Image
-            src={mascot}
-            width="0"
-            height="0"
-            sizes="100vw"
-            className="w-[99vw]  h-auto"
-          />
-        </div>
-        <div id="home" className="pt-10 flex flex-row justify-center">
+        {/* <div id="home" className="pt-10 w-[100vw] flex justify-center">
+          <div className="w-[85vw]">
+            <Button text="Explore Shishir" link="..." />
+          </div>
+        </div> */}
+        {/* <div id="home" className="pt-10 flex flex-row justify-center">
           <Image
             src={separator}
             width="0"
             height="0"
             sizes="100vw"
-            className="w-[100vw]  h-auto"
+            className="w-[100vw]"
           />
+        </div> */}
+        <div id="home" className="pt-10 flex flex-col justify-center">
+          <div className="bg-[#4EB7B4] w-screen h-5"></div>
+          <div className="bg-[#186B80] w-screen h-5"></div>
+          <div className="bg-[#E03932] w-screen h-5"></div>
         </div>
         {/** About Us Section  */}
         <div id="home" className="pt-24 flex flex-row justify-center">

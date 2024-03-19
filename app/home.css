@@ -13,7 +13,7 @@
 
 #splash {
   position: absolute;
-  background-color: black;
+  background-color: #121212;
   width: 100vw;
   height: 100vh;
   animation: removeSplash 0.8s ease 3s forwards;

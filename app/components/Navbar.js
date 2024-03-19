@@ -6,6 +6,7 @@ import "./nav.css";
 import Close from "../../public/Close.svg";
 import Image from "next/image";
 import HamBurger from "../../public/Hamburger.svg";
+import star from "../../public/StarBlue.svg";
 
 export default function Navbar() {
   const [close, setClose] = useState(null);
@@ -93,7 +94,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      <div className="flex absolute flex-row bg-transparent w-screen justify-end">
+      <div className="flex absolute flex-row md:pb-6  w-screen justify-end md:justify-center">
         <div
           onClick={() => {
             console.log("Clicked Open");
@@ -105,7 +106,7 @@ export default function Navbar() {
               setClose("1");
             }
           }}
-          className="cursor-pointer m-4 font-bold transition-all duration-1000"
+          className="cursor-pointer m-4 font-bold transition-all duration-1000 md:hidden"
           style={{ color: close === "0" ? "white" : "black" }}
         >
           {close === "0" ? (
@@ -125,6 +126,22 @@ export default function Navbar() {
               className="w-[10vw]  h-auto"
             />
           )}
+        </div>
+        <div className="hidden md:flex justify-center font-bernier text-primaryBlue space-x-8 text-2xl pt-6 lg:text-4xl lg:space-x-12">
+          <div className="text-primaryRed cursor-pointer">Home</div>
+          <Image
+            src={star}
+            width={20}
+            height={20}
+            className="text-primaryBlue"
+          ></Image>
+          <div className="cursor-pointer">Events</div>
+          <Image src={star} width={20} height={20} className=""></Image>
+          <div className="cursor-pointer">Tickets</div>
+          <Image src={star} width={20} height={20}></Image>
+          <div className="cursor-pointer">Team</div>
+          <Image src={star} width={20} height={20}></Image>
+          <div className="cursor-pointer">MUN</div>
         </div>
       </div>
     </>
