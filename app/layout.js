@@ -10,6 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <link rel="icon" href="/logo.png" />
       <body className="bg-[url('../public/texture.png')] bg-[#FDF6E9]">
         <Banner />
         <Navbar className="sticky" />
