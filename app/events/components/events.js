@@ -89,7 +89,7 @@ export const allEvents = [
     eDay:"5th April",
     eType:"Register", 
     eRule:"https://drive.google.com/file/d/1QFG2yYkH2isfZz7fznY3LzxqRpEc57uo/view?usp=sharing" ,
-    eLink:"",
+    eLink:"https://forms.gle/vCrP3ne497VyQYZd9",
     category:"Literary",
     id:8},
 
@@ -101,7 +101,7 @@ export const allEvents = [
     eDay:"4th April",
     eType:"Register", 
     eRule:"https://drive.google.com/file/d/1r7Wc5ANLqq3q4HZfg2DnHbMPfBz74QlI/view?usp=drive_link" ,
-    eLink:"",
+    eLink:"https://forms.gle/6ZEG7SkqkwErtqXa7",
     category:"Literary",
     id:9},
 
@@ -113,21 +113,21 @@ export const allEvents = [
     eDay:"5th April",
     eType:"Register", 
     eRule:"https://drive.google.com/file/d/1C6NELRNrmwyG36rCR6haCeMdVxJ1TrQ4/view?usp=drive_link" ,
-    eLink:"",
+    eLink:"https://forms.gle/Wq5azh4V1y1rabN97",
     category:"Literary",
     id:10},
 
 
-    {eName:"The Laughing Summit", 
-    eDesc:"Get ready to embark on a laughter-filled journey as we bring you The Laughing Summit an electrifying evening of stand-up comedy tailored specifically for National Institute of Technology Meghalaya. ", 
-    eTime:"TBA", 
-    eVenue:"Pandal",
-    eDay:"TBA",
-    eType:"Register", 
-    eRule:"" ,
-    eLink:"",
-    category:"TF",
-    id:11},
+    // {eName:"The Laughing Summit", 
+    // eDesc:"Get ready to embark on a laughter-filled journey as we bring you The Laughing Summit an electrifying evening of stand-up comedy tailored specifically for National Institute of Technology Meghalaya. ", 
+    // eTime:"TBA", 
+    // eVenue:"Pandal",
+    // eDay:"TBA",
+    // eType:"Register", 
+    // eRule:"" ,
+    // eLink:"",
+    // category:"TF",
+    // id:11},
 
 
     {eName:"Flash Mob", 
@@ -149,7 +149,7 @@ export const allEvents = [
     eDay:"TBA",
     eType:"Register", 
     eRule:"" ,
-    eLink:"",
+    eLink:"https://forms.gle/Ashkfb5PSimEXzZj9",
     category:"DandD",
     id:13},
 
@@ -164,6 +164,18 @@ export const allEvents = [
     eLink:"",
     category:"DandD",
     id:14},
+
+
+    {eName:"Traditiional Dance", 
+    eDesc:"Nothing is as beautiful as witnessing an indian traditional dance. A vibrant showcase of the rich cultural heritage of traditional dance.", 
+    eTime:"10:30AM - 1:30PM", 
+    eVenue:"Pandal",
+    eDay:"5th April",
+    eType:"Register", 
+    eRule:"https://drive.google.com/file/d/1_8-UKCQmTEGQ1N67PgFFKU6xCtFvZVJL/view?usp=drive_link" ,
+    eLink:"https://forms.gle/uPKWaqkg1VDoP7WM9",
+    category:"DandD",
+    id:27},
 
 
     {eName:"Short Film", 
