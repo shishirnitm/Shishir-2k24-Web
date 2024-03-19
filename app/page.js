@@ -46,7 +46,7 @@ const galleryImages = [gallery1, gallery2];
 export default function Home() {
   return (
     <>
-      <div className="h-[96vh] overflow-scroll overflow-x-hidden">
+      <div className="">
         <div id="splash">
           <div id="splash-inner" className="text-red-700 text-center font-bold">
             Welcome to Shishir 2024!

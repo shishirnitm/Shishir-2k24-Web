@@ -94,7 +94,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      <div className="flex absolute flex-row md:pb-6 md:backdrop-blur-md w-screen justify-end md:justify-center">
+      <div className="flex absolute flex-row md:pb-6  w-screen justify-end md:justify-center">
         <div
           onClick={() => {
             console.log("Clicked Open");
