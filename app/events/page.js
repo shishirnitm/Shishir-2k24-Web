@@ -46,15 +46,32 @@ export default function Events() {
           </div>
           <div className="flex flex-wrap w-full gap-x-2 space-y-2 place-items-start text-center text-sm
           xl:text-xl">
-            <div className="rounded-2xl border-[1px] border-black font-blogger px-2 h-7 self-end"><button onClick={()=>{setCategory("all")}}>All</button></div>
-            <div className="rounded-2xl border-[1px] border-black font-blogger px-2 h-7"><button onClick={()=>{setCategory("Main")}}>Main</button></div>
-            <div className="rounded-2xl border-[1px] border-black font-blogger px-2 h-7"><button onClick={()=>{setCategory("Music")}}>Music</button></div>
-            <div className="rounded-2xl border-[1px] border-black font-blogger px-2 h-7 col-span-2"><button onClick={()=>{setCategory("EBSB")}}>EBSB Club</button></div>
-            <div className="rounded-2xl border-[1px] border-black font-blogger px-2 h-7 col-span-2"><button onClick={()=>{setCategory("Literary")}}>Literary Club</button></div>
-            <div className="rounded-2xl border-[1px] border-black font-blogger px-2 h-7"><button onClick={()=>{setCategory("Krigg")}}>Krigg</button></div>
-            <div className="rounded-2xl border-[1px] border-black font-blogger px-2 h-7 col-span-2"><button onClick={()=>{setCategory("TF")}}>Task Force Club</button></div>
-            <div className="rounded-2xl border-[1px] border-black font-blogger px-2 h-7 col-span-2"><button onClick={()=>{setCategory("DandD")}}>Dance and Drama Club</button></div>
-            <div className="rounded-2xl border-[1px] border-black font-blogger px-2 h-7 col-span-2"><button onClick={()=>{setCategory("Photography")}}>Photography Club</button></div>
+            {category=="all" ? <div className="rounded-2xl border-[1px] bg-[#F5E074] border-white text-white font-blogger px-2 h-7 self-end"><button onClick={()=>{setCategory("all")}}>All</button></div> 
+            : <div className="rounded-2xl border-[1px] border-black font-blogger px-2 h-7 self-end"><button onClick={()=>{setCategory("all")}}>All</button></div>}
+
+            {category=="Main"? <div className="rounded-2xl border-[1px] bg-[#F5E074] border-white text-white font-blogger px-2 h-7"><button onClick={()=>{setCategory("Main")}}>Main</button></div>
+            :<div className="rounded-2xl border-[1px] border-black font-blogger px-2 h-7"><button onClick={()=>{setCategory("Main")}}>Main</button></div>}
+
+            {category=="Music"? <div className="rounded-2xl border-[1px] bg-[#F5E074] border-white text-white font-blogger px-2 h-7"><button onClick={()=>{setCategory("Music")}}>Music</button></div>
+            :<div className="rounded-2xl border-[1px] border-black font-blogger px-2 h-7"><button onClick={()=>{setCategory("Music")}}>Music</button></div>}
+
+            {category=="EBSB"? <div className="rounded-2xl border-[1px] bg-[#F5E074] border-white text-white font-blogger px-2 h-7 col-span-2"><button onClick={()=>{setCategory("EBSB")}}>EBSB Club</button></div>
+            :<div className="rounded-2xl border-[1px] border-black font-blogger px-2 h-7 col-span-2"><button onClick={()=>{setCategory("EBSB")}}>EBSB Club</button></div>}
+
+            {category=="Literary"? <div className="rounded-2xl border-[1px] bg-[#F5E074] border-white text-white font-blogger px-2 h-7 col-span-2"><button onClick={()=>{setCategory("Literary")}}>Literary Club</button></div>
+            :<div className="rounded-2xl border-[1px] border-black font-blogger px-2 h-7 col-span-2"><button onClick={()=>{setCategory("Literary")}}>Literary Club</button></div>}
+
+            {category=="Krigg"? <div className="rounded-2xl border-[1px] bg-[#F5E074] border-white text-white font-blogger px-2 h-7"><button onClick={()=>{setCategory("Krigg")}}>Krigg</button></div>
+            :<div className="rounded-2xl border-[1px] border-black font-blogger px-2 h-7"><button onClick={()=>{setCategory("Krigg")}}>Krigg</button></div>}
+
+            {category=="TF"? <div className="rounded-2xl border-[1px] bg-[#F5E074] border-white text-white font-blogger px-2 h-7 col-span-2"><button onClick={()=>{setCategory("TF")}}>Task Force Club</button></div>
+            :<div className="rounded-2xl border-[1px] border-black font-blogger px-2 h-7 col-span-2"><button onClick={()=>{setCategory("TF")}}>Task Force Club</button></div>}
+
+            {category=="DandD"? <div className="rounded-2xl border-[1px] bg-[#F5E074] border-white text-white font-blogger px-2 h-7 col-span-2"><button onClick={()=>{setCategory("DandD")}}>Dance and Drama Club</button></div>
+            :<div className="rounded-2xl border-[1px] border-black font-blogger px-2 h-7 col-span-2"><button onClick={()=>{setCategory("DandD")}}>Dance and Drama Club</button></div>}
+
+            {category=="Photography"? <div className="rounded-2xl border-[1px] bg-[#F5E074] border-white text-white font-blogger px-2 h-7 col-span-2"><button onClick={()=>{setCategory("Photography")}}>Photography Club</button></div>
+            :<div className="rounded-2xl border-[1px] border-black font-blogger px-2 h-7 col-span-2"><button onClick={()=>{setCategory("Photography")}}>Photography Club</button></div>}
           </div>
         </div>
 
