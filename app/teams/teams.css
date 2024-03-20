@@ -3,7 +3,7 @@
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: #E03932;
     font-family: Antonio;
-    font-size: 3.9rem;
+    font-size: 7rem;
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
@@ -50,4 +50,11 @@
     top: -4px;
     left: -4px;
     box-shadow: 4px 4px #000000;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .textStroke{
+        font-size: 3.9rem;
+    }
 }

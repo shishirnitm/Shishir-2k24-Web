@@ -279,17 +279,17 @@ const Teams = () => {
                     width="0"
                     height="0"
                     sizes="100vw"
-                    className="w-[10vw] h-auto my-10 mx-8"
+                    className=" w-[10vw] lg:w-[4vw] h-auto lg:my-5 my-10 mx-8"
                 />
             </div>
-            <div className=' w-screen pb-20'>
+            <div className=' w-screen pb-20 lg:text-center lg:px-10'>
                 <div className="flex flex-col text-[#E03932] mt-5 px-5">
                     <div className=" textStroke ">Meet the</div>
                     <div className=" textStroke ">Teams Behind</div>
-                    <div className=" font-bernier text-9xl ">Shishir</div>
+                    <div className=" font-bernier lg:text-[200px] text-9xl ">Shishir</div>
                     <div className="white-box mt-5">
-                        <div className=" font-blogger text-[#186B80] text-[20px] ">Meet the <span className="font-bloggerBold">hardworking crew</span> behind <span className="font-bloggerBold">Shishir</span> that made this event possible!</div>
-                        <div className=" font-blogger text-[#186B80] text-[20px] ">Let&apos;s say hello to some of the people from the land of - <span className="font-bloggerBold">behind the scenes~</span></div>
+                        <div className=" font-blogger text-[#186B80] text-[20px] lg:text-2xl">Meet the <span className="font-bloggerBold">hardworking crew</span> behind <span className="font-bloggerBold">Shishir</span> that made this event possible!</div>
+                        <div className=" font-blogger text-[#186B80] text-[20px] lg:text-2xl">Let&apos;s say hello to some of the people from the land of - <span className="font-bloggerBold">behind the scenes~</span></div>
                     </div>
 
                 </div>
