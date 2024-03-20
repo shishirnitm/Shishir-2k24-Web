@@ -12,7 +12,7 @@ export default function Events() {
         <div className="flex justify-center textStroke w-5/6 h-36 mt-20
         sm:h-20
         xl:h-36">
-          <div className="w-80 
+          <div className="w-80 text-5xl
           sm:w-full sm:text-center sm:text-6xl
           xl:text-8xl">EXPLORE THE SHISHIR EVENTS !
           </div>
@@ -64,8 +64,8 @@ export default function Events() {
             {category=="Krigg"? <div className="rounded-2xl border-[1px] bg-[#F5E074] border-white text-white font-blogger px-2 h-7"><button onClick={()=>{setCategory("Krigg")}}>Krigg</button></div>
             :<div className="rounded-2xl border-[1px] border-black font-blogger px-2 h-7"><button onClick={()=>{setCategory("Krigg")}}>Krigg</button></div>}
 
-            {category=="TF"? <div className="rounded-2xl border-[1px] bg-[#F5E074] border-white text-white font-blogger px-2 h-7 col-span-2"><button onClick={()=>{setCategory("TF")}}>Task Force Club</button></div>
-            :<div className="rounded-2xl border-[1px] border-black font-blogger px-2 h-7 col-span-2"><button onClick={()=>{setCategory("TF")}}>Task Force Club</button></div>}
+            {/* {category=="TF"? <div className="rounded-2xl border-[1px] bg-[#F5E074] border-white text-white font-blogger px-2 h-7 col-span-2"><button onClick={()=>{setCategory("TF")}}>Task Force Club</button></div>
+            :<div className="rounded-2xl border-[1px] border-black font-blogger px-2 h-7 col-span-2"><button onClick={()=>{setCategory("TF")}}>Task Force Club</button></div>} */}
 
             {category=="DandD"? <div className="rounded-2xl border-[1px] bg-[#F5E074] border-white text-white font-blogger px-2 h-7 col-span-2"><button onClick={()=>{setCategory("DandD")}}>Dance and Drama Club</button></div>
             :<div className="rounded-2xl border-[1px] border-black font-blogger px-2 h-7 col-span-2"><button onClick={()=>{setCategory("DandD")}}>Dance and Drama Club</button></div>}
@@ -142,9 +142,9 @@ export default function Events() {
           {category=="EBSB" && (allEvents.map((prop)=>(
             prop.category=="EBSB"&&(<EventCard key={prop.eName} eName={prop.eName} eTime={prop.eTime} eRule={prop.eRule} eLink={prop.eLink} eDesc={prop.eDesc} eType={prop.eType} eVenue={prop.eVenue} eDay={prop.eDay}/>)
           )))}
-          {category=="TF" && (allEvents.map((prop)=>(
+          {/* {category=="TF" && (allEvents.map((prop)=>(
             prop.category=="TF"&&(<EventCard key={prop.eName} eName={prop.eName} eTime={prop.eTime} eRule={prop.eRule} eLink={prop.eLink} eDesc={prop.eDesc} eType={prop.eType} eVenue={prop.eVenue} eDay={prop.eDay}/>)
-          )))}
+          )))} */}
           {category=="DandD" && (allEvents.map((prop)=>(
             prop.category=="DandD"&&(<EventCard key={prop.eName} eName={prop.eName} eTime={prop.eTime} eRule={prop.eRule} eLink={prop.eLink} eDesc={prop.eDesc} eType={prop.eType} eVenue={prop.eVenue} eDay={prop.eDay}/>)
           )))}

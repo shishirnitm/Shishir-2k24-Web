@@ -279,7 +279,7 @@ export const allEvents = [
     eTime:"All Day", 
     eVenue:"On-Campus Stalls",
     eDay:"5th April",
-    eType:"Free For All", 
+    eType:"FreeForAll", 
     eRule:"" ,
     eLink:"",
     category:"Photography",
