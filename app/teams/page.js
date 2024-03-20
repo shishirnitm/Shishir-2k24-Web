@@ -5,11 +5,10 @@ import "./teams.css"
 import TeamMember from './Components/TeamMember';
 import TeamHeader from './Components/TeamHeader';
 
-// import { teams } from "./teamsData";
-import Papa from "../../public/Papasito.svg";
+
+import { useState, useRef } from "react";
 
 
-import { useState } from "react";
 
 
 
@@ -220,6 +219,16 @@ const Teams = () => {
     const [filter, setFilter] = useState("all");
 
 
+
+    // Team Refs
+    const sacTeam = useRef(null);
+    const coreTeam = useRef(null);
+    const webTeam = useRef(null);
+
+    const goBack = () => {
+        router.back();
+      };
+
     const handleButtonClick = (e) => {
         const button = e.target;
         const buttonInnerHTML = e.target.innerHTML;
@@ -241,16 +250,38 @@ const Teams = () => {
     };
 
 
+    const handleNext = (teamRef) => {
+        if (teamRef.current) {
+            teamRef.current.scrollTo({
+                left: teamRef.current.scrollLeft + 200,
+                behavior: 'smooth',
+            });
+        }
+    };
+
+    const handlePrev = (teamRef) => {
+        if (teamRef.current) {
+            teamRef.current.scrollTo({
+                left: teamRef.current.scrollLeft - 200,
+                behavior: 'smooth',
+            });
+        }
+    };
+
+
+
     return (
         <>
-            <Image
-                src={backButton}
-                alt="back button"
-                width="0"
-                height="0"
-                sizes="100vw"
-                className="w-[10vw] h-auto my-10 mx-8"
-            />
+            <div>
+                <Image
+                    src={backButton}
+                    alt="back button"
+                    width="0"
+                    height="0"
+                    sizes="100vw"
+                    className="w-[10vw] h-auto my-10 mx-8"
+                />
+            </div>
             <div className=' w-screen pb-20'>
                 <div className="flex flex-col text-[#E03932] mt-5 px-5">
                     <div className=" textStroke ">Meet the</div>
@@ -264,7 +295,7 @@ const Teams = () => {
                 </div>
 
                 <div className="mt-10">
-                    <div className=" team flex w-screen overflow-scroll " style={{ scrollbarWidth: 'none' }}>
+                    <div className=" team flex w-screen overflow-x-scroll " style={{ scrollbarWidth: 'none' }}>
                         <div className="yellowButton filter-active" onClick={handleButtonClick}>all</div>
                         <div className="yellowButton" onClick={handleButtonClick}>core team</div>
                         <div className="yellowButton" onClick={handleButtonClick}>management</div>
@@ -277,8 +308,8 @@ const Teams = () => {
 
                 {/* SAC Team */}
                 {((filter == "all") || (filter == "sac")) && <div className="mt-10">
-                    <TeamHeader teamName="SAC" />
-                    <div className=" team flex w-screen overflow-scroll mt-5 pr-5" style={{ scrollbarWidth: 'none' }}>
+                    <TeamHeader teamName="SAC" onNext={() => handleNext(sacTeam)} onPrev={() => handlePrev(sacTeam)} />
+                    <div className=" team flex w-screen overflow-x-scroll mt-5 pr-5 " style={{ scrollbarWidth: 'none' }} ref={sacTeam}>
                         {teams.sac.map((img, index) => (
                             <div key={index} className=" pl-5">
                                 <TeamMember
@@ -297,12 +328,13 @@ const Teams = () => {
 
                 {/* Core Team */}
                 {((filter == "all") || (filter == "core team")) && <div className="mt-10">
-                    <TeamHeader teamName="Core Team" />
-                    <div className=" team flex w-screen overflow-scroll mt-5 pr-5" style={{ scrollbarWidth: 'none' }}>
+                    <TeamHeader teamName="Core Team" onNext={() => handleNext(coreTeam)} onPrev={() => handlePrev(coreTeam)} />
+                    <div className=" team flex w-screen overflow-x-scroll mt-5 pr-5" style={{ scrollbarWidth: 'none' }} ref={coreTeam}>
                         {teams.coreTeam.map((img, index) => (
                             <div key={index} className=" pl-5">
                                 <TeamMember
                                     key={index}
+                                    // img={teams.coreTeam[index].img}
                                     img={teams.coreTeam[index].img}
                                     name={teams.coreTeam[index].name}
                                     position={teams.coreTeam[index].position}
@@ -316,8 +348,8 @@ const Teams = () => {
 
                 {/* Web Dev Team */}
                 {((filter == "all") || (filter == "web dev")) && <div className="mt-10">
-                    <TeamHeader teamName="Web Dev" />
-                    <div className=" team flex w-screen overflow-scroll mt-5 pr-5" style={{ scrollbarWidth: 'none' }}>
+                    <TeamHeader teamName="Web Dev" onNext={() => handleNext(webTeam)} onPrev={() => handlePrev(webTeam)} />
+                    <div className=" team flex w-screen overflow-scroll mt-5 pr-5" style={{ scrollbarWidth: 'none' }} ref={webTeam}>
                         {teams.webDev.map((img, index) => (
                             <div key={index} className=" pl-5">
                                 <TeamMember
@@ -331,7 +363,6 @@ const Teams = () => {
                         ))}
                     </div>
                 </div>}
-
 
             </div>
         </>
