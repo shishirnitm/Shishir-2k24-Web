@@ -38,7 +38,14 @@
     line-height: normal;
 }
 
-.yellowButton:hover, .yellowButton:active {
+/* .yellowButton:hover{
+    position: relative;
+    top: -4px;
+    left: -4px;
+    box-shadow: 4px 4px #000000;
+} */
+
+.filter-active{
     position: relative;
     top: -4px;
     left: -4px;

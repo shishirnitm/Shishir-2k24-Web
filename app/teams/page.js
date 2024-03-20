@@ -1,3 +1,4 @@
+'use client';
 import Image from "next/image";
 import backButton from "../../public/back-button.svg"
 import "./teams.css"
@@ -8,6 +9,7 @@ import TeamHeader from './Components/TeamHeader';
 import Papa from "../../public/Papasito.svg";
 
 
+import { useState } from "react";
 
 
 
@@ -212,7 +214,33 @@ const teams = {
 
 
 
-const page = () => {
+const Teams = () => {
+
+
+    const [filter, setFilter] = useState("all");
+
+
+    const handleButtonClick = (e) => {
+        const button = e.target;
+        const buttonInnerHTML = e.target.innerHTML;
+        setFilter(buttonInnerHTML);
+
+        if (button.classList.contains('filter-active')) {
+            button.classList.remove('filter-active');
+            setFilter('');
+        } else {
+
+            document.querySelectorAll('.yellowButton').forEach(btn => {
+                btn.classList.remove('filter-active');
+            });
+
+
+            button.classList.add('filter-active');
+            setFilter(buttonInnerHTML);
+        }
+    };
+
+
     return (
         <>
             <Image
@@ -236,21 +264,21 @@ const page = () => {
                 </div>
 
                 <div className="mt-10">
-                    <div className=" team flex w-screen overflow-scroll ">
-                        <div className="yellowButton">all</div>
-                        <div className="yellowButton">core team</div>
-                        <div className="yellowButton">management</div>
-                        <div className="yellowButton">design</div>
-                        <div className="yellowButton">wev dev</div>
-                        <div className="yellowButton">finance</div>
+                    <div className=" team flex w-screen overflow-scroll " style={{ scrollbarWidth: 'none' }}>
+                        <div className="yellowButton filter-active" onClick={handleButtonClick}>all</div>
+                        <div className="yellowButton" onClick={handleButtonClick}>core team</div>
+                        <div className="yellowButton" onClick={handleButtonClick}>management</div>
+                        <div className="yellowButton" onClick={handleButtonClick}>design</div>
+                        <div className="yellowButton" onClick={handleButtonClick}>web dev</div>
+                        <div className="yellowButton" onClick={handleButtonClick}>finance</div>
                     </div>
                 </div>
 
 
                 {/* SAC Team */}
-                <div className="mt-10">
+                {((filter == "all") || (filter == "sac")) && <div className="mt-10">
                     <TeamHeader teamName="SAC" />
-                    <div className=" team flex w-screen overflow-scroll mt-5 pr-5">
+                    <div className=" team flex w-screen overflow-scroll mt-5 pr-5" style={{ scrollbarWidth: 'none' }}>
                         {teams.sac.map((img, index) => (
                             <div key={index} className=" pl-5">
                                 <TeamMember
@@ -264,13 +292,13 @@ const page = () => {
                             </div>
                         ))}
                     </div>
-                </div>
+                </div>}
 
 
                 {/* Core Team */}
-                <div className="mt-10">
+                {((filter == "all") || (filter == "core team")) && <div className="mt-10">
                     <TeamHeader teamName="Core Team" />
-                    <div className=" team flex w-screen overflow-scroll mt-5 pr-5">
+                    <div className=" team flex w-screen overflow-scroll mt-5 pr-5" style={{ scrollbarWidth: 'none' }}>
                         {teams.coreTeam.map((img, index) => (
                             <div key={index} className=" pl-5">
                                 <TeamMember
@@ -283,13 +311,13 @@ const page = () => {
                             </div>
                         ))}
                     </div>
-                </div>
+                </div>}
 
 
                 {/* Web Dev Team */}
-                <div className="mt-10">
+                {((filter == "all") || (filter == "web dev")) && <div className="mt-10">
                     <TeamHeader teamName="Web Dev" />
-                    <div className=" team flex w-screen overflow-scroll mt-5 pr-5">
+                    <div className=" team flex w-screen overflow-scroll mt-5 pr-5" style={{ scrollbarWidth: 'none' }}>
                         {teams.webDev.map((img, index) => (
                             <div key={index} className=" pl-5">
                                 <TeamMember
@@ -302,7 +330,7 @@ const page = () => {
                             </div>
                         ))}
                     </div>
-                </div>
+                </div>}
 
 
             </div>
@@ -310,4 +338,4 @@ const page = () => {
     )
 }
 
-export default page;
+export default Teams;
