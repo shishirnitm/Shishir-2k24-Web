@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 import "./nav.css";
 import Close from "../../public/Close.svg";
@@ -21,7 +22,9 @@ export default function Navbar() {
             className="text-5xl  space-y-3 font-medium font-bernier text-[#E03932] mt-16  flex flex-col"
           >
             <div className="flex justify-between space-x-6">
-              <span id="items">Home</span>
+              <Link href="/" onClick={() => setClose("1")}>
+                <span id="items">Home</span>
+              </Link>
               <div className="flex justify-end ">
                 <span
                   id="items"
@@ -39,7 +42,9 @@ export default function Navbar() {
             </div>
 
             <div className="flex justify-between space-x-6">
-              <span id="items">Events</span>
+              <Link href="events" onClick={() => setClose("1")}>
+                <span id="items">Events</span>
+              </Link>
               <div className="flex justify-end ">
                 <span
                   id="items"
@@ -57,7 +62,9 @@ export default function Navbar() {
             </div>
 
             <div className="flex justify-between space-x-6">
-              <span id="items">Sponsors</span>
+              <Link href="/404" onClick={() => setClose("1")}>
+                <span id="items">Sponsors</span>
+              </Link>
               <div className="flex justify-end ">
                 <span
                   id="items"
@@ -74,7 +81,9 @@ export default function Navbar() {
               </div>
             </div>
             <div className="flex justify-between space-x-6">
-              <span id="items">Teams</span>
+              <Link href="/teams" onClick={() => setClose("1")}>
+                <span id="items">Teams</span>
+              </Link>
               <div className="flex justify-end ">
                 <span
                   id="items"
@@ -128,20 +137,31 @@ export default function Navbar() {
           )}
         </div>
         <div className="hidden md:flex justify-center font-bernier text-primaryBlue space-x-8 text-2xl pt-6 lg:text-4xl lg:space-x-12">
-          <div className="text-primaryRed cursor-pointer">Home</div>
+          <Link href="/">
+            <div className="text-primaryRed cursor-pointer">Home</div>
+          </Link>
           <Image
             src={star}
             width={20}
             height={20}
             className="text-primaryBlue"
           ></Image>
-          <div className="cursor-pointer">Events</div>
+          <Link href="/events">
+            <div className="cursor-pointer">Events</div>
+          </Link>
           <Image src={star} width={20} height={20} className=""></Image>
-          <div className="cursor-pointer">Tickets</div>
+          <Link href="/ticket">
+            {" "}
+            <div className="cursor-pointer">Tickets</div>
+          </Link>
           <Image src={star} width={20} height={20}></Image>
-          <div className="cursor-pointer">Team</div>
+          <Link href="/teams">
+            <div className="cursor-pointer">Team</div>
+          </Link>
           <Image src={star} width={20} height={20}></Image>
-          <div className="cursor-pointer">MUN</div>
+          <Link href="/mun">
+            <div className="cursor-pointer">MUN</div>
+          </Link>
         </div>
       </div>
     </>

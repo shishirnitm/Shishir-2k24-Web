@@ -100,6 +100,9 @@ export default function Home() {
             />
           </div>
         </div>
+        {/* <div id="home" className="pt-5  w-screen text-center">
+          <Button text="Explore Shishir" link="..." />
+        </div> */}
         {/* <div id="home" className="pt-10 w-[100vw] flex justify-center">
           <div className="w-[85vw]">
             <Button text="Explore Shishir" link="..." />
