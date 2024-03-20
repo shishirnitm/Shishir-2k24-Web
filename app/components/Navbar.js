@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import "./nav.css";
 import Close from "../../public/Close.svg";
@@ -11,6 +12,35 @@ import star from "../../public/StarBlue.svg";
 
 export default function Navbar() {
   const [close, setClose] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    switch (pathname) {
+      case "/": {
+        setActiveIndex(0);
+        break;
+      }
+      case "/events": {
+        setActiveIndex(1);
+        break;
+      }
+      case "/ticket": {
+        setActiveIndex(2);
+        break;
+      }
+      case "/teams": {
+        setActiveIndex(3);
+        break;
+      }
+      case "/mun": {
+        setActiveIndex(4);
+        break;
+      }
+      default: {
+      }
+    }
+  }, [pathname]);
 
   return (
     <>
@@ -138,7 +168,13 @@ export default function Navbar() {
         </div>
         <div className="hidden md:flex justify-center font-bernier text-primaryBlue space-x-8 text-2xl pt-6 lg:text-4xl lg:space-x-12">
           <Link href="/">
-            <div className="text-primaryRed cursor-pointer">Home</div>
+            <div
+              className={`${
+                activeIndex == 0 ? "text-primaryRed" : "text-primaryBlue"
+              } cursor-pointer`}
+            >
+              Home
+            </div>
           </Link>
           <Image
             src={star}
@@ -147,20 +183,44 @@ export default function Navbar() {
             className="text-primaryBlue"
           ></Image>
           <Link href="/events">
-            <div className="cursor-pointer">Events</div>
+            <div
+              className={`${
+                activeIndex == 1 ? "text-primaryRed" : "text-primaryBlue"
+              } cursor-pointer`}
+            >
+              Events
+            </div>
           </Link>
           <Image src={star} width={20} height={20} className=""></Image>
           <Link href="/ticket">
             {" "}
-            <div className="cursor-pointer">Tickets</div>
+            <div
+              className={`${
+                activeIndex == 2 ? "text-primaryRed" : "text-primaryBlue"
+              } cursor-pointer`}
+            >
+              Tickets
+            </div>
           </Link>
           <Image src={star} width={20} height={20}></Image>
           <Link href="/teams">
-            <div className="cursor-pointer">Team</div>
+            <div
+              className={`${
+                activeIndex == 3 ? "text-primaryRed" : "text-primaryBlue"
+              } cursor-pointer`}
+            >
+              Team
+            </div>
           </Link>
           <Image src={star} width={20} height={20}></Image>
           <Link href="/mun">
-            <div className="cursor-pointer">MUN</div>
+            <div
+              className={`${
+                activeIndex == 4 ? "text-primaryRed" : "text-primaryBlue"
+              } cursor-pointer`}
+            >
+              MUN
+            </div>
           </Link>
         </div>
       </div>
