@@ -204,15 +204,6 @@ const teams = {
 
 
 
-
-
-
-
-
-
-
-
-
 const Teams = () => {
 
 
@@ -225,9 +216,6 @@ const Teams = () => {
     const coreTeam = useRef(null);
     const webTeam = useRef(null);
 
-    const goBack = () => {
-        router.back();
-      };
 
     const handleButtonClick = (e) => {
         const button = e.target;
