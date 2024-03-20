@@ -36,6 +36,7 @@ import "./home.css";
 import Guest from "./components/Guest";
 import Poster from "./components/Poster";
 import Gallery from "./components/Gallery";
+import splash from "../public/splash.svg";
 
 const posters = [promNight, battleBands];
 const galleryImages = [gallery1, gallery2];
@@ -47,9 +48,34 @@ export default function Home() {
   return (
     <>
       <div className="">
-        <div id="splash">
-          <div id="splash-inner" className="text-red-700 text-center font-bold">
-            Welcome to Shishir 2024!
+        <div id="splash" className="relative">
+          <svg
+            id="splash-image"
+            width="5751"
+            height="3938"
+            viewBox="0 0 5751 3938"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5537.66 1946.51C5925.91 1628.02 5690.11 643.175 5690.11 643.175L5692.43 21.239L-0.366566 5.47836e-05L-12.986 3382.46C-12.986 3382.46 853.338 4190.46 1281.96 3856.47C1560.33 3639.56 1258.63 3098.65 1590.92 2990.18C1853.8 2904.36 1978.84 3312.02 2248.83 3254.5C2648.5 3169.36 2342.52 2495.6 2689.99 2274.13C3116.33 2002.4 3571.87 2865.35 3948.87 2524.33C4195.97 2300.82 3963.44 1925.96 4204.98 1696.03C4594.37 1325.36 5123.04 2286.62 5537.66 1946.51Z"
+              fill="#121212"
+              stroke="black"
+            />
+          </svg>
+
+          <div
+            id="splash-inner"
+            className="text-red-700 text-center font-bold flex justify-center items-center h-screen"
+          >
+            <Image
+              id="logo"
+              src={shishir}
+              width="0"
+              height="0"
+              sizes="100vw"
+              className="w-[95vw] h-auto md:w-[40vw]"
+            />
           </div>
         </div>
         {/** Felt lazy to search and download all the fonts,
