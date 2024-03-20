@@ -120,18 +120,21 @@ export default function Home() {
           <div className="bg-[#E03932] w-screen h-5"></div>
         </div>
         {/** About Us Section  */}
-        <div id="home" className="pt-24 flex flex-row justify-center">
+        <div
+          id="home"
+          className="pt-24 flex flex-row pl-[8vw] justify-start md:justify-start md:pl-[10vw]"
+        >
           <Image
             src={about}
             width="0"
             height="0"
             sizes="100vw"
-            className="w-[80vw]  h-auto"
+            className="w-[80vw] sm:w-[40vw] md:w-[25vw] h-auto"
           />
         </div>
         <div
           id="home"
-          className="font-blogger flex flex-row justify-center text-lg font-semibold text-primaryBlue bg-transparent"
+          className="font-blogger flex flex-row justify-start pl-[8vw] md:justify-start md:pl-[10vw]  md:pt-10 md:text-xl text-lg font-semibold text-primaryBlue bg-transparent"
         >
           <div className="w-[80vw] mt-6">
             Enjoy music, dance, shows, and fun at{" "}
@@ -145,54 +148,58 @@ export default function Home() {
             <br /> <br /> Make special memories at Shishir!
           </div>
         </div>
-        <div id="home" className="flex flex-row justify-center mt-10">
-          <div className="w-[75vw] flex flex-row justify-between">
-            <div className=" space-y-2 text-primaryBlue font-semibold text-3xl font-antonio">
-              <div className="text-4xl">15+</div>
+        <div
+          id="home"
+          className="flex  flex-col md:flex-row mt-10 md:pt-10  pl-[8vw] md:pb-10 md:pl-[10vw] md:space-x-24"
+        >
+          <div className="w-[70vw] md:w-min md:space-x-24 flex flex-row justify-between md:justify-start">
+            <div className=" space-y-2 md:space-y-6 text-primaryBlue font-semibold text-3xl md:text-4xl font-antonio">
+              <div className="text-4xl  md:text-6xl">15+</div>
               <div>
                 SPECIAL
                 <br /> ARTISTS
               </div>
             </div>
-            <div className=" space-y-2 text-primaryBlue font-semibold text-3xl font-antonio">
-              <div className="text-4xl">1.8K+</div>
+            <div className=" space-y-2 md:space-y-6 text-primaryBlue font-semibold md:text-4xl  text-3xl font-antonio">
+              <div className="text-4xl md:text-6xl ">1.8K+</div>
               <div>
                 SHISHIR
-                <br /> FOOTBALL
+                {/* lmao kilio */}
+                <br /> FOOTFALL
               </div>
             </div>
           </div>
-        </div>
-        <div id="home" className="flex flex-row justify-center mt-8">
-          <div className="w-[75vw] flex flex-row justify-between">
-            <div className=" space-y-2 text-primaryBlue font-semibold text-3xl font-antonio">
-              <div className="text-4xl">150+</div>
+
+          <div className="w-[70vw] mt-8 md:mt-0 md:w-min md:space-x-24 flex flex-row justify-between md:justify-start">
+            <div className=" space-y-2 md:space-y-6 text-primaryBlue font-semibold text-3xl md:text-4xl font-antonio">
+              <div className="text-4xl md:text-6xl">15+</div>
               <div>
-                GUESTS <br />
+                SPECIAL
+                <br />
+                GUESTS
               </div>
             </div>
-            <div className=" space-y-2 text-primaryBlue font-semibold text-3xl font-antonio">
-              <div className="text-4xl">130+</div>
-              <div>EVENTS</div>
+            <div className=" space-y-2 md:space-y-6 text-primaryBlue font-semibold md:text-4xl text-3xl font-antonio">
+              <div className="text-4xl md:text-6xl">130+</div>
+              <div>
+                SHISHIR
+                <br /> EVENTS
+              </div>
             </div>
           </div>
         </div>
         <div
           id="home"
-          className="font-blogger flex flex-row justify-center text-md font-semibold text-primaryBlue bg-transparent"
+          className="font-blogger flex flex-row justify-start text-md md:text-xl font-semibold text-primaryBlue bg-transparent"
         >
-          <div className="text-center w-[80vw] mt-8">
+          <div className="w-[80vw] pl-[8vw] md:pl-[10vw] md:w-auto m mt-8 md:mt-20">
             Ready to participate? But first...
           </div>
         </div>
-        <div id="home" className="pt-10 flex flex-row justify-center">
-          <Image
-            src={aboutSeparator}
-            width="0"
-            height="0"
-            sizes="100vw"
-            className="w-[100vw]  h-auto"
-          />
+        <div id="home" className="pt-10 md:pt-20 flex flex-col justify-center">
+          <div className="bg-[#F5E074] w-screen h-5"></div>
+          <div className="bg-[#EFB023] w-screen h-5"></div>
+          <div className="bg-[#E03932] w-screen h-5"></div>
         </div>
         <div id="home" className="pt-5 w-screen flex justify-end">
           <Image
