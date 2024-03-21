@@ -66,7 +66,7 @@ export default function Contact()
                     <div className="w-[80vw] md:w-full"><Image src={Himanshu} width={350}/></div>
                     <div className="font-bloggerBold text-[#E03932] text-2xl">Himanshu Kashyap</div>
                     <div className="font-blogger font-light"><i>General Secretary 2 &#40;Cultural&#41;</i></div>
-                    <div className="font-bloggerBold"><i>3rd Year B.Tech Mech</i></div>
+                    <div className="font-bloggerBold"><i>3rd Year B.Tech Civil</i></div>
                     <div className="flex items-center">
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
