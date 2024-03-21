@@ -31,9 +31,9 @@ export default function Contact()
             <div className="flex w-[80vw] font-bernier text-[#E03932] text-5xl">
                 <div className="">CULTURAL HEADS</div>
             </div>
-            <div className="flex flex-col space-y-10">
+            <div className="flex flex-col space-y-10 md:flex-row md:space-y-0 md:space-x-10 md:place-self-start md:px-20 lg:px-32">
                 <div className="flex flex-col">
-                    <div className="w-[80vw]"><Image src={Mika} width={350}/></div>
+                    <div className="w-[80vw] md:w-full"><Image src={Mika} width={350}/></div>
                     <div className="font-bloggerBold text-[#E03932] text-2xl">Da E Mika Mandiam Gashnga</div>
                     <div className="font-blogger font-light"><i>General Secretary 1 &#40;Cultural&#41;</i></div>
                     <div className="font-bloggerBold"><i>4th Year B.Tech Mech</i></div>
@@ -63,7 +63,7 @@ export default function Contact()
                     </div>
                 </div>
                 <div className="flex flex-col">
-                    <div className="w-[80vw]"><Image src={Himanshu} width={350}/></div>
+                    <div className="w-[80vw] md:w-full"><Image src={Himanshu} width={350}/></div>
                     <div className="font-bloggerBold text-[#E03932] text-2xl">Himanshu Kashyap</div>
                     <div className="font-blogger font-light"><i>General Secretary 2 &#40;Cultural&#41;</i></div>
                     <div className="font-bloggerBold"><i>3rd Year B.Tech Mech</i></div>
