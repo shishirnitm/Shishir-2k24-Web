@@ -14,8 +14,10 @@ import meet from "../public/home/meet.svg";
 import speaker from "../public/home/speakers.svg";
 import mainEvents from "../public/home/main_events.svg";
 import dontMiss from "../public/home/dont_miss.svg";
-import battleBands from "../public/home/battle_bands.svg";
-import promNight from "../public/home/prom_night.svg";
+import battleBands from "../public/home/bob.svg";
+import symphony from "../public/home/symphony.svg";
+import panache from "../public/home/panache.svg";
+// import promNight from "../public/home/prom_night.svg";
 import cheese from "../public/home/cheese.svg";
 import gallery from "../public/home/gallery.svg";
 import map from "../public/home/map.svg";
@@ -25,10 +27,7 @@ import gallery1 from "../public/home/gallery1.png";
 import gallery2 from "../public/home/gallery2.png";
 
 //TODO: Replace with actual guests later
-import godfather from "../public/home/godfather.png";
-import goodfella from "../public/home/goodfella.png";
-import theKing from "../public/home/the_king.png";
-import dentist from "../public/home/dentist.png";
+import godfather from "../public/home/jahnu.png";
 
 import Button from "./components/Button";
 
@@ -38,7 +37,7 @@ import Poster from "./components/Poster";
 import Gallery from "./components/Gallery";
 import splash from "../public/splash.svg";
 
-const posters = [promNight, battleBands];
+const posters = [symphony, battleBands, panache];
 const galleryImages = [gallery1, gallery2];
 
 // Needs refactoring, too many lines in a single file...
@@ -230,48 +229,57 @@ export default function Home() {
           <div className="bg-[#EFB023] w-screen h-5"></div>
           <div className="bg-[#E03932] w-screen h-5"></div>
         </div>
-        <div id="home" className="pt-5 w-screen flex justify-end">
+        <div
+          id="home"
+          className="pt-5 w-screen flex  md:w-fit justify-end xs:pt-5 sm:pt-10 md:pt-24"
+        >
           <Image
             src={attention}
             width="0"
             height="0"
             sizes="100vw"
-            className="w-[25vw] h-auto translate-x-4 "
+            className="w-[25vw] h-auto translate-x-4 md:translate-x-0 md:w-[10vw]"
           />
         </div>
-        <div id="home" className="pt-5 flex flex-row justify-center">
+        <div
+          id="home"
+          className="pt-5 flex flex-row justify-start pl-[8vw] md:pl-[10vw]"
+        >
           <Image
             src={howTo}
             width="0"
             height="0"
             sizes="100vw"
-            className="w-[85vw]  h-auto"
+            className="w-[85vw] h-auto sm:w-[40vw] md:w-[25vw]"
           />
         </div>
         <div
           id="home"
-          className="font-blogger flex flex-col items-center justify-center text-md font-semibold text-primaryBlue bg-transparent"
+          className="font-blogger flex flex-col text-md items-center justify-center md:items-start font-semibold text-primaryBlue bg-transparent  md:pl-[10vw]"
         >
-          <div className="text-2xl font-bloggerBold w-[85vw] mt-8">
+          <div className="text-2xl font-bloggerBold w-[85vw] md:w-fit mt-8 md:text-3xl">
             NIT Meghalaya Students:
           </div>
-          <div className="text-lg font-blogger w-[85vw]">
+          <div className="text-lg font-blogger w-[85vw] md:text-xl">
             Flash your college ID card at the entry gate to gain free access.
-          </div>
-        </div>
-        <div id="home" className="pt-5 w-[100vw] flex justify-center">
-          <div className="w-[85vw]">
-            <Button text="Explore Events" link="..." />
           </div>
         </div>
         <div
           id="home"
-          className="font-blogger flex flex-col pt-5 items-center justify-center text-md font-semibold text-primaryBlue bg-transparent"
+          className="pt-5 w-[100vw] md:pl-[10vw] flex justify-center md:justify-start"
         >
-          <div className="text-2xl font-bloggerBold w-[85vw] mt-8">
+          <div className="w-[85vw]">
+            <Button text="Explore Events" link="/events" />
+          </div>
+        </div>
+        <div
+          id="home"
+          className="font-blogger flex flex-col pt-5 items-center justify-center md:items-start text-md font-semibold text-primaryBlue bg-transparent  md:pl-[10vw]"
+        >
+          <div className="text-2xl font-bloggerBold w-[85vw] md:w-fit mt-8 md:text-3xl">
             Other Students:
           </div>
-          <div className="text-lg font-blogger w-[85vw]">
+          <div className="text-lg font-blogger w-[85vw] md:text-xl">
             Purchase your entry ticket offline / online through our secure
             website. <br />
             <span className="font-medium italic">
@@ -279,57 +287,62 @@ export default function Home() {
             </span>
           </div>
         </div>
-        <div id="home" className="pt-5 w-[100vw] flex justify-center">
+        <div
+          id=""
+          className="pt-5 w-[100vw] flex justify-center md:justify-start  md:pl-[10vw]"
+        >
           <div className="w-[85vw]">
-            <Button text="Get Your Ticket" link="..." />
+            <Button text="Get Your Ticket" link="/ticket" />
           </div>
         </div>
         <div
           id="home"
-          className="pt-2 pb-20 w-[100vw] flex justify-center font-blogger text-primaryBlue underline"
+          className="pt-2 pb-20 w-[100vw] md:mt-10 md:text-lg flex justify-center font-blogger text-primaryBlue underline"
         >
           <div>Learn more: why are we charging you?</div>
         </div>
-        <div id="home" className="pb-4 flex flex-row justify-center">
-          <Image
-            src={howToSeparator}
-            width="0"
-            height="0"
-            sizes="100vw"
-            className="w-[100vw]  h-auto"
-          />
+        <div id="home" className="pt-10 md:pt-10 flex flex-col justify-center">
+          <div className="bg-[#3F362B] w-screen h-5"></div>
+          <div className="bg-[#F7DCAD] w-screen h-5"></div>
+          <div className="bg-[#4EB7B4] w-screen h-5"></div>
         </div>
-        <div id="home" className="pt-5 w-screen flex justify-end">
+        <div
+          id="home"
+          className="pt-5 w-screen flex  md:w-fit justify-end xs:pt-5 sm:pt-10 md:pt-24"
+        >
           <Image
             src={mainEvents}
             width="0"
             height="0"
             sizes="100vw"
-            className="w-[25vw] h-auto translate-x-4 "
+            className="w-[25vw] h-auto translate-x-4 md:translate-x-0 md:w-[10vw] "
           />
         </div>
-        <div id="home" className="pt-5 flex w- flex-row justify-center">
+        <div
+          id="home"
+          className="pt-5 flex flex-row md:justify-start pl-[8vw] md:pl-[10vw]"
+        >
           <Image
             src={dontMiss}
             width="0"
             height="0"
             sizes="100vw"
-            className="w-[85vw]  h-auto"
+            className="w-[85vw] h-auto sm:w-[40vw] md:w-[25vw]"
           />
         </div>
         <div
           id="home"
-          className="font-blogger flex flex-col items-center justify-center font-semibold text-primaryBlue bg-transparent"
+          className="font-blogger flex flex-col items-center md:items-start md:justify-start font-semibold text-primaryBlue bg-transparent pl-8vw md:pl-[10vw]"
         >
-          <div className="text-lg font-semibold w-[85vw] mt-8">
+          <div className="text-lg font-semibold w-[85vw] mt-8 md:text-2xl md:mt-10">
             Handpicked events for you! These are our most popular and in-demand
             events. Grab your seat and enjoy the show ~
           </div>
         </div>
         <div className="pt-5">
-          <div className="flex w-screen overflow-scroll ">
+          <div className="flex w-screen overflow-scroll mt-10 ">
             {posters.map((img, index) => (
-              <div key={index} className="pl-10">
+              <div key={index} className="">
                 <Poster img={img} />
               </div>
             ))}
@@ -337,97 +350,82 @@ export default function Home() {
         </div>
         <div
           id="home"
-          className="font-blogger flex flex-col items-center justify-center font-semibold text-primaryBlue bg-transparent"
+          className="font-blogger flex flex-col items-center justify-center md:items-start md:pl-[10vw] font-semibold text-primaryBlue bg-transparent"
         >
           <div className="text-lg font-semibold w-[85vw] mt-8">
             Looking for more events to join? You can..
           </div>
         </div>
-        <div id="home" className="pt-5 w-[100vw] flex justify-center">
+        <div
+          id=""
+          className="pt-5 w-[100vw] flex justify-center md:justify-start  md:pl-[10vw]"
+        >
           <div className="w-[85vw]">
-            <Button text="Explore Events" link="..." />
+            <Button text="Explore Events" link="/events" />
           </div>
         </div>
-        <div id="home" className="pt-24 flex flex-row justify-center">
-          <Image
-            src={separator}
-            width="0"
-            height="0"
-            sizes="100vw"
-            className="w-[100vw]  h-auto"
-          />
+        <div id="home" className="pt-10  md:pt-20 flex flex-col justify-center">
+          <div className="bg-[#4EB7B4] w-screen h-5"></div>
+          <div className="bg-[#186B80] w-screen h-5"></div>
+          <div className="bg-[#E03932] w-screen h-5"></div>
         </div>
-        <div id="home" className="pt-16 w-screen] flex justify-end">
+        <div
+          id="home"
+          className="pt-5 w-screen flex  md:w-fit justify-end xs:pt-5 sm:pt-10 md:pt-24"
+        >
           <Image
             src={speaker}
             width="0"
             height="0"
             sizes="100vw"
-            className="w-[25vw] h-auto translate-x-4 "
+            className="w-[25vw] h-auto translate-x-4 md:translate-x-0 md:w-[10vw] "
           />
         </div>
-        <div id="home" className="pt-5 flex w- flex-row justify-center">
+        <div
+          id="home"
+          className="pt-5 flex flex-row justify-start md:justify-start pl-[8vw] md:pl-[10vw]"
+        >
           <Image
             src={meet}
             width="0"
             height="0"
             sizes="100vw"
-            className="w-[85vw]  h-auto"
+            className="w-[85vw] h-auto sm:w-[40vw] md:w-[25vw]"
           />
         </div>
         <div
           id="home"
-          className="font-blogger flex flex-col items-center justify-center font-semibold text-primaryBlue bg-transparent"
+          className="font-blogger flex flex-col pl-[8vw] md:pl-[10vw]  md:items-start justify-center font-semibold text-primaryBlue bg-transparent"
         >
-          <div className="text-lg font-semibold w-[85vw] mt-8">
+          <div className="text-lg font-semibold w-[85vw] mt-8 md:text-2xl md:mt-10">
             Meet the Speakers and Performers coming in to liven up the Shishir
             stage this April.
           </div>
         </div>
         <div id="home" className="mt-16 flex flex-col items-center">
-          <div className="flex w-[85vw] justify-between">
+          <div className="flex w-[85vw] space-x-6">
             <Guest
               img={godfather}
-              title={"Al Pacino"}
-              bio={"Singer/Songwriter"}
+              title={"Jahnu Barua"}
+              bio={"Indian Film Director"}
             />
-            <Guest
-              img={goodfella}
-              title={"Robert De Niro"}
-              bio={"Singer/Songwriter"}
-            />
+            <Guest img={null} title={"TBA"} bio={"NA"} />
           </div>
-          <div className="flex w-[85vw] mt-10 justify-between">
-            <Guest
-              img={theKing}
-              title={"Elvis Presley"}
-              bio={"Singer/Songwriter"}
-            />
-            <Guest
-              img={dentist}
-              title={"Christoph Waltz"}
-              bio={"Singer/Songwriter"}
-            />
-          </div>
-          <div className="text-md mt-10 font-blogger w-[85vw] text-primaryBlue">
+          <div className="text-md md:text-xl mt-10 font-blogger w-[85vw] text-primaryBlue">
             <span className="font-normal">
               meet your favorite celebs at Shishir. Go ahead and. .
             </span>
           </div>
-          <div id="home" className="pt-5 w-[100vw] flex justify-center">
+          <div id="" className="pt-5 w-[100vw]  flex justify-center">
             <div className="w-[85vw]">
-              <Button text="Explore Events" link="..." />
+              <Button text="Explore Events" link="/events" />
             </div>
           </div>
         </div>
-        <div id="home" className="pt-10 flex flex-row justify-center">
-          <Image
-            src={aboutSeparator}
-            width="0"
-            height="0"
-            sizes="100vw"
-            className="w-[100vw]  h-auto"
-          />
+        <div id="home" className="pt-10 md:pt-20 flex flex-col justify-center">
+          <div className="bg-[#F5E074] w-screen h-5"></div>
+          <div className="bg-[#EFB023] w-screen h-5"></div>
+          <div className="bg-[#E03932] w-screen h-5"></div>
         </div>
         <div id="home" className="pt-5 w-screen flex justify-end">
           <Image
@@ -464,9 +462,9 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <div id="home" className="w-[100vw] flex justify-center">
+        <div id="" className="w-[100vw] flex justify-center">
           <div className="w-[85vw]">
-            <Button text="View Full Gallery" link="..." />
+            <Button text="View Full Gallery" link="/404" />
           </div>
         </div>
         <div id="home" className="pt-20 flex flex-row justify-center">
