@@ -14,7 +14,7 @@ export default function Events() {
         xl:h-36">
           <div className="w-80 text-5xl
           sm:w-full sm:text-center sm:text-6xl
-          xl:text-8xl">EXPLORE THE SHISHIR EVENTS !
+          xl:text-8xl">EXPLORE THE SHISHIR EVENTS!
           </div>
         </div>
         <div className="flex justify-center font-bernier text-[#E03932] text-[42px] w-5/6 text-center
