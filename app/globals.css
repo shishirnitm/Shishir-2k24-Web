@@ -26,3 +26,8 @@
   font-family: "BloggerBold";
   src: url("../public/fonts/Blogger_Sans-Bold.otf");
 }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../public/fonts/MontserratSemiBold600.ttf");
+}
