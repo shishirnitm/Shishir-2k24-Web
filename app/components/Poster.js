@@ -4,7 +4,7 @@ export default function Poster({ img }) {
   return (
     <div>
       {" "}
-      <div className="w-60 h-96">
+      <div className="w-60 h-96 md:w-[18vw] mr-2 ml-[8vw] md:ml-[5vw] md:h-[45vh] ">
         <Image
           src={img}
           loading="lazy"
