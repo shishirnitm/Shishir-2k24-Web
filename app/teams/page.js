@@ -22,7 +22,7 @@ import { useState, useRef } from "react";
 const teams = {
     "coreTeam": [
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "/teams/Core/Mayo.jpeg",
             "name": "Mayo",
             "position": "HEAD",
             "year": "4TH YEAR ME"
@@ -50,6 +50,12 @@ const teams = {
             "name": "Wanrapbok",
             "position": "COORDINATOR",
             "year": "3RD YEAR EC"
+        },
+        {
+            "img": "/teams/Core/Om_Prakash.jpeg",
+            "name": "Om Prakash",
+            "position": "CO-COORDINATOR",
+            "year": "2ND YEAR ME"
         }
     ],
     "sac": [
@@ -58,6 +64,12 @@ const teams = {
             "name": "Da E Mika",
             "position": "GS-1, CULTURAL",
             "year": "4th YEAR ME"
+        },
+        {
+            "img": "/teams/SAC/Embhahlang.jpeg",
+            "name": "Embhahlang",
+            "position": "FEMALE REPRESENTATIVE",
+            "year": "4th YEAR CE"
         },
         {
             "img": "/teams/SAC/Himanshu.jpeg",
@@ -119,27 +131,71 @@ const teams = {
     "design": [
         {
             "img": "/teams/Papa.jpeg",
-            "name": "Johnny Papasito",
+            "name": "Vadan",
+            "position": "HEAD",
+            "year": "2ND YEAR ME"
+        },
+        {
+            "img": "/teams/Design/Rai.jpeg",
+            "name": "Rai Tripura",
+            "position": "COORDINATOR",
+            "year": "3RD YEAR CE"
+        },
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Subhadeep",
+            "position": "COORDINATOR",
+            "year": "3RD YEAR EC"
+        },
+        {
+            "img": "/teams/Design/Tiya.jpeg",
+            "name": "Tiyangsen",
+            "position": "CO-COORDINATOR",
+            "year": "2ND YEAR ME"
+        },
+        {
+            "img": "/teams/Design/Komune.jpeg",
+            "name": "Komune",
+            "position": "CO-COORDINATOR",
+            "year": "2ND YEAR CE"
+        }
+    ],
+    "event-mgt": [
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Olivia",
+            "position": "HEAD",
+            "year": "4TH YEAR CS"
+        },
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Sai Upendhar ",
+            "position": "LEAD DEVELOPER",
+            "year": "4TH YEAR CS"
+        },
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Isaiah",
+            "position": "LEAD DEVELOPER",
+            "year": "4TH YEAR CS"
+        },
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Ronald",
+            "position": "LEAD DEVELOPER",
+            "year": "4TH YEAR CS"
+        },
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Gaurav",
             "position": "LEAD DEVELOPER",
             "year": "2ND YEAR ME"
         },
         {
             "img": "/teams/Papa.jpeg",
-            "name": "Johnny Papasito",
-            "position": "LEAD DEVELOPER",
-            "year": "2ND YEAR ME"
-        },
-        {
-            "img": "/teams/Papa.jpeg",
-            "name": "Johnny Papasito",
-            "position": "LEAD DEVELOPER",
-            "year": "2ND YEAR ME"
-        },
-        {
-            "img": "/teams/Papa.jpeg",
-            "name": "Johnny Papasito",
-            "position": "LEAD DEVELOPER",
-            "year": "2ND YEAR ME"
+            "name": "Saman",
+            "position": "APPRENTICE",
+            "year": "3RD YEAR CS"
         }
     ],
     "finance": [
@@ -215,7 +271,7 @@ const Teams = () => {
     const sacTeam = useRef(null);
     const coreTeam = useRef(null);
     const webTeam = useRef(null);
-
+    const designTeam = useRef(null);
 
     const handleButtonClick = (e) => {
         const button = e.target;
@@ -346,6 +402,24 @@ const Teams = () => {
                                     name={teams.webDev[index].name}
                                     position={teams.webDev[index].position}
                                     year={teams.webDev[index].year}
+                                />
+                            </div>
+                        ))}
+                    </div>
+                </div>}
+
+                {/* Design Team */}
+                {((filter == "all") || (filter == "design")) && <div className="mt-10">
+                    <TeamHeader teamName="Design" onNext={() => handleNext(designTeam)} onPrev={() => handlePrev(designTeam)} />
+                    <div className=" team flex w-screen overflow-scroll mt-5 pr-5" style={{ scrollbarWidth: 'none' }} ref={designTeam}>
+                        {teams.design.map((img, index) => (
+                            <div key={index} className=" pl-5">
+                                <TeamMember
+                                    key={index}
+                                    img={teams.design[index].img}
+                                    name={teams.design[index].name}
+                                    position={teams.design[index].position}
+                                    year={teams.design[index].year}
                                 />
                             </div>
                         ))}
