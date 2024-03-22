@@ -17,6 +17,8 @@ module.exports = {
       antonio: ["Antonio", "sans-serif"],
       blogger: ["BloggerSans", "sans"],
       bloggerBold: ["BloggerBold", "sans"],
+      // montserrat: ["Montserrat", "sans-serif"],
+      
     },
     extend: {
       backgroundImage: {

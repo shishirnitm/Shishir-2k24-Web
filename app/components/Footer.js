@@ -12,7 +12,6 @@ export default function Footer() {
       </div>
       <div className="flex flex-col mt-5 pl-[35px] pr-[36px] ">
         <div className="text-[#E03932] font-bernier text-[56px] mb-[-6px] ">
-
           Shishir
         </div>
         <div className="text-[#186B80] font-bloggerBold text-[20px] leading-[24px]">
@@ -130,7 +129,7 @@ export default function Footer() {
         </div>
         <div className="text-[#186B80] font-blogger text-[16px] leading-[21px]">
           <strong>
-            Designed and developed by {" "}
+            Designed and developed by{" "}
             <i>
               <spam className="text-[#E03932] ">
                 <u>NITM Web Dev Creatives</u>
