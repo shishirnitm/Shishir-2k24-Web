@@ -1,5 +1,7 @@
 'use client';
 import Image from "next/image";
+import Link from "next/link";
+
 import backButton from "../../public/back-button.svg"
 import "./teams.css"
 import TeamMember from './Components/TeamMember';
@@ -68,7 +70,7 @@ const teams = {
         {
             "img": "/teams/SAC/Embhahlang.jpeg",
             "name": "Embhahlang",
-            "position": "FEMALE REPRESENTATIVE",
+            "position": "FEMALE REP.",
             "year": "4th YEAR CE"
         },
         {
@@ -313,10 +315,13 @@ const Teams = () => {
     };
 
 
-
-    return (
-        <>
-            <div>
+        return (
+        <div className="overflow-hidden">
+            <Link 
+                href="/"
+                passHref
+                className="lg:text-center text-left mb-2"
+            >
                 <Image
                     src={backButton}
                     alt="back button"
@@ -325,7 +330,7 @@ const Teams = () => {
                     sizes="100vw"
                     className=" w-[10vw] lg:w-[4vw] h-auto lg:my-5 my-10 mx-8"
                 />
-            </div>
+            </Link>
             <div className=' w-screen pb-20 lg:text-center lg:px-10'>
                 <div className="flex flex-col text-[#E03932] mt-5 px-5">
                     <div className=" textStroke ">Meet the</div>
@@ -339,7 +344,7 @@ const Teams = () => {
                 </div>
 
                 <div className="mt-10">
-                    <div className=" team flex w-screen overflow-x-scroll " style={{ scrollbarWidth: 'none' }}>
+                    <div className=" team flex w-screen overflow-x-scroll pr-5" style={{ scrollbarWidth: 'none' }}>
                         <div className="yellowButton filter-active" onClick={handleButtonClick}>all</div>
                         <div className="yellowButton" onClick={handleButtonClick}>core team</div>
                         <div className="yellowButton" onClick={handleButtonClick}>management</div>
@@ -427,8 +432,8 @@ const Teams = () => {
                 </div>}
 
             </div>
-        </>
-    )
+        </div>
+        )
 }
 
-export default Teams;
+        export default Teams;
