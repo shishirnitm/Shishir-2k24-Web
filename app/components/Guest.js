@@ -1,12 +1,13 @@
 import Image from "next/image";
+import empty from "../../public/home/coming.png";
 
 export default function Guest({ img, title, bio }) {
   return (
     <div>
       {" "}
-      <div className="w-40 h-52 bg-primaryRed overflow-hidden">
+      <div className="w-40 h-52 md:w-80 md:h-96 bg-primaryRed overflow-hidden">
         <Image
-          src={img}
+          src={img ? img : empty}
           loading="lazy"
           placeholder="blur"
           width="0"
@@ -15,10 +16,10 @@ export default function Guest({ img, title, bio }) {
           className="object-cover h-full w-full"
         />
       </div>
-      <div className="font-blogger mt-2 font-semibold text-lg text-primaryRed">
+      <div className="font-blogger mt-2 font-semibold text-lg md:text-2xl text-primaryRed">
         {title}
       </div>
-      <div className="font-blogger font-semibold text-md text-[#3F362B]">
+      <div className="font-blogger font-semibold text-md md:text-xl text-[#3F362B]">
         {bio}
       </div>
     </div>

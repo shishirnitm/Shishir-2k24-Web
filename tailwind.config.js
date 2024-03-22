@@ -1,3 +1,5 @@
+const colors = require("tailwindcss/colors");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -7,6 +9,7 @@ module.exports = {
   ],
   theme: {
     colors: {
+      ...colors,
       primaryRed: "#E03932",
       primaryBlue: "#186B80",
       white: "#FFFFFF",
@@ -17,8 +20,7 @@ module.exports = {
       antonio: ["Antonio", "sans-serif"],
       blogger: ["BloggerSans", "sans"],
       bloggerBold: ["BloggerBold", "sans"],
-      // montserrat: ["Montserrat", "sans-serif"],
-      
+      montserrat:["Montserrat", "sans"],
     },
     extend: {
       backgroundImage: {

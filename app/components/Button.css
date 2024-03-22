@@ -1,5 +1,5 @@
 .btn {
-  width: calc(100% - 4px);
+  width: 30%;
   font-size: 24px;
   text-align: center;
   display: inline-block;
@@ -13,6 +13,7 @@
   border-radius: 9px;
   box-shadow: 4px 4px #E03932;
   cursor: pointer;
+  margin-bottom: 0.2rem;
 }
 
 .btn:active {
@@ -26,4 +27,12 @@
   display: inline-block;
   vertical-align: middle;
   margin-left: 1rem;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .btn {
+    width: calc(100% - 4px);
+  }
 }
