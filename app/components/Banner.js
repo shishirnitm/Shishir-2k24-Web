@@ -39,7 +39,7 @@ export default function Banner() {
         <span class="mx-4 text-2xl">2024</span>
         <Image src={star} width={20} height={20}></Image>
 
-        <span class="mx-4 text-2xl">1st - 3rd</span>
+        <span class="mx-4 text-2xl">4th - 6th</span>
         <Image src={star} width={20} height={20}></Image>
 
         <span class="mx-4 text-2xl">April</span>

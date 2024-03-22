@@ -320,7 +320,7 @@ const Teams = () => {
             <Link 
                 href="/"
                 passHref
-                className="lg:text-center text-left mb-2"
+                className=""
             >
                 <Image
                     src={backButton}
