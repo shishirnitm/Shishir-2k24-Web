@@ -12,7 +12,8 @@ import { useState, useRef } from "react";
 
 
 
-
+// Please don't judge me by the repetitive lines of code I've written here...... I know, it looks noobie
+// I wasn't paid to do this
 
 
 
@@ -68,12 +69,6 @@ const teams = {
             "year": "4th YEAR ME"
         },
         {
-            "img": "/teams/SAC/Embhahlang.jpeg",
-            "name": "Embhahlang",
-            "position": "FEMALE REP.",
-            "year": "4th YEAR CE"
-        },
-        {
             "img": "/teams/SAC/Himanshu.jpeg",
             "name": "Himanshu",
             "position": "GS-2, CULTURAL",
@@ -126,7 +121,7 @@ const teams = {
         {
             "img": "/teams/Web_Dev/Saman.jpg",
             "name": "Saman",
-            "position": "APPRENTICE",
+            "position": "BACKEND MANAGER",
             "year": "3RD YEAR CS"
         }
     ],
@@ -162,94 +157,324 @@ const teams = {
             "year": "2ND YEAR CE"
         }
     ],
-    "event-mgt": [
+    "publicity": [
         {
             "img": "/teams/Papa.jpeg",
-            "name": "Olivia",
+            "name": "Kumar Gaurav",
+            "position": "HEAD",
+            "year": "4TH YEAR CE"
+        },
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Wallam Rani",
             "position": "HEAD",
             "year": "4TH YEAR CS"
         },
         {
             "img": "/teams/Papa.jpeg",
-            "name": "Sai Upendhar ",
-            "position": "LEAD DEVELOPER",
-            "year": "4TH YEAR CS"
+            "name": "Anjani",
+            "position": "COORDINATOR",
+            "year": "3RD YEAR EC"
         },
         {
             "img": "/teams/Papa.jpeg",
-            "name": "Isaiah",
-            "position": "LEAD DEVELOPER",
-            "year": "4TH YEAR CS"
+            "name": "Saket Singh",
+            "position": "COORDINATOR",
+            "year": "3RD YEAR CE"
         },
         {
             "img": "/teams/Papa.jpeg",
-            "name": "Ronald",
-            "position": "LEAD DEVELOPER",
-            "year": "4TH YEAR CS"
+            "name": "Medaki",
+            "position": "COORDINATOR",
+            "year": "3RD YEAR ME"
         },
         {
             "img": "/teams/Papa.jpeg",
-            "name": "Gaurav",
-            "position": "LEAD DEVELOPER",
-            "year": "2ND YEAR ME"
-        },
-        {
-            "img": "/teams/Papa.jpeg",
-            "name": "Saman",
-            "position": "APPRENTICE",
+            "name": "Achintya",
+            "position": "COORDINATOR",
             "year": "3RD YEAR CS"
+        },
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Neelkantha",
+            "position": "CO-COORDINATOR",
+            "year": "2ND YEAR CE"
+        },
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Dip Kundu",
+            "position": "CO-COORDINATOR",
+            "year": "2ND YEAR CE"
         }
     ],
-    "finance": [
+    "sponsorship": [
         {
             "img": "/teams/Papa.jpeg",
-            "name": "Johnny Papasito",
-            "position": "LEAD DEVELOPER",
-            "year": "2ND YEAR ME"
+            "name": "Kalpesh",
+            "position": "HEAD",
+            "year": "4TH YEAR CS"
         },
         {
             "img": "/teams/Papa.jpeg",
-            "name": "Johnny Papasito",
-            "position": "LEAD DEVELOPER",
-            "year": "2ND YEAR ME"
+            "name": "Rohit",
+            "position": "HEAD",
+            "year": "4TH YEAR"
         },
         {
             "img": "/teams/Papa.jpeg",
-            "name": "Johnny Papasito",
-            "position": "LEAD DEVELOPER",
-            "year": "2ND YEAR ME"
+            "name": "Kyle",
+            "position": "HEAD",
+            "year": "4TH YEAR EE"
         },
         {
             "img": "/teams/Papa.jpeg",
-            "name": "Johnny Papasito",
-            "position": "LEAD DEVELOPER",
-            "year": "2ND YEAR ME"
+            "name": "Supriya",
+            "position": "COORDINATOR",
+            "year": "3RD YEAR CS"
+        },
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Ananya",
+            "position": "COORDINATOR",
+            "year": "3RD YEAR CS"
+        },
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Yongdo",
+            "position": "COORDINATOR",
+            "year": "3RD YEAR ME"
+        },
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Arkibud",
+            "position": "COORDINATOR",
+            "year": "3RD YEAR CS"
+        },
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Raj Kedia",
+            "position": "COORDINATOR",
+            "year": "3RD YEAR EC"
+        },
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Aroma",
+            "position": "CO-COORDINATOR",
+            "year": "2ND YEAR EC"
+        },
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Prem",
+            "position": "CO-COORDINATOR",
+            "year": "2ND YEAR CS"
+        },
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Manikanta",
+            "position": "CO-COORDINATOR",
+            "year": "2ND YEAR EC"
         }
     ],
-    "marketing": [
+    "event_mgt": [
         {
             "img": "/teams/Papa.jpeg",
-            "name": "Johnny Papasito",
-            "position": "LEAD DEVELOPER",
+            "name": "Olivia",
+            "position": "HEAD",
+            "year": "4TH YEAR EC"
+        },
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Sai Upendhar ",
+            "position": "HEAD",
+            "year": "4TH YEAR CE"
+        },
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Ashutosh",
+            "position": "COORDINATOR",
+            "year": "3RD YEAR EE"
+        },
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Avinash",
+            "position": "COORDINATOR",
+            "year": "3RD YEAR CS"
+        },
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Dhiraj",
+            "position": "COORDINATOR",
+            "year": "3RD YEAR EC"
+        },
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Kupar",
+            "position": "CO-COORDINATOR",
             "year": "2ND YEAR ME"
         },
         {
             "img": "/teams/Papa.jpeg",
-            "name": "Johnny Papasito",
-            "position": "LEAD DEVELOPER",
-            "year": "2ND YEAR ME"
+            "name": "Mrinoy",
+            "position": "CO-COORDINATOR",
+            "year": "2ND YEAR CS"
         },
         {
             "img": "/teams/Papa.jpeg",
-            "name": "Johnny Papasito",
-            "position": "LEAD DEVELOPER",
-            "year": "2ND YEAR ME"
+            "name": "Manish",
+            "position": "CO-COORDINATOR",
+            "year": "2ND YEAR CS"
+        }
+    ],
+    "stage_mgt": [
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Nishant",
+            "position": "HEAD",
+            "year": "4TH YEAR CS"
         },
         {
             "img": "/teams/Papa.jpeg",
-            "name": "Johnny Papasito",
-            "position": "LEAD DEVELOPER",
-            "year": "2ND YEAR ME"
+            "name": "Meba",
+            "position": "HEAD",
+            "year": "4TH YEAR CS"
+        },  
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Sojib",
+            "position": "COORDINATOR",
+            "year": "3RD YEAR CE"
+        },
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "P.Dhanunjay",
+            "position": "COORDINATOR",
+            "year": "3RD YEAR ME"
+        },
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Rahul",
+            "position": "CO-COORDINATOR",
+            "year": "2ND YEAR CE"
+        },
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Avinash",
+            "position": "CO-COORDINATOR",
+            "year": "2ND YEAR CS"
+        }
+    ],
+    "hospitality": [
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "K.Sammi",
+            "position": "HEAD",
+            "year": "4TH YEAR ME"
+        },  
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Rathod",
+            "position": "HEAD",
+            "year": "4TH YEAR"
+        },
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Charan",
+            "position": "HEAD",
+            "year": "4TH YEAR"
+        },  
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Samika",
+            "position": "COORDINATOR",
+            "year": "3RD YEAR EE"
+        },
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Purlemla ",
+            "position": "COORDINATOR",
+            "year": "3RD YEAR CE"
+        },
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Iahunshisha ",
+            "position": "COORDINATOR",
+            "year": "3RD YEAR"
+        },
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Debashish",
+            "position": "CO-COORDINATOR",
+            "year": "2ND YEAR EC"
+        }
+    ],
+    "food_comm": [
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Banteilang",
+            "position": "HEAD",
+            "year": "4TH YEAR CS"
+        },  
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Randheer",
+            "position": "HEAD",
+            "year": "4TH YEAR"
+        },  
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Rahul",
+            "position": "HEAD",
+            "year": "4TH YEAR"
+        },
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Penugurthi",
+            "position": "COORDINATOR",
+            "year": "3RD YEAR"
+        },
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Nimakuri ",
+            "position": "COORDINATOR",
+            "year": "3RD YEAR"
+        }
+    ],
+    "security": [
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Mebanjop",
+            "position": "HEAD",
+            "year": "4TH YEAR CE"
+        },  
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Skhembor",
+            "position": "HEAD",
+            "year": "4TH YEAR CS"
+        },
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Klusborning",
+            "position": "HEAD",
+            "year": "4TH YEAR EE"
+        },  
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Nangsan",
+            "position": "COORDINATOR",
+            "year": "3RD YEAR CS"
+        },
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Marbhahki",
+            "position": "COORDINATOR",
+            "year": "3RD YEAR EC"
+        },
+        {
+            "img": "/teams/Papa.jpeg",
+            "name": "Dapmain",
+            "position": "COORDINATOR",
+            "year": "3RD YEAR CE"
         }
     ]
 }
@@ -274,6 +499,17 @@ const Teams = () => {
     const coreTeam = useRef(null);
     const webTeam = useRef(null);
     const designTeam = useRef(null);
+    const publicityTeam = useRef(null);
+    const sponsTeam = useRef(null);
+    const eventTeam = useRef(null);
+    const stageTeam = useRef(null);
+    const hospTeam = useRef(null);
+    const foodTeam = useRef(null);
+    const securityTeam = useRef(null);
+
+
+
+
 
     const handleButtonClick = (e) => {
         const button = e.target;
@@ -347,17 +583,21 @@ const Teams = () => {
                     <div className=" team flex w-screen overflow-x-scroll pr-5" style={{ scrollbarWidth: 'none' }}>
                         <div className="yellowButton filter-active" onClick={handleButtonClick}>all</div>
                         <div className="yellowButton" onClick={handleButtonClick}>core team</div>
+                        <div className="yellowButton" onClick={handleButtonClick}>web dev</div>
                         <div className="yellowButton" onClick={handleButtonClick}>management</div>
                         <div className="yellowButton" onClick={handleButtonClick}>design</div>
-                        <div className="yellowButton" onClick={handleButtonClick}>web dev</div>
-                        <div className="yellowButton" onClick={handleButtonClick}>finance</div>
+                        <div className="yellowButton" onClick={handleButtonClick}>publicity</div>
+                        <div className="yellowButton" onClick={handleButtonClick}>sponsorship</div>
+                        <div className="yellowButton" onClick={handleButtonClick}>hospitality</div>
+                        <div className="yellowButton" onClick={handleButtonClick}>food committee</div>
+                        <div className="yellowButton" onClick={handleButtonClick}>security</div>
                     </div>
                 </div>
 
 
                 {/* SAC Team */}
                 {((filter == "all") || (filter == "sac")) && <div className="mt-10">
-                    <TeamHeader teamName="SAC" onNext={() => handleNext(sacTeam)} onPrev={() => handlePrev(sacTeam)} />
+                    <TeamHeader teamName="SAC Cultural" onNext={() => handleNext(sacTeam)} onPrev={() => handlePrev(sacTeam)} />
                     <div className=" team flex w-screen overflow-x-scroll mt-5 pr-5 " style={{ scrollbarWidth: 'none' }} ref={sacTeam}>
                         {teams.sac.map((img, index) => (
                             <div key={index} className=" pl-5">
@@ -413,6 +653,7 @@ const Teams = () => {
                     </div>
                 </div>}
 
+
                 {/* Design Team */}
                 {((filter == "all") || (filter == "design")) && <div className="mt-10">
                     <TeamHeader teamName="Design" onNext={() => handleNext(designTeam)} onPrev={() => handlePrev(designTeam)} />
@@ -425,6 +666,134 @@ const Teams = () => {
                                     name={teams.design[index].name}
                                     position={teams.design[index].position}
                                     year={teams.design[index].year}
+                                />
+                            </div>
+                        ))}
+                    </div>
+                </div>}
+                
+                
+                {/* Publicity Team */}
+                {((filter == "all") || (filter == "publicity")) && <div className="mt-10">
+                    <TeamHeader teamName="Publicity &amp; Social Media" onNext={() => handleNext(publicityTeam)} onPrev={() => handlePrev(publicityTeam)} />
+                    <div className=" team flex w-screen overflow-scroll mt-5 pr-5" style={{ scrollbarWidth: 'none' }} ref={publicityTeam}>
+                        {teams.publicity.map((img, index) => (
+                            <div key={index} className=" pl-5">
+                                <TeamMember
+                                    key={index}
+                                    img={teams.publicity[index].img}
+                                    name={teams.publicity[index].name}
+                                    position={teams.publicity[index].position}
+                                    year={teams.publicity[index].year}
+                                />
+                            </div>
+                        ))}
+                    </div>
+                </div>}
+                
+                
+                {/* Sponsorship Team */}
+                {((filter == "all") || (filter == "sponsorship")) && <div className="mt-10">
+                    <TeamHeader teamName="Sponsorship &amp; Marketing" onNext={() => handleNext(sponsTeam)} onPrev={() => handlePrev(sponsTeam)} />
+                    <div className=" team flex w-screen overflow-scroll mt-5 pr-5" style={{ scrollbarWidth: 'none' }} ref={sponsTeam}>
+                        {teams.sponsorship.map((img, index) => (
+                            <div key={index} className=" pl-5">
+                                <TeamMember
+                                    key={index}
+                                    img={teams.sponsorship[index].img}
+                                    name={teams.sponsorship[index].name}
+                                    position={teams.sponsorship[index].position}
+                                    year={teams.sponsorship[index].year}
+                                />
+                            </div>
+                        ))}
+                    </div>
+                </div>}
+
+                {/* Event Mgt Team */}
+                {((filter == "all") || (filter == "management")) && <div className="mt-10">
+                    <TeamHeader teamName="Event Management" onNext={() => handleNext(eventTeam)} onPrev={() => handlePrev(eventTeam)} />
+                    <div className=" team flex w-screen overflow-scroll mt-5 pr-5" style={{ scrollbarWidth: 'none' }} ref={eventTeam}>
+                        {teams.event_mgt.map((img, index) => (
+                            <div key={index} className=" pl-5">
+                                <TeamMember
+                                    key={index}
+                                    img={teams.event_mgt[index].img}
+                                    name={teams.event_mgt[index].name}
+                                    position={teams.event_mgt[index].position}
+                                    year={teams.event_mgt[index].year}
+                                />
+                            </div>
+                        ))}
+                    </div>
+                </div>}
+
+                {/* Stage Mgt Team */}
+                {((filter == "all") || (filter == "management")) && <div className="mt-10">
+                    <TeamHeader teamName="Stage Management" onNext={() => handleNext(stageTeam)} onPrev={() => handlePrev(stageTeam)} />
+                    <div className=" team flex w-screen overflow-scroll mt-5 pr-5" style={{ scrollbarWidth: 'none' }} ref={stageTeam}>
+                        {teams.stage_mgt.map((img, index) => (
+                            <div key={index} className=" pl-5">
+                                <TeamMember
+                                    key={index}
+                                    img={teams.stage_mgt[index].img}
+                                    name={teams.stage_mgt[index].name}
+                                    position={teams.stage_mgt[index].position}
+                                    year={teams.stage_mgt[index].year}
+                                />
+                            </div>
+                        ))}
+                    </div>
+                </div>}
+
+                {/* Hospitality Team */}
+                {((filter == "all") || (filter == "hospitality")) && <div className="mt-10">
+                    <TeamHeader teamName="Hospitality" onNext={() => handleNext(hospTeam)} onPrev={() => handlePrev(hospTeam)} />
+                    <div className=" team flex w-screen overflow-scroll mt-5 pr-5" style={{ scrollbarWidth: 'none' }} ref={hospTeam}>
+                        {teams.hospitality.map((img, index) => (
+                            <div key={index} className=" pl-5">
+                                <TeamMember
+                                    key={index}
+                                    img={teams.hospitality[index].img}
+                                    name={teams.hospitality[index].name}
+                                    position={teams.hospitality[index].position}
+                                    year={teams.hospitality[index].year}
+                                />
+                            </div>
+                        ))}
+                    </div>
+                </div>}
+
+                {/* Food Committee Team */}
+                {((filter == "all") || (filter == "food committee")) && <div className="mt-10">
+                    <TeamHeader teamName="Food Committee" onNext={() => handleNext(foodTeam)} onPrev={() => handlePrev(foodTeam)} />
+                    <div className=" team flex w-screen overflow-scroll mt-5 pr-5" style={{ scrollbarWidth: 'none' }} ref={foodTeam}>
+                        {teams.food_comm.map((img, index) => (
+                            <div key={index} className=" pl-5">
+                                <TeamMember
+                                    key={index}
+                                    img={teams.food_comm[index].img}
+                                    name={teams.food_comm[index].name}
+                                    position={teams.food_comm[index].position}
+                                    year={teams.food_comm[index].year}
+                                />
+                            </div>
+                        ))}
+                    </div>
+                </div>}
+
+                {/* Security Team */}
+                {((filter == "all") || (filter == "security")) && <div className="mt-10">
+                    <TeamHeader teamName="Security" onNext={() => handleNext(securityTeam)} onPrev={() => handlePrev(securityTeam)} />
+                    <div className=" team flex w-screen overflow-scroll mt-5 pr-5" style={{ scrollbarWidth: 'none' }} ref={securityTeam}>
+                        {teams.security.map((img, index) => (
+                            <div key={index} className=" pl-5">
+                                <TeamMember
+                                    key={index}
+                                    img={teams.security[index].img}
+                                    name={teams.security[index].name}
+                                    position={teams.security[index].position}
+                                    year={teams.security[index].year}
                                 />
                             </div>
                         ))}
