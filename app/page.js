@@ -162,9 +162,9 @@ export default function Home() {
         </div>
         <div
           id="home"
-          className="font-blogger flex flex-row justify-start pl-[8vw] md:justify-start md:pl-[10vw]  md:pt-10 md:text-xl text-lg font-semibold text-primaryBlue bg-transparent"
+          className=" font-blogger flex flex-row justify-start pl-[8vw] md:justify-start md:pl-[10vw]  md:pt-10 md:text-xl text-lg font-semibold text-primaryBlue bg-transparent"
         >
-          <div className="w-[80vw] mt-6">
+          <div className="w-[80vw] mt-6 leading-tight">
             Enjoy music, dance, shows, and fun at{" "}
             <span className="text-primaryRed">Shishir</span> - NIT
             Meghalaya&apos;s yearly culture fest. <br /> <br /> Come to the
@@ -257,15 +257,15 @@ export default function Home() {
           id="home"
           className="font-blogger flex flex-col text-md items-center justify-center md:items-start font-semibold text-primaryBlue bg-transparent  md:pl-[10vw]"
         >
-          <div className="text-2xl font-bloggerBold w-[85vw] md:w-fit mt-8 md:text-3xl">
+          <div className="text-xl font-bloggerBold w-[85vw] md:w-fit mt-8 md:text-3xl">
             NIT Meghalaya Students:
           </div>
-          <div className="text-lg font-blogger w-[85vw] md:text-xl">
+          <div className="text-md leading-tight font-blogger w-[85vw] md:text-xl">
             Flash your college ID card at the entry gate to gain free access.
           </div>
         </div>
         <div
-          id="home"
+          id=""
           className="pt-5 w-[100vw] md:pl-[10vw] flex justify-center md:justify-start"
         >
           <div className="w-[85vw]">
@@ -276,12 +276,12 @@ export default function Home() {
           id="home"
           className="font-blogger flex flex-col pt-5 items-center justify-center md:items-start text-md font-semibold text-primaryBlue bg-transparent  md:pl-[10vw]"
         >
-          <div className="text-2xl font-bloggerBold w-[85vw] md:w-fit mt-8 md:text-3xl">
+          <div className="text-xl font-bloggerBold w-[85vw] md:w-fit mt-8 md:text-3xl">
             Other Students:
           </div>
-          <div className="text-lg font-blogger w-[85vw] md:text-xl">
+          <div className="text-md  leading-tight  font-blogger w-[85vw] md:text-xl">
             Purchase your entry ticket offline / online through our secure
-            website. <br />
+            website. <br /> <br />
             <span className="font-medium italic">
               Limited tickets available! So, Don&apos;t miss out!
             </span>
@@ -358,13 +358,13 @@ export default function Home() {
         </div>
         <div
           id=""
-          className="pt-5 w-[100vw] flex justify-center md:justify-start  md:pl-[10vw]"
+          className="pt-5 w-[100vw]  flex justify-center md:justify-start  md:pl-[10vw]"
         >
           <div className="w-[85vw]">
             <Button text="Explore Events" link="/events" />
           </div>
         </div>
-        <div id="home" className="pt-10  md:pt-20 flex flex-col justify-center">
+        <div id="home" className="pt-16  md:pt-20 flex flex-col justify-center">
           <div className="bg-[#4EB7B4] w-screen h-5"></div>
           <div className="bg-[#186B80] w-screen h-5"></div>
           <div className="bg-[#E03932] w-screen h-5"></div>
@@ -422,7 +422,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div id="home" className="pt-10 md:pt-20 flex flex-col justify-center">
+        <div id="home" className="pt-32 md:pt-20 flex flex-col justify-center">
           <div className="bg-[#F5E074] w-screen h-5"></div>
           <div className="bg-[#EFB023] w-screen h-5"></div>
           <div className="bg-[#E03932] w-screen h-5"></div>
@@ -436,7 +436,7 @@ export default function Home() {
             className="w-[25vw] h-auto translate-x-4 "
           />
         </div>
-        <div id="home" className="pt-5 flex w- flex-row justify-center">
+        <div id="home" className="pt-10 flex w- flex-row justify-center">
           <Image
             src={gallery}
             width="0"
@@ -485,7 +485,7 @@ export default function Home() {
             className="w-[100vw]  h-auto"
           />
         </div>
-        <div id="home" className="pb-20 flex flex-row justify-center">
+        <div id="home" className="flex flex-row justify-center">
           <Image
             src={howToSeparator}
             width="0"
