@@ -48,7 +48,7 @@ export default function home() {
         </div>
        
         <div className="text-[#E03932] font-bernier text-[40px]  pl-[31px] mt-[15px] mb-[-18px]"> EXCLUSIVE EVENTS:</div>
-        <div id="home" className="p-8 sm:p-8 md:p-8 lg:p-10 xl:p-12 flex flex-row justify-center ">
+        <div id="home" className="p-8 sm:p-8 md:p-8 lg:p-10 xl:p-12 flex flex-row justify-center relative ">
           <Image
             src={botb}
             width="0"
