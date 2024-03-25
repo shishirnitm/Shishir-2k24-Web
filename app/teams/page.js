@@ -573,8 +573,8 @@ const Teams = () => {
                     <div className=" textStroke ">Teams Behind</div>
                     <div className=" font-bernier lg:text-[200px] text-9xl ">Shishir</div>
                     <div className="white-box mt-5">
-                        <div className=" font-blogger text-[#186B80] text-[20px] lg:text-2xl">Meet the <span className="font-bloggerBold">hardworking crew</span> behind <span className="font-bloggerBold">Shishir</span> that made this event possible!</div>
-                        <div className=" font-blogger text-[#186B80] text-[20px] lg:text-2xl">Let&apos;s say hello to some of the people from the land of - <span className="font-bloggerBold">behind the scenes~</span></div>
+                        <div className=" font-blogger mb-4 text-[#186B80] text-[20px] lg:text-2xl leading-6">Meet the <span className="font-bloggerBold">hardworking crew</span> behind <span className="font-bloggerBold">Shishir</span> that made this event possible!</div>
+                        <div className=" font-blogger text-[#186B80] text-[20px] lg:text-2xl leading-6">Let&apos;s say hello to some of the people from the land of - <span className="font-bloggerBold">behind the scenes~</span></div>
                     </div>
 
                 </div>
