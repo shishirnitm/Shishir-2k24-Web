@@ -33,6 +33,7 @@ const TeamMember = (props) => {
           sizes="100vw"
           className="h-full w-full object-cover"
           alt="Team Member photo"
+          style={{"aspectRatio": "3/4"}}
         />
         <div className=' pl-1 text-left mt-2 font-blogger text-[#3f362b] text-2xl lg:text-xl lg:leading-snug '>{props.name}</div>
         <div className=' pl-1 text-left font-blogger opacity-70 text-[#3f362b] text-lg lg:text-base lg:leading-snug '>{props.position}</div>
