@@ -7,7 +7,7 @@ import contactus from "../../public/ContactUs.svg";
 export default function Footer() {
   return (
     <div className="flex flex-col ">
-      <div id="home" className="pt-7 flex flex-row justify-center">
+      <div id="home" className=" flex flex-row justify-center">
         <Image src={contactus} className="w-[100vw]  h-auto" />
       </div>
       <div className="flex flex-col mt-5 pl-[35px] pr-[36px] ">
