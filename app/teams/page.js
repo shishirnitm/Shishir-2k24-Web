@@ -43,7 +43,7 @@ const teams = {
             "year": "4TH YEAR EE"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Aidan",
             "position": "COORDINATOR",
             "year": "3RD YEAR CS"
@@ -127,7 +127,7 @@ const teams = {
     ],
     "design": [
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Vadan",
             "position": "HEAD",
             "year": "2ND YEAR ME"
@@ -139,7 +139,7 @@ const teams = {
             "year": "3RD YEAR CE"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Subhadeep",
             "position": "COORDINATOR",
             "year": "3RD YEAR EC"
@@ -159,49 +159,49 @@ const teams = {
     ],
     "publicity": [
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Kumar Gaurav",
             "position": "HEAD",
             "year": "4TH YEAR CE"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Wallam Rani",
             "position": "HEAD",
             "year": "4TH YEAR CS"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Anjani",
             "position": "COORDINATOR",
             "year": "3RD YEAR EC"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Saket Singh",
             "position": "COORDINATOR",
             "year": "3RD YEAR CE"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Medaki",
             "position": "COORDINATOR",
             "year": "3RD YEAR ME"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Achintya",
             "position": "COORDINATOR",
             "year": "3RD YEAR CS"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Neelkantha",
             "position": "CO-COORDINATOR",
             "year": "2ND YEAR CE"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Dip Kundu",
             "position": "CO-COORDINATOR",
             "year": "2ND YEAR CE"
@@ -209,67 +209,67 @@ const teams = {
     ],
     "sponsorship": [
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Kalpesh",
             "position": "HEAD",
             "year": "4TH YEAR CS"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Rohit",
             "position": "HEAD",
             "year": "4TH YEAR"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Kyle",
             "position": "HEAD",
             "year": "4TH YEAR EE"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "girl",
             "name": "Supriya",
             "position": "COORDINATOR",
             "year": "3RD YEAR CS"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "girl",
             "name": "Ananya",
             "position": "COORDINATOR",
             "year": "3RD YEAR CS"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Yongdo",
             "position": "COORDINATOR",
             "year": "3RD YEAR ME"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Arkibud",
             "position": "COORDINATOR",
             "year": "3RD YEAR CS"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Raj Kedia",
             "position": "COORDINATOR",
             "year": "3RD YEAR EC"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "girl",
             "name": "Aroma",
             "position": "CO-COORDINATOR",
             "year": "2ND YEAR EC"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Prem",
             "position": "CO-COORDINATOR",
             "year": "2ND YEAR CS"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Manikanta",
             "position": "CO-COORDINATOR",
             "year": "2ND YEAR EC"
@@ -277,49 +277,49 @@ const teams = {
     ],
     "event_mgt": [
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "girl",
             "name": "Olivia",
             "position": "HEAD",
             "year": "4TH YEAR EC"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Sai Upendhar ",
             "position": "HEAD",
             "year": "4TH YEAR CE"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Ashutosh",
             "position": "COORDINATOR",
             "year": "3RD YEAR EE"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Avinash",
             "position": "COORDINATOR",
             "year": "3RD YEAR CS"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Dhiraj",
             "position": "COORDINATOR",
             "year": "3RD YEAR EC"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Kupar",
             "position": "CO-COORDINATOR",
             "year": "2ND YEAR ME"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Mrinoy",
             "position": "CO-COORDINATOR",
             "year": "2ND YEAR CS"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Manish",
             "position": "CO-COORDINATOR",
             "year": "2ND YEAR CS"
@@ -327,37 +327,37 @@ const teams = {
     ],
     "stage_mgt": [
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Nishant",
             "position": "HEAD",
             "year": "4TH YEAR CS"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "girl",
             "name": "Meba",
             "position": "HEAD",
             "year": "4TH YEAR CS"
         },  
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Sojib",
             "position": "COORDINATOR",
             "year": "3RD YEAR CE"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "P.Dhanunjay",
             "position": "COORDINATOR",
             "year": "3RD YEAR ME"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Rahul",
             "position": "CO-COORDINATOR",
             "year": "2ND YEAR CE"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Avinash",
             "position": "CO-COORDINATOR",
             "year": "2ND YEAR CS"
@@ -365,43 +365,43 @@ const teams = {
     ],
     "hospitality": [
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "girl",
             "name": "K.Sammi",
             "position": "HEAD",
             "year": "4TH YEAR ME"
         },  
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Rathod",
             "position": "HEAD",
             "year": "4TH YEAR"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Charan",
             "position": "HEAD",
             "year": "4TH YEAR"
         },  
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "girl",
             "name": "Samika",
             "position": "COORDINATOR",
             "year": "3RD YEAR EE"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "girl",
             "name": "Purlemla ",
             "position": "COORDINATOR",
             "year": "3RD YEAR CE"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "girl",
             "name": "Iahunshisha ",
             "position": "COORDINATOR",
             "year": "3RD YEAR"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Debashish",
             "position": "CO-COORDINATOR",
             "year": "2ND YEAR EC"
@@ -409,31 +409,31 @@ const teams = {
     ],
     "food_comm": [
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Banteilang",
             "position": "HEAD",
             "year": "4TH YEAR CS"
         },  
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Randheer",
             "position": "HEAD",
             "year": "4TH YEAR"
         },  
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Rahul",
             "position": "HEAD",
             "year": "4TH YEAR"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Penugurthi",
             "position": "COORDINATOR",
             "year": "3RD YEAR"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Nimakuri ",
             "position": "COORDINATOR",
             "year": "3RD YEAR"
@@ -441,37 +441,37 @@ const teams = {
     ],
     "security": [
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Mebanjop",
             "position": "HEAD",
             "year": "4TH YEAR CE"
         },  
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Skhembor",
             "position": "HEAD",
             "year": "4TH YEAR CS"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Klusborning",
             "position": "HEAD",
             "year": "4TH YEAR EE"
         },  
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Nangsan",
             "position": "COORDINATOR",
             "year": "3RD YEAR CS"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Marbhahki",
             "position": "COORDINATOR",
             "year": "3RD YEAR EC"
         },
         {
-            "img": "/teams/Papa.jpeg",
+            "img": "guy",
             "name": "Dapmain",
             "position": "COORDINATOR",
             "year": "3RD YEAR CE"
