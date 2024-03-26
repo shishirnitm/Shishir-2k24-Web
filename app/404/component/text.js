@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../../components/Button';
+import Button from './bt';
 export default function TextContent() {
   return (
     <div className="flex flex-col">

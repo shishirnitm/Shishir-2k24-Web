@@ -5,7 +5,7 @@ import botb from "../../public/BOTB.svg";
 import Tag from "../../public/ticket_tag.svg";
 import "./ticket.css";
 import "../globals.css";
-// import "../home.css";
+import "../home.css";
 export default function home() {
   return (
     <div className="flex flex-col mt-4 ">
@@ -44,7 +44,7 @@ export default function home() {
       </div>{" "}
       <div className=" sm:flex flex-row">
         <div
-          id="home"
+          // id="home"
           className="p-8 sm:p-8 md:p-8 lg:p-10 xl:p-12 flex flex-row justify-center relative sm:w-1/2 lg:w-1/3 "
         >
           <Image
@@ -66,7 +66,7 @@ export default function home() {
           </div> */}
         </div>
         <div
-          id="home"
+          // id="home"
           className="p-8 sm:p-8 md:p-8 lg:p-10 xl:p-12 flex flex-row justify-center mt-[-35px] mb-[-5px] sm:mt-[0px] sm:mb-[0px]  relative  sm:w-1/2 lg:w-1/3 "
         >
           <Image
@@ -89,7 +89,7 @@ export default function home() {
       </div>
       <div className="sm:flex sm:flex-row"> </div>
       <div
-        id="home"
+        // id="home"
         className="p-8 sm:p-8 md:p-8 lg:p-10 xl:p-12 flex flex-row justify-center sm:w-1/2 lg:w-1/3 relative "
       >
         <Image
@@ -141,7 +141,7 @@ export default function home() {
         </ul>
       </div>
       <div
-        class="border-[#F5E074] font-bernier text-[22px] sm:text-[27px] mt-[35px]  flex justify-center items-center
+        class="border-[#F5E074] font-bernier text-[19px] sm:text-[27px] mt-[35px]  flex justify-center items-center
    border-dotted border-t-2 border-b-2 sm:border-t-4 sm:border-b-4 bg-[#186B80] text-white p-2"
       >
         FEEL FREE TO&nbsp;
