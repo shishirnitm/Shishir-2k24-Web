@@ -39,7 +39,7 @@ const teams = {
             "year": "4TH YEAR EE"
         },
         {
-            "img": "guy",
+            "img": "/teams/Core/Aidan.jpeg",
             "name": "Aidan",
             "position": "COORDINATOR",
             "year": "3RD YEAR CS"
