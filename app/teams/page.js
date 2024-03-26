@@ -215,10 +215,10 @@ const teams = {
             "year": "4TH YEAR EC"
         },
         {
-            "img": "guy",
+            "img": "/teams/Sponsorship/Rohit.jpeg",
             "name": "Rohit",
             "position": "HEAD",
-            "year": "4TH YEAR"
+            "year": "4TH YEAR EE"
         },
         {
             "img": "/teams/Sponsorship/Kyle.jpeg",
@@ -874,7 +874,7 @@ const Teams = () => {
 
         return (
         <div className="overflow-hidden">
-            <Link 
+            {/* <Link 
                 href="/"
                 passHref
                 className=""
@@ -887,8 +887,8 @@ const Teams = () => {
                     sizes="100vw"
                     className=" w-[10vw] lg:w-[4vw] h-auto lg:my-5 my-10 mx-8"
                 />
-            </Link>
-            <div className=' w-screen pb-20 lg:text-center lg:px-10'>
+            </Link> */}
+            <div className='mt-20 w-screen pb-20 lg:text-center lg:px-10'>
                 <div className="flex flex-col text-[#E03932] mt-5 px-5">
                     <div className=" textStroke ">Meet the</div>
                     <div className=" textStroke ">Teams Behind</div>
