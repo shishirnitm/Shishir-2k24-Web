@@ -73,7 +73,7 @@ export default function home() {
         </div>
         <br></br>
         <div>
-          But here&apos;s the catch  we&apos;re  ,<spam className="font-bloggerBold">broke AF</spam>! Sure, we got some sponsors
+          But here&apos;s the catch  we&apos;re, <spam className="font-bloggerBold">broke AF</spam>! Sure, we got some sponsors
           hooking us up, but it ain&apos;t nearly enough to make <spam className="font-bloggerBold">Shishir </spam>  as lit as we
           want it to be.
         </div>
