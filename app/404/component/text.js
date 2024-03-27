@@ -16,7 +16,7 @@ export default function TextContent() {
         meanwhile, why don’t you try going
       </div> 
       <div className="pl-[100px] sm:pl-[65px] sm:pr-[65px] mt-1 pr-[100px]">
-        <Button text="Back Home" link="...." />
+        <Button text="Back Home" link="/" />
       </div>
     </div>
   );
