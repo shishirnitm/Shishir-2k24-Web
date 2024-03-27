@@ -1,5 +1,5 @@
 
-.btn {
+.btn1 {
     text-align: center;
     display: inline-block;
     font-weight: bold;
@@ -9,7 +9,7 @@
     transition: transform 0.1s ease; 
   }
   
-  .btn:active {
+  .btn1:active {
     transform: translate(2px, 2px); 
     box-shadow: none; 
   }

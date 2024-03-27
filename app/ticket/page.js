@@ -9,15 +9,15 @@ import "../home.css";
 export default function home() {
   return (
     <div className="flex flex-col mt-4 ">
-        <div id="home" className="xs:pt-5 w-fit sm:pt-10 md:pt-24">
-          <Image
-            src={Tag}
-            width="0"
-            height="0"
-            sizes="100vw"
-            className="w-[25vw] h-auto -translate-x-0 md:translate-x-0 md:w-[10vw]"
-          />
-        </div>
+      <div id="home" className="xs:pt-5 w-fit sm:pt-10 md:pt-24">
+        <Image
+          src={Tag}
+          width="0"
+          height="0"
+          sizes="100vw"
+          className="w-[25vw] h-auto -translate-x-0 md:translate-x-0 md:w-[10vw]"
+        />
+      </div>
       <div className="flex flex-col pl-[31px] pr-1">
         <div className="text-[#E03932] font-bernier text-[50px]  mb-[-2px] ">
           NOTE:
@@ -55,7 +55,7 @@ export default function home() {
             className="w-[99vw]  h-auto object-cover"
           />
           <a href="https://forms.gle/EvR4ozNzeTideLsY7">
-            <button className=" btn bg-white hover:bg-white text-black border-2 border-black font-bloggerBold py-3 px-5 rounded-full absolute bottom-[15%] right-[15%]">
+            <button className=" btn1 bg-white hover:bg-white text-black border-2 border-black font-bloggerBold py-3 px-5 rounded-full absolute bottom-[15%] right-[15%]">
               {">"}
             </button>
           </a>
@@ -77,7 +77,7 @@ export default function home() {
             className="w-[99vw]  h-auto"
           />
           <a href="https://forms.gle/Gp2zVKaLgw2WMdgp7">
-            <button className=" btn bg-white hover:bg-white text-black border-2 border-black font-bloggerBold py-3 px-5 rounded-full absolute bottom-[15%] right-[15%]">
+            <button className=" btn1 bg-white hover:bg-white text-black border-2 border-black font-bloggerBold py-3 px-5 rounded-full absolute bottom-[15%] right-[15%]">
               {">"}
             </button>
           </a>
@@ -100,7 +100,7 @@ export default function home() {
           className="w-[99vw]  h-auto"
         />
         <a href="https://docs.google.com/forms/d/1edCZy1w6DyS7v489WJLtzP69cISXiF3OO39mW-g0zAs/viewform?edit_requested=true">
-          <button className=" btn bg-white hover:bg-white text-black border-2 border-black font-bloggerBold py-3 px-5 rounded-full absolute bottom-[15%] right-[15%]">
+          <button className=" btn1 bg-white hover:bg-white text-black border-2 border-black font-bloggerBold py-3 px-5 rounded-full absolute bottom-[15%] right-[15%]">
             {">"}
           </button>
         </a>
@@ -124,8 +124,9 @@ export default function home() {
             {" "}
             <strong>
               <span class="text-[#186B80]">
-                NIT Meghalaya students also require these separate tickets to
-                attend the events.
+                <spam class=" font-bloggerBold">NIT Meghalaya students </spam>{" "}
+                are not required to pay for these separate tickets to attend the
+               <spam class=" font-bloggerBold"> special events</spam>.
               </span>{" "}
             </strong>
           </li>

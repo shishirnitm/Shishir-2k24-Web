@@ -295,11 +295,13 @@ export default function Home() {
             <Button text="Get Your Ticket" link="/ticket" />
           </div>
         </div>
-        <div
-          id="home"
-          className="pt-2 pb-20 w-[100vw] md:mt-10 md:text-lg flex justify-center font-blogger text-primaryBlue underline"
-        >
-          <div>Learn more: why are we charging you?</div>
+        <div className="pt-2 pb-20 w-[100vw] md:mt-10 md:text-lg flex justify-center font-blogger text-primaryBlue underline">
+          <a
+            className="text-[#186B80] font-blogger text-[17px] leading-[22px]"
+            href="/wawcy"
+          >
+            Learn more: why are we charging you?{" "}
+          </a>
         </div>
         <div id="home" className="pt-10 md:pt-10 flex flex-col justify-center">
           <div className="bg-[#3F362B] w-screen h-5"></div>
