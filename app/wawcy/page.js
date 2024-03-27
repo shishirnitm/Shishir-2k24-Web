@@ -7,12 +7,22 @@ import dc from "../../public/4clip.svg";
 import Button from "../components/Button"
 import "../globals.css";
 import "../home.css";
-export default function home() {
+import "../ticket/ticket.css"
+import vl from "../../public/Vectorleft.svg"
+export default function home() {                                        
   return (
     <div className="flex flex-col   ">
+        <div className="pl-[32px] pt-[35px] sm:pt-[40px] md:pt-[70px] ">
+        <a href="/">
+            <button className=" btn1 bg-white hover:bg-white text-black border-2 border-black font-bloggerBold py-4 px-5 rounded-full ">
+            <Image src={vl} alt="Opps" className="h-[17px] w-auto" />
+            </button>
+          </a>
+        </div>
+         
       <div
         id="home"
-        className="xs:pt-5 w-fit sm:pt-10 md:pt-24 pl-[30px] pr-[30px] mt-[100px]"
+        className=" w-fit mt-[20px] md:mt-[-5px] sm:pt-10 md:pt-18 lg:pt-[50px]  pl-[30px] pr-[30px]"
       >
         <Image
           src={img}

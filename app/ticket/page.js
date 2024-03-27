@@ -3,6 +3,8 @@ import sdp from "../../public/single Day pass.svg";
 import fep from "../../public/FEP.svg";
 import botb from "../../public/BOTB.svg";
 import Tag from "../../public/ticket_tag.svg";
+import va from "../../public/Vector.svg";
+import vb from "../../public/Vector.png";
 import "./ticket.css";
 import "../globals.css";
 import "../home.css";
@@ -55,8 +57,8 @@ export default function home() {
             className="w-[99vw]  h-auto object-cover"
           />
           <a href="https://forms.gle/EvR4ozNzeTideLsY7">
-            <button className=" btn1 bg-white hover:bg-white text-black border-2 border-black font-bloggerBold py-3 px-5 rounded-full absolute bottom-[15%] right-[15%]">
-              {">"}
+            <button className=" btn1 bg-white hover:bg-white text-black border-2 border-black font-bloggerBold py-4 px-5 rounded-full absolute bottom-[15%] right-[15%]">
+            <Image src={va} alt="Opps" className="h-[17px] w-auto" />
             </button>
           </a>
 
@@ -77,8 +79,8 @@ export default function home() {
             className="w-[99vw]  h-auto"
           />
           <a href="https://forms.gle/Gp2zVKaLgw2WMdgp7">
-            <button className=" btn1 bg-white hover:bg-white text-black border-2 border-black font-bloggerBold py-3 px-5 rounded-full absolute bottom-[15%] right-[15%]">
-              {">"}
+            <button className=" btn1 bg-white hover:bg-white text-black border-2 border-black font-bloggerBold py-4 px-5 rounded-full absolute bottom-[15%] right-[15%]">
+            <Image src={va} alt="Opps" className="h-[17px] w-auto" />
             </button>
           </a>
         </div>
@@ -100,8 +102,8 @@ export default function home() {
           className="w-[99vw]  h-auto"
         />
         <a href="https://docs.google.com/forms/d/1edCZy1w6DyS7v489WJLtzP69cISXiF3OO39mW-g0zAs/viewform?edit_requested=true">
-          <button className=" btn1 bg-white hover:bg-white text-black border-2 border-black font-bloggerBold py-3 px-5 rounded-full absolute bottom-[15%] right-[15%]">
-            {">"}
+          <button className=" btn1 bg-white hover:bg-white text-black border-2 border-black font-montserrat py-4 px-5 rounded-full absolute bottom-[15%] right-[15%]">
+          <Image src={va} alt="Opps" className="h-[17px] w-auto" />
           </button>
         </a>
       </div>
