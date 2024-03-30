@@ -4,7 +4,14 @@ import Insta from "../../public/SocialInstagram.svg";
 import Ln from "../../public/LinkedIn.svg";
 import Image from "next/image";
 import contactus from "../../public/ContactUs.svg";
+import Button from "./Button"
 export default function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
   return (
     <div className="flex flex-col ">
       {/* <div id="home" className=" flex flex-row justify-center">
@@ -127,7 +134,20 @@ export default function Footer() {
         <div className="text-[#E03932] font-bernier text-[32px] mt-3">
           You&apos;ve Reached the end ~
         </div>
-        <div className="text-[#186B80] font-blogger text-[16px] leading-[21px]">
+        
+        <div className="w-full mt-1 ">
+            <Button text="Leave a message for the Devs" link="/404" />
+        </div>
+        <div className="flex flex-row mt-3">
+        <div className="w-1/3">
+            <Button text="Donate" link="/404" />
+          </div>
+          <div className="w-2/3 pl-4">
+            <Button text="Go back to top" link="/events" />
+          </div>
+          
+        </div>
+        <div className="text-[#186B80] font-blogger text-[16px] leading-[21px] mt-2">
           <strong>
             Designed and developed by{" "}
             <i>
@@ -137,6 +157,12 @@ export default function Footer() {
             </i>
           </strong>
         </div>
+      </div>
+      
+      <div className="w-full mt-1">
+        {/* <button onClick={scrollToTop} className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+          Go back to top
+        </button> */}
       </div>
       <div
         id="home"

@@ -14,8 +14,11 @@ import meet from "../public/home/meet.svg";
 import speaker from "../public/home/speakers.svg";
 import mainEvents from "../public/home/main_events.svg";
 import dontMiss from "../public/home/dont_miss.svg";
-import battleBands from "../public/home/bob.svg";
-import symphony from "../public/home/symphony.svg";
+// import battleBands from "../public/home/bob.svg";
+// import symphony from "../public/home/symphony.svg";
+import symphony from "../public/home/singing something.png";
+import battleBands from "../public/home/botb.png";
+import prom from "../public/home/prom.png";
 import panache from "../public/home/panache.svg";
 // import promNight from "../public/home/prom_night.svg";
 import cheese from "../public/home/cheese.svg";
@@ -37,7 +40,7 @@ import Poster from "./components/Poster";
 import Gallery from "./components/Gallery";
 import splash from "../public/splash.svg";
 
-const posters = [symphony, battleBands, panache];
+const posters = [symphony, battleBands,prom , panache];
 const galleryImages = [gallery1, gallery2];
 
 // Needs refactoring, too many lines in a single file...

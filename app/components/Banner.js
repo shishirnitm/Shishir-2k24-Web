@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Banner() {
   return (
-    <div class="relative flex overflow-x-hidden overflow-hidden pt-2 pb-2 bg-[#186B80] text-white font-bernier">
+    <div id="top" class="relative flex overflow-x-hidden overflow-hidden pt-2 pb-2 bg-[#186B80] text-white font-bernier">
       <div class="animate-marquee whitespace-nowrap flex">
         <span class="mx-4 text-2xl">NIT</span>
         <Image src={star} width={20} height={20}></Image>

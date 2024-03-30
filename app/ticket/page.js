@@ -113,7 +113,7 @@ export default function home() {
           IMPORTANT NOTICE:
         </div>
         <ul className="list-disc text-[#E03932] pl-6 text-[18px]">
-          <li>
+          {/* <li>
             <strong>
               Exclusive Events{" "}
               <span class="text-[#186B80]">
@@ -121,7 +121,7 @@ export default function home() {
                 are separate from the general Shishir event entry pass.
               </span>
             </strong>
-          </li>
+          </li> */}
           <li>
             {" "}
             <strong>
