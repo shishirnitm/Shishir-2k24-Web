@@ -90,7 +90,25 @@ export default function Navbar() {
                 </span>
               </div>
             </div>
-
+            <div className="flex justify-between space-x-6">
+              <Link href="events" onClick={() => setClose("1")}>
+                <span id="items">Tickets</span>
+              </Link>
+              <div className="flex justify-end ">
+                <span
+                  id="items"
+                  className="text-2xl font-bukhari mr-4 text-[#186B80]"
+                >
+                  ............
+                </span>
+                <span
+                  id="items"
+                  className="text-2xl font-bukhari text-[#186B80]"
+                >
+                  3
+                </span>
+              </div>
+            </div>
             <div className="flex justify-between space-x-6">
               <Link href="/404" onClick={() => setClose("1")}>
                 <span id="items">Sponsors</span>
@@ -106,7 +124,7 @@ export default function Navbar() {
                   id="items"
                   className="text-2xl font-bukhari text-[#186B80]"
                 >
-                  3
+                  4
                 </span>
               </div>
             </div>
@@ -125,7 +143,7 @@ export default function Navbar() {
                   id="items"
                   className="text-2xl font-bukhari text-[#186B80]"
                 >
-                  4
+                  5
                 </span>
               </div>
             </div>

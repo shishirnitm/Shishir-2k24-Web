@@ -28,8 +28,7 @@ export default function home() {
           NIT Meghalaya Students:
         </div>
         <div className="text-[#186B80] font-blogger leading-none text-[20px]">
-          Flash your college ID card at the entry gate to gain free access. (not
-          applicable to some special events){" "}
+          Flash your college ID card at the entry gate to gain free access.{" "}
         </div>
         <div className="text-[#186B80] font-bloggerBold text-[28px] mt-[18px] ">
           {" "}
@@ -58,7 +57,7 @@ export default function home() {
           />
           <a href="https://forms.gle/EvR4ozNzeTideLsY7">
             <button className=" btn1 bg-white hover:bg-white text-black border-2 border-black font-bloggerBold py-4 px-5 rounded-full absolute bottom-[15%] right-[15%]">
-            <Image src={va} alt="Opps" className="h-[17px] w-auto" />
+              <Image src={va} alt="Opps" className="h-[17px] w-auto" />
             </button>
           </a>
 
@@ -80,12 +79,12 @@ export default function home() {
           />
           <a href="https://forms.gle/Gp2zVKaLgw2WMdgp7">
             <button className=" btn1 bg-white hover:bg-white text-black border-2 border-black font-bloggerBold py-4 px-5 rounded-full absolute bottom-[15%] right-[15%]">
-            <Image src={va} alt="Opps" className="h-[17px] w-auto" />
+              <Image src={va} alt="Opps" className="h-[17px] w-auto" />
             </button>
           </a>
         </div>
       </div>
-      <div className="text-[#E03932] font-bernier text-[40px] border border-solid border-bold pl-[31px] mt-[15px] mb-[-18px]">
+      {/* <div className="text-[#E03932] font-bernier text-[40px] border border-solid border-bold pl-[31px] mt-[15px] mb-[-18px]">
         {" "}
         EXCLUSIVE EVENTS:
       </div>
@@ -106,7 +105,7 @@ export default function home() {
           <Image src={va} alt="Opps" className="h-[17px] w-auto" />
           </button>
         </a>
-      </div>
+      </div> */}
       <div className=" flex flex-col text-[#186B80] font-blogger text-[18px] pl-[27px] pr-2">
         <div className="text-[#E03932] font-bernier text-[40px] mt-[15px]">
           {" "}
@@ -127,8 +126,8 @@ export default function home() {
             <strong>
               <span class="text-[#186B80]">
                 <spam class=" font-bloggerBold">NIT Meghalaya students </spam>{" "}
-                are not required to pay for these separate tickets to attend the
-               <spam class=" font-bloggerBold"> special events</spam>.
+                are not required to get the visitor's tickets to attend the
+                <spam class=" font-bloggerBold"> events</spam>.
               </span>{" "}
             </strong>
           </li>
@@ -136,8 +135,8 @@ export default function home() {
             {" "}
             <strong>
               <span class="text-[#186B80]">
-                Limited tickets are available for each event, so book yours
-                early to avoid disappointment!{" "}
+                Limited tickets are available, so book yours early to avoid
+                disappointment!{" "}
               </span>{" "}
             </strong>{" "}
           </li>
