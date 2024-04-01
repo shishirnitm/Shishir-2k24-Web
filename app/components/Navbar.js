@@ -49,8 +49,28 @@ export default function Navbar() {
 
   return (
     <>
-      <div close={close} id="nav" className="absolute bg-[#F1EAE5]">
-        <div className="justify-between h-[92vh] flex flex-col">
+      <div
+        close={close}
+        id="nav"
+        className="absolute bg-[#F1EAE5] overflow-hidden"
+      >
+        <div
+          id="items"
+          className="bg-primaryBlue  overflow-ellipsis text-nowrap h-min absolute bottom-0 font-blogger pb-3 pt-1 w-full text-center"
+        >
+          <span
+            id="items"
+            className="text-white text-sm
+            
+            "
+          >
+            built with love and care by |
+          </span>{" "}
+          <span className="text-yellow-300 text-sm">
+            nitm web dev creatives
+          </span>
+        </div>
+        <div className="justify-between flex flex-col">
           <div
             close={close}
             id="items"
@@ -332,17 +352,6 @@ export default function Navbar() {
               <Image src={whatsapp} width={20} height={20}></Image>
               <Image src={linkedin} width={20} height={20}></Image>
             </div>
-          </div>
-          <div className="bg-primaryBlue font-blogger pb-3 pt-1 w-full text-center">
-            <span
-              className="text-white text-sm
-            "
-            >
-              built with love and care by |
-            </span>{" "}
-            <span className="text-yellow-300 text-sm">
-              nitm web dev creatives
-            </span>
           </div>
         </div>
       </div>
