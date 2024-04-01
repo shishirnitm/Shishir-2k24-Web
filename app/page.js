@@ -16,10 +16,22 @@ import mainEvents from "../public/home/main_events.svg";
 import dontMiss from "../public/home/dont_miss.svg";
 import battleBands from "../public/home/bob.svg";
 import symphony from "../public/home/symphony.svg";
+import shimmer from "../public/home/shimmer-min.jpg";
+import td from "../public/home/3D.jpg";
+import om from "../public/home/OM.jpg";
+import rangoli from "../public/home/Rangoli.jpg";
+import dc from "../public/home/DC.jpg";
+import ac from "../public/home/AC.jpg";
+import th from "../public/home/TH.jpg";
+import valo from "../public/home/VALO.jpg";
+import bgmi from "../public/home/BGMI.jpg";
+import tda from "../public/home/TD.jpg";
+import step from "../public/home/step up.jpg";
+import extemp from "../public/home/extemp.jpg";
 // import symphony from "../public/home/singing something.png";
 // import battleBands from "../public/home/botb.png";
 import prom from "../public/home/prom.png";
-import panache from "../public/home/panache.svg";
+import panache from "../public/home/panache.jpg";
 // import promNight from "../public/home/prom_night.svg";
 import cheese from "../public/home/cheese.svg";
 import gallery from "../public/home/gallery.svg";
@@ -40,7 +52,7 @@ import Poster from "./components/Poster";
 import Gallery from "./components/Gallery";
 import splash from "../public/splash.svg";
 
-const posters = [symphony, battleBands,prom , panache];
+const posters = [symphony, battleBands,prom , panache, shimmer,td,om,rangoli,dc,ac,th,valo,bgmi,tda,step,extemp];
 const galleryImages = [gallery1, gallery2];
 
 // Needs refactoring, too many lines in a single file...
