@@ -4,7 +4,7 @@ import Banner from "./components/Banner";
 import Footer from "./components/Footer";
 export const metadata = {
   title: "Shishir",
-  description: "Developed by the Web Dev Team at NITM (2023)",
+  description: "Developed by the Web Dev Team at NITM (2024)",
 };
 
 export default function RootLayout({ children }) {
