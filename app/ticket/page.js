@@ -126,7 +126,7 @@ export default function home() {
             <strong>
               <span class="text-[#186B80]">
                 <spam class=" font-bloggerBold">NIT Meghalaya students </spam>{" "}
-                are not required to get the visitor's tickets to attend the
+                are not required to get the visitor&apos;s tickets to attend the
                 <spam class=" font-bloggerBold"> events</spam>.
               </span>{" "}
             </strong>
