@@ -297,14 +297,14 @@ export default function Navbar() {
                 </div>
               </div>
               <div className="flex justify-between space-x-6 items-baseline ">
-                <Link href="/404" onClick={() => setClose("1")}>
+                <a href="https://nitm.ac.in">
                   <span
                     // id="items"
                     className="font-bloggerBold text-primaryBlue italic text-xl"
                   >
-                    NITM
+                    NITM Website
                   </span>
-                </Link>
+                </a>
                 <div className="flex justify-end ">
                   <span
                     id="items"
@@ -347,10 +347,18 @@ export default function Navbar() {
             </div>
             <div className="flex justify-center space-x-6 pt-2">
               {" "}
-              <Image src={instagram} width={20} height={20}></Image>
-              <Image src={fb} width={20} height={20}></Image>
-              <Image src={whatsapp} width={20} height={20}></Image>
-              <Image src={linkedin} width={20} height={20}></Image>
+              <a href="https://www.instagram.com/shishir_nitm?igsh=MXIzYzBvajFpdWRpNg==">
+                <Image src={instagram} width={20} height={20}></Image>
+              </a>
+              <a href="https://www.facebook.com/shishir.nitm?mibextid=LQQJ4d">
+                <Image src={fb} width={20} height={20}></Image>
+              </a>
+              <a href="https://wa.me/message/CUN5EZTFE2KKA1">
+                <Image src={whatsapp} width={20} height={20}></Image>
+              </a>
+              <a href="https://in.linkedin.com/company/shishir-nit-meghalaya">
+                <Image src={linkedin} width={20} height={20}></Image>{" "}
+              </a>
             </div>
           </div>
         </div>
