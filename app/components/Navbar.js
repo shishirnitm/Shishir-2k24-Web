@@ -54,7 +54,7 @@ export default function Navbar() {
           <div
             close={close}
             id="items"
-            className="text-5xl ml-5 mr-5 space-y-3 font-medium font-bernier text-[#E03932] mt-16  flex flex-col"
+            className="text-4xl ml-5 mr-5 space-y-3 font-medium font-bernier text-[#E03932] mt-16  flex flex-col"
           >
             <div className="flex justify-between space-x-6">
               <Link href="/" onClick={() => setClose("1")}>
@@ -133,7 +133,7 @@ export default function Navbar() {
                 </span>
               </div>
             </div>
-            <div className="flex justify-between space-x-6 pb-8">
+            <div className="flex justify-between space-x-6 pb-4">
               <Link href="/teams" onClick={() => setClose("1")}>
                 <span id="items">Teams</span>
               </Link>
@@ -152,15 +152,15 @@ export default function Navbar() {
                 </span>
               </div>
             </div>
-            <div className="border-[5px] border-primaryBlue p-4  pb-6 -space-y-2 flex flex-col">
-              <div className="self-center  relative -top-11 bg-[#F1EAE5] w-min pl-6 pr-6">
+            <div className="border-[5px] border-primaryBlue p-2  pb-4 -space-y-2 flex flex-col ">
+              <div className="self-center  relative -top-11 bg-[#F5EAE5] w-min pl-6 pr-6">
                 Specials
               </div>
-              <div className="flex justify-between space-x-6 items-baseline ">
+              <div className="flex justify-between space-x-6 items-baseline  ">
                 <Link href="/404" onClick={() => setClose("1")}>
                   <span
-                    // id="items"
-                    className="font-bloggerBold text-primaryBlue italic text-2xl"
+                    id="items"
+                    className="font-bloggerBold text-primaryBlue italic text-xl"
                   >
                     Contact us
                   </span>
@@ -168,13 +168,13 @@ export default function Navbar() {
                 <div className="flex justify-end ">
                   <span
                     id="items"
-                    className="text-2xl  font-bukhari mr-2 text-[#186B80]"
+                    className="text-xl  font-bukhari mr-2 text-[#186B80]"
                   >
-                    .............
+                    ..........
                   </span>
                   <span
                     id="items"
-                    className="text-2xl font-bukhari text-[#186B80]"
+                    className="text-xl font-bukhari text-[#186B80]"
                   >
                     1
                   </span>
@@ -184,7 +184,7 @@ export default function Navbar() {
                 <Link href="/mun" onClick={() => setClose("1")}>
                   <span
                     // id="items"
-                    className="font-bloggerBold text-primaryBlue italic text-2xl"
+                    className="font-bloggerBold text-primaryBlue italic text-xl"
                   >
                     MUN
                   </span>
@@ -192,13 +192,13 @@ export default function Navbar() {
                 <div className="flex justify-end ">
                   <span
                     id="items"
-                    className="text-2xl  font-bukhari mr-2 text-[#186B80]"
+                    className="text-xl  font-bukhari mr-2 text-[#186B80]"
                   >
                     ..............
                   </span>
                   <span
                     id="items"
-                    className="text-2xl font-bukhari text-[#186B80]"
+                    className="text-xl font-bukhari text-[#186B80]"
                   >
                     2
                   </span>
@@ -208,7 +208,7 @@ export default function Navbar() {
                 <Link href="/teams" onClick={() => setClose("1")}>
                   <span
                     // id="items"
-                    className="font-bloggerBold text-primaryBlue italic text-2xl"
+                    className="font-bloggerBold text-primaryBlue italic text-xl"
                   >
                     Teams
                   </span>
@@ -216,13 +216,13 @@ export default function Navbar() {
                 <div className="flex justify-end ">
                   <span
                     id="items"
-                    className="text-2xl  font-bukhari mr-2 text-[#186B80]"
+                    className="text-xl  font-bukhari mr-2 text-[#186B80]"
                   >
                     .................
                   </span>
                   <span
                     id="items"
-                    className="text-2xl font-bukhari text-[#186B80]"
+                    className="text-xl font-bukhari text-[#186B80]"
                   >
                     3
                   </span>
@@ -256,7 +256,7 @@ export default function Navbar() {
                 <Link href="/404" onClick={() => setClose("1")}>
                   <span
                     // id="items"
-                    className="font-bloggerBold text-primaryBlue italic text-2xl"
+                    className="font-bloggerBold text-primaryBlue italic text-xl"
                   >
                     FAQ
                   </span>
@@ -264,13 +264,13 @@ export default function Navbar() {
                 <div className="flex justify-end ">
                   <span
                     id="items"
-                    className="text-2xl  font-bukhari mr-2 text-[#186B80]"
+                    className="text-xl  font-bukhari mr-2 text-[#186B80]"
                   >
                     ..................
                   </span>
                   <span
                     id="items"
-                    className="text-2xl font-bukhari text-[#186B80]"
+                    className="text-xl font-bukhari text-[#186B80]"
                   >
                     5
                   </span>
@@ -280,21 +280,21 @@ export default function Navbar() {
                 <Link href="/404" onClick={() => setClose("1")}>
                   <span
                     // id="items"
-                    className="font-bloggerBold text-primaryBlue italic text-2xl"
+                    className="font-bloggerBold text-primaryBlue italic text-xl"
                   >
-                    NITM Website
+                    NITM
                   </span>
                 </Link>
                 <div className="flex justify-end ">
                   <span
                     id="items"
-                    className="text-2xl  font-bukhari mr-2 text-[#186B80]"
+                    className="text-xl  font-bukhari mr-2 text-[#186B80]"
                   >
                     .........
                   </span>
                   <span
                     id="items"
-                    className="text-2xl font-bukhari text-[#186B80]"
+                    className="text-xl font-bukhari text-[#186B80]"
                   >
                     6
                   </span>
@@ -304,28 +304,28 @@ export default function Navbar() {
                 <Link href="/404" onClick={() => setClose("1")}>
                   <span
                     // id="items"
-                    className="font-bloggerBold text-primaryBlue italic text-2xl"
+                    className="font-bloggerBold text-primaryBlue italic text-xl"
                   >
-                    Terms and Conditions
+                    Terms & Conditions
                   </span>
                 </Link>
                 <div className="flex justify-end ">
                   <span
                     id="items"
-                    className="text-2xl  font-bukhari mr-2 text-[#186B80]"
+                    className="text-xl  font-bukhari mr-2 text-[#186B80]"
                   >
-                    ....
+                    ...
                   </span>
                   <span
                     id="items"
-                    className="text-2xl font-bukhari text-[#186B80]"
+                    className="text-xl font-bukhari text-[#186B80]"
                   >
                     7
                   </span>
                 </div>
               </div>
             </div>
-            <div className="flex justify-center space-x-6 pt-4">
+            <div className="flex justify-center space-x-6 pt-2">
               {" "}
               <Image src={instagram} width={20} height={20}></Image>
               <Image src={fb} width={20} height={20}></Image>
@@ -333,14 +333,16 @@ export default function Navbar() {
               <Image src={linkedin} width={20} height={20}></Image>
             </div>
           </div>
-          <div className="bg-primaryBlue font-blogger pb-4 pt-2 w-full text-center">
+          <div className="bg-primaryBlue font-blogger pb-3 pt-1 w-full text-center">
             <span
-              className="text-white
+              className="text-white text-sm
             "
             >
               built with love and care by |
             </span>{" "}
-            <span className="text-yellow-300">nitm web dev creatives</span>
+            <span className="text-yellow-300 text-sm">
+              nitm web dev creatives
+            </span>
           </div>
         </div>
       </div>
