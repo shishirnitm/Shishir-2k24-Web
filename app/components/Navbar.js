@@ -173,7 +173,7 @@ export default function Navbar() {
               </div>
             </div>
             <div className="border-[5px] border-primaryBlue p-2  pb-4 -space-y-2 flex flex-col ">
-              <div className="self-center  relative -top-7 bg-[#F5EAE5] w-min pl-6 pr-6">
+              <div className="self-center  relative -top-7 bg-[#F1EAE5] w-min pl-6 pr-6">
                 Specials
               </div>
               <div className="flex justify-between space-x-6 items-baseline  ">
