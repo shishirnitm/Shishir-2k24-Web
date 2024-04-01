@@ -54,7 +54,7 @@ export default function Navbar() {
           <div
             close={close}
             id="items"
-            className="text-4xl ml-5 mr-5 space-y-3 font-medium font-bernier text-[#E03932] mt-16  flex flex-col"
+            className="text-3xl ml-5 mr-5 space-y-3 font-medium font-bernier text-[#E03932] mt-16  flex flex-col"
           >
             <div className="flex justify-between space-x-6">
               <Link href="/" onClick={() => setClose("1")}>
@@ -368,7 +368,7 @@ export default function Navbar() {
               width="0"
               height="0"
               sizes="100vw"
-              className="w-[10vw]  h-auto"
+              className="w-[8vw]  h-auto"
             />
           ) : (
             <Image
@@ -376,7 +376,7 @@ export default function Navbar() {
               width="0"
               height="0"
               sizes="100vw"
-              className="w-[10vw]  h-auto"
+              className="w-[8vw]  h-auto"
             />
           )}
         </div>
