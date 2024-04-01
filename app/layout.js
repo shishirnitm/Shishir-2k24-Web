@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="bg-[url('../public/texture.png')] bg-[#FDF6E9]">
         <Banner />
-        <Navbar className="sticky" />
+        <Navbar />
         {children}
         <Footer />
       </body>

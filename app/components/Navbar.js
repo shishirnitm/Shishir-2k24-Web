@@ -50,7 +50,7 @@ export default function Navbar() {
   return (
     <>
       <div close={close} id="nav" className="absolute bg-[#F1EAE5]">
-        <div className="h-[95vh] justify-between flex flex-col">
+        <div className="justify-between h-[92vh] flex flex-col">
           <div
             close={close}
             id="items"
@@ -153,7 +153,7 @@ export default function Navbar() {
               </div>
             </div>
             <div className="border-[5px] border-primaryBlue p-2  pb-4 -space-y-2 flex flex-col ">
-              <div className="self-center  relative -top-11 bg-[#F5EAE5] w-min pl-6 pr-6">
+              <div className="self-center  relative -top-7 bg-[#F5EAE5] w-min pl-6 pr-6">
                 Specials
               </div>
               <div className="flex justify-between space-x-6 items-baseline  ">
