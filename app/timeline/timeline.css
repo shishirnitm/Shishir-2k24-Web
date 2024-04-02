@@ -1,0 +1,37 @@
+.background {
+    background: url(grain\ texture\ top\ \(1\).png),#FDF6E9  50% / cover no-repeat;
+    flex-shrink: 0;
+}
+.eCard{
+    background: url(grain\ texture\ top\ \(1\).png),#ffffff  50% / cover no-repeat;
+}
+.textStroke{
+    color: #FDF6E9;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #E03932;
+    font-family: Antonio;
+    font-size: 51px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70.764px; /* 116.352% */
+}
+
+.yellowButton{
+    background-color: #F5E074;
+    width: fit-content;
+    height: min-content;
+    border-radius: 50px;
+    border-color: #3F362B;
+    border-width: thin;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: var(--Black-primary, #3F362B);
+    text-align: center;
+    font-family: Static;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
