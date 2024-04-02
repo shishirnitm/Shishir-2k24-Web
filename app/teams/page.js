@@ -1,8 +1,4 @@
 'use client';
-import Image from "next/image";
-import Link from "next/link";
-
-import backButton from "../../public/back-button.svg"
 import "./teams.css"
 import TeamMember from './Components/TeamMember';
 import TeamHeader from './Components/TeamHeader';
@@ -13,7 +9,7 @@ import { useState, useRef } from "react";
 
 
 // Please don't judge me by the repetitive lines of code I've written here...... I know, it looks noobie
-// I wasn't paid to do this
+// P.S: I wasn't paid to do this
 
 
 
@@ -43,7 +39,7 @@ const teams = {
             "year": "4TH YEAR EE"
         },
         {
-            "img": "guy",
+            "img": "/teams/Core/Aidan.jpeg",
             "name": "Aidan",
             "position": "COORDINATOR",
             "year": "3RD YEAR CS"
@@ -215,10 +211,10 @@ const teams = {
             "year": "4TH YEAR EC"
         },
         {
-            "img": "guy",
+            "img": "/teams/Sponsorship/Rohit.jpeg",
             "name": "Rohit",
             "position": "HEAD",
-            "year": "4TH YEAR"
+            "year": "4TH YEAR EE"
         },
         {
             "img": "/teams/Sponsorship/Kyle.jpeg",
@@ -617,31 +613,31 @@ const teams = {
     ],
     "panache": [
         {
-            "img": "guy",
+            "img": "/teams/Panache/Maybryan.jpeg",
             "name": "Maybryan",
             "position": "HEAD",
             "year": "4TH YEAR CE"
         },  
         {
-            "img": "guy",
+            "img": "/teams/Panache/Kenneth.jpeg",
             "name": "Kenneth",
             "position": "HEAD",
             "year": "4TH YEAR EE"
         },
         {
-            "img": "guy",
+            "img": "/teams/Panache/Naphisabet.jpeg",
             "name": "Naphisabet",
             "position": "COORDINATOR",
             "year": "3RD YEAR CS"
         },
         {
-            "img": "guy",
+            "img": "/teams/Panache/Kabesa.jpeg",
             "name": "Kabesa",
             "position": "COORDINATOR",
             "year": "3RD YEAR ME"
         },
         {
-            "img": "guy",
+            "img": "/teams/Panache/Mebanker.jpeg",
             "name": "Mebanker",
             "position": "CO-COORDINATOR",
             "year": "2ND YEAR CS"
@@ -649,37 +645,37 @@ const teams = {
     ],
     "shimmer": [
         {
-            "img": "guy",
+            "img": "/teams/Shimmer/Chonsram.jpeg",
             "name": "Chonsram",
             "position": "HEAD",
             "year": "4TH YEAR CS"
         },  
         {
-            "img": "girl",
+            "img": "/teams/Shimmer/Jahnavi.jpeg",
             "name": "Jahnavi",
             "position": "HEAD",
             "year": "4TH YEAR CS"
         },
         {
-            "img": "guy",
+            "img": "/teams/Shimmer/Richter.jpeg",
             "name": "Richter",
             "position": "COORDINATOR",
             "year": "3RD YEAR EC"
         },
         {
-            "img": "guy",
+            "img": "girl",
             "name": "Deinipaia",
             "position": "COORDINATOR",
             "year": "3RD YEAR"
         },
         {
-            "img": "guy",
-            "name": "Vedant",
+            "img": "/teams/Shimmer/Vedant.jpg",
+            "name": "B. Vedant",
             "position": "CO-COORDINATOR",
             "year": "2ND YEAR EE"
         },
         {
-            "img": "girl",
+            "img": "/teams/Shimmer/Chandrani.jpeg",
             "name": "Chandrani",
             "position": "CO-COORDINATOR",
             "year": "2ND YEAR EC"
@@ -719,31 +715,31 @@ const teams = {
             "year": "4TH YEAR"
         },  
         {
-            "img": "guy",
+            "img": "/teams/Volunteers/Ayush.jpeg",
             "name": "Ayush",
             "position": "HEAD",
             "year": "4TH YEAR CS"
         },  
         {
-            "img": "guy",
+            "img": "/teams/Volunteers/Richard.jpeg",
             "name": "Richard",
             "position": "HEAD",
             "year": "4TH YEAR CE"
         },  
         {
-            "img": "guy",
+            "img": "/teams/Volunteers/Gopal.jpeg",
             "name": "Gopal Rai",
             "position": "HEAD",
             "year": "4TH YEAR ME"
         },  
         {
-            "img": "guy",
+            "img": "/teams/Volunteers/Rikidame.jpg",
             "name": "Rikidame",
             "position": "HEAD",
             "year": "4TH YEAR ME"
         },  
         {
-            "img": "guy",
+            "img": "/teams/Volunteers/Helpman.jpeg",
             "name": "Helpman",
             "position": "HEAD",
             "year": "4TH YEAR ME"
@@ -755,31 +751,31 @@ const teams = {
             "year": "3RD YEAR"
         },
         {
-            "img": "guy",
+            "img": "/teams/Volunteers/Ankit.jpeg",
             "name": "Ankit",
             "position": "CO-COORDINATOR",
             "year": "3RD YEAR CS"
         },
         {
-            "img": "guy",
+            "img": "/teams/Volunteers/Wailadmi.jpeg",
             "name": "Wailadmi",
             "position": "CO-COORDINATOR",
             "year": "3RD YEAR EE"
         },
         {
-            "img": "guy",
+            "img": "/teams/Volunteers/Rangkynsai.jpeg",
             "name": "Rangkynsai",
             "position": "CO-COORDINATOR",
             "year": "3RD YEAR CE"
         },
         {
-            "img": "guy",
+            "img": "/teams/Volunteers/Rohit.jpeg",
             "name": "Rohit",
             "position": "CO-COORDINATOR",
             "year": "2ND YEAR EE"
         },
         {
-            "img": "guy",
+            "img": "/teams/Volunteers/Rounak.jpeg",
             "name": "Rounak",
             "position": "CO-COORDINATOR",
             "year": "2ND YEAR CS"
@@ -874,7 +870,7 @@ const Teams = () => {
 
         return (
         <div className="overflow-hidden">
-            <Link 
+            {/* <Link 
                 href="/"
                 passHref
                 className=""
@@ -887,8 +883,8 @@ const Teams = () => {
                     sizes="100vw"
                     className=" w-[10vw] lg:w-[4vw] h-auto lg:my-5 my-10 mx-8"
                 />
-            </Link>
-            <div className=' w-screen pb-20 lg:text-center lg:px-10'>
+            </Link> */}
+            <div className='mt-20 w-screen pb-20 lg:text-center lg:px-10'>
                 <div className="flex flex-col text-[#E03932] mt-5 px-5">
                     <div className=" textStroke ">Meet the</div>
                     <div className=" textStroke ">Teams Behind</div>

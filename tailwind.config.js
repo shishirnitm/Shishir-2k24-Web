@@ -32,6 +32,10 @@ module.exports = {
         marquee: "marquee 25s linear infinite",
         marquee2: "marquee2 25s linear infinite",
       },
+      screens: {
+        'lg-xl': {'min': '1140px', 'max': '1299px'}, 
+        'mi':{'min': '1300px', 'max': '1579px' },
+      },
       keyframes: {
         marquee: {
           "0%": { transform: "translateX(0%)" },

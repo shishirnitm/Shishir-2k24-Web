@@ -16,7 +16,22 @@ import mainEvents from "../public/home/main_events.svg";
 import dontMiss from "../public/home/dont_miss.svg";
 import battleBands from "../public/home/bob.svg";
 import symphony from "../public/home/symphony.svg";
-import panache from "../public/home/panache.svg";
+import shimmer from "../public/home/shimmer-min.jpg";
+import td from "../public/home/3D.jpg";
+import om from "../public/home/OM.jpg";
+import rangoli from "../public/home/Rangoli.jpg";
+import dc from "../public/home/DC.jpg";
+import ac from "../public/home/AC.jpg";
+import th from "../public/home/TH.jpg";
+import valo from "../public/home/VALO.jpg";
+import bgmi from "../public/home/BGMI.jpg";
+import tda from "../public/home/TD.jpg";
+import step from "../public/home/step up.jpg";
+import extemp from "../public/home/extemp.jpg";
+// import symphony from "../public/home/singing something.png";
+// import battleBands from "../public/home/botb.png";
+import prom from "../public/home/prom.png";
+import panache from "../public/home/panache.jpg";
 // import promNight from "../public/home/prom_night.svg";
 import cheese from "../public/home/cheese.svg";
 import gallery from "../public/home/gallery.svg";
@@ -37,7 +52,7 @@ import Poster from "./components/Poster";
 import Gallery from "./components/Gallery";
 import splash from "../public/splash.svg";
 
-const posters = [symphony, battleBands, panache];
+const posters = [symphony, battleBands,prom , panache, shimmer,td,om,rangoli,dc,ac,th,valo,bgmi,tda,step,extemp];
 const galleryImages = [gallery1, gallery2];
 
 // Needs refactoring, too many lines in a single file...
@@ -295,11 +310,13 @@ export default function Home() {
             <Button text="Get Your Ticket" link="/ticket" />
           </div>
         </div>
-        <div
-          id="home"
-          className="pt-2 pb-20 w-[100vw] md:mt-10 md:text-lg flex justify-center font-blogger text-primaryBlue underline"
-        >
-          <div>Learn more: why are we charging you?</div>
+        <div className="pt-2 pb-20 w-[100vw] md:mt-10 md:text-lg flex justify-center font-blogger text-primaryBlue underline">
+          <a
+            className="text-[#186B80] font-blogger text-[17px] leading-[22px]"
+            href="/wawcy"
+          >
+            Learn more: why are we charging you?{" "}
+          </a>
         </div>
         <div id="home" className="pt-10 md:pt-10 flex flex-col justify-center">
           <div className="bg-[#3F362B] w-screen h-5"></div>
@@ -464,7 +481,7 @@ export default function Home() {
         </div>
         <div id="" className="w-[100vw] flex justify-center">
           <div className="w-[85vw]">
-            <Button text="View Full Gallery" link="/404" />
+            <Button text="View Full Gallery" link="/gallery" />
           </div>
         </div>
         <div id="home" className="pt-20 flex flex-row justify-center">
