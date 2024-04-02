@@ -481,7 +481,7 @@ export default function Home() {
         </div>
         <div id="" className="w-[100vw] flex justify-center">
           <div className="w-[85vw]">
-            <Button text="View Full Gallery" link="/404" />
+            <Button text="View Full Gallery" link="/gallery" />
           </div>
         </div>
         <div id="home" className="pt-20 flex flex-row justify-center">
