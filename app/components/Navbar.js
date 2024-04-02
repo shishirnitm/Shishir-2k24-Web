@@ -119,7 +119,7 @@ export default function Navbar() {
               </div>
             </div>
             <div className="flex justify-between space-x-6">
-              <Link href="events" onClick={() => setClose("1")}>
+              <Link href="/ticket" onClick={() => setClose("1")}>
                 <span id="items">Tickets</span>
               </Link>
               <div className="flex justify-end ">
