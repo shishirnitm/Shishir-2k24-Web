@@ -42,6 +42,9 @@ export default function Navbar() {
         setActiveIndex(4);
         break;
       }
+      case "/sponsor": {
+        setActiveIndex(5);
+      }
       default: {
       }
     }
@@ -135,7 +138,7 @@ export default function Navbar() {
               </div>
             </div>
             <div className="flex justify-between space-x-6">
-              <Link href="/404" onClick={() => setClose("1")}>
+              <Link href="/sponsor" onClick={() => setClose("1")}>
                 <span id="items">Sponsors</span>
               </Link>
               <div className="flex justify-end ">
@@ -451,6 +454,16 @@ export default function Navbar() {
               } cursor-pointer`}
             >
               MUN
+            </div>
+          </Link>
+          <Image src={star} width={20} height={20}></Image>
+          <Link href="/sponsor">
+            <div
+              className={`${
+                activeIndex == 5 ? "text-primaryRed" : "text-primaryBlue"
+              } cursor-pointer`}
+            >
+              Sponsors
             </div>
           </Link>
         </div>
