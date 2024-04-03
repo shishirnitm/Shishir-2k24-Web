@@ -28,6 +28,10 @@ import bgmi from "../public/home/BGMI.jpg";
 import tda from "../public/home/TD.jpg";
 import step from "../public/home/step up.jpg";
 import extemp from "../public/home/extemp.jpg";
+import rakesh from "../public/home/RakeshChaurasia.jpg";
+import pandit from "../public/home/pandit.png";
+import dpg from "../public/home/DGP.png";
+import spic from "../public/home/Spicmacay-1.png";
 // import symphony from "../public/home/singing something.png";
 // import battleBands from "../public/home/botb.png";
 import prom from "../public/home/prom.png";
@@ -52,7 +56,25 @@ import Poster from "./components/Poster";
 import Gallery from "./components/Gallery";
 import splash from "../public/splash.svg";
 
-const posters = [symphony, battleBands,prom , panache, shimmer,td,om,rangoli,dc,ac,th,valo,bgmi,tda,step,extemp];
+const posters = [
+  panache,
+  spic,
+  prom,
+  shimmer,
+  td,
+  om,
+  rangoli,
+  dc,
+  ac,
+  th,
+  valo,
+  bgmi,
+  tda,
+  step,
+  extemp,
+  battleBands,
+  symphony,
+];
 const galleryImages = [gallery1, gallery2];
 
 // Needs refactoring, too many lines in a single file...
@@ -357,15 +379,24 @@ export default function Home() {
           </div>
         </div>
         <div className="pt-5">
-          <div className="flex w-screen overflow-scroll mt-10 ">
-            {posters.map((img, index) => (
-              <div key={index} className="">
-                <Poster img={img} />
-              </div>
-            ))}
+          <div className="flex w-full overflow-scroll mt-10">
+            {posters.map(
+              (img, index) => {
+                if (index == 1) return <Poster img={img} width={"w-96"} />;
+                else return <Poster img={img} width={null} />;
+              }
+              // <div
+              //   key={index}
+              //   className={
+              //     index === 0 ? "flex-grow ml-[-30px] mr-0" : "ml-[-30px] mr-0"
+              //   }
+              // >
+
+              // </div>
+            )}
           </div>
         </div>
-        <div
+        {/* <div
           id="home"
           className="font-blogger flex flex-col items-center justify-center md:items-start md:pl-[10vw] font-semibold text-primaryBlue bg-transparent"
         >
@@ -380,7 +411,7 @@ export default function Home() {
           <div className="w-[85vw]">
             <Button text="Explore Events" link="/events" />
           </div>
-        </div>
+        </div> */}
         <div id="home" className="pt-16  md:pt-20 flex flex-col justify-center">
           <div className="bg-[#4EB7B4] w-screen h-5"></div>
           <div className="bg-[#186B80] w-screen h-5"></div>
@@ -420,14 +451,41 @@ export default function Home() {
           </div>
         </div>
         <div id="home" className="mt-16 flex flex-col items-center">
-          <div className="flex w-[85vw] space-x-6">
+          <div className="flex md:space-x-24 space-x-5 mb-5">
             <Guest
               img={godfather}
               title={"Jahnu Barua"}
               bio={"Indian Film Director"}
             />
-            <Guest img={null} title={"TBA"} bio={"NA"} />
+
+            <Guest
+              img={rakesh}
+              title={"Shri Rakesh Chaurasia"}
+              bio={"World Renowned Bansuri"}
+            />
           </div>
+
+          <div className="flex md:space-x-24 space-x-5 mb-5">
+            <Guest
+              img={pandit}
+              title={"Anutosh Degharia"}
+              bio={"Indian Tabla Percussionist"}
+            />
+
+            <Guest
+              img={""}
+              title={"Shri Ambrose Marak"}
+              bio={"IAS Secretary "}
+            />
+          </div>
+          <div className="flex md:space-x-24 space-x-5 mb-5">
+            <Guest
+              img={dpg}
+              title={"Dr L R Bishnoi"}
+              bio={"DGP of Meghalaya "}
+            />
+          </div>
+
           <div className="text-md md:text-xl mt-10 font-blogger w-[85vw] text-primaryBlue">
             <span className="font-normal">
               meet your favorite celebs at Shishir. Go ahead and. .

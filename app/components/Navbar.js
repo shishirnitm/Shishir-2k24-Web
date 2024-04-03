@@ -228,12 +228,12 @@ export default function Navbar() {
                 </div>
               </div>
               <div className="flex justify-between space-x-6 items-baseline ">
-                <Link href="/teams" onClick={() => setClose("1")}>
+                <Link href="/timeline" onClick={() => setClose("1")}>
                   <span
                     // id="items"
                     className="font-bloggerBold text-primaryBlue italic text-xl"
                   >
-                    Teams
+                    Timeline
                   </span>
                 </Link>
                 <div className="flex justify-end ">
