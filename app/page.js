@@ -40,6 +40,9 @@ import panache from "../public/home/panache.jpg";
 import cheese from "../public/home/cheese.svg";
 import gallery from "../public/home/gallery.svg";
 import map from "../public/home/map.svg";
+import day1 from "../public/home/day1.jpeg";
+import day2 from "../public/home/day2.jpeg";
+import day3 from "../public/home/day3.jpeg";
 
 //TODO: Replace with final images later
 import gallery1 from "../public/home/gallery1.png";
@@ -417,6 +420,71 @@ export default function Home() {
           <div className="bg-[#186B80] w-screen h-5"></div>
           <div className="bg-[#E03932] w-screen h-5"></div>
         </div>
+        <div
+          id="home"
+          className="pt-5 w-screen flex  md:w-fit justify-end xs:pt-5 sm:pt-10 md:pt-24"
+        >
+          <Image
+            src={speaker}
+            width="0"
+            height="0"
+            sizes="100vw"
+            className="w-[25vw] h-auto translate-x-4 md:translate-x-0 md:w-[10vw] "
+          />
+        </div>
+        <div
+          id="home"
+          className="pt-5 flex flex-row justify-start md:justify-start pl-[8vw] md:pl-[10vw]"
+        >
+          <Image
+            src={meet}
+            width="0"
+            height="0"
+            sizes="100vw"
+            className="w-[85vw] h-auto sm:w-[40vw] md:w-[25vw]"
+          />
+        </div>
+        <div
+          id="home"
+          className="font-blogger flex flex-col pl-[8vw] md:pl-[10vw]  md:items-start justify-center font-semibold text-primaryBlue bg-transparent"
+        >
+          <div className="text-lg font-semibold w-[85vw] mt-8 md:text-2xl md:mt-10">
+            Meet the Performers coming in to liven up the Shishir stage this
+            April.
+          </div>
+        </div>
+        <div id="home" className="flex flex-col space-y-10 items-center ">
+          <div className="text-4xl font-bernier text-center text-primaryBlue font-semibold w-[100vw] mt-8 md:mt-10">
+            DAY 1
+          </div>
+          <Poster img={day1} width={"w-80"} />
+          {/* <div className="w-50vw border-2"></div> */}
+          <div className="text-4xl font-bernier text-center text-primaryBlue font-semibold w-[100vw] mt-8 md:mt-10">
+            DAY 2
+          </div>
+          <Poster img={day2} width={"w-80"} />
+          <div className="text-4xl font-bernier text-center text-primaryBlue font-semibold w-[100vw] mt-8 md:mt-10">
+            DAY 3
+          </div>
+          <Poster img={day3} width={"w-80"} />
+
+          <div className="text-md md:text-xl mt-10 font-blogger w-[85vw] text-primaryBlue">
+            <span className="font-normal">
+              meet your favorite celebs at Shishir. Go ahead and. .
+            </span>
+          </div>
+          <div id="" className="pt-5 w-[100vw]  flex justify-center">
+            <div className="w-[85vw]">
+              <Button text="Book tickets" link="/ticket" />
+            </div>
+          </div>
+        </div>
+        <div id="home" className="pt-32 md:pt-20 flex flex-col justify-center">
+          <div className="bg-[#F5E074] w-screen h-5"></div>
+          <div className="bg-[#EFB023] w-screen h-5"></div>
+          <div className="bg-[#E03932] w-screen h-5"></div>
+        </div>
+
         <div
           id="home"
           className="pt-5 w-screen flex  md:w-fit justify-end xs:pt-5 sm:pt-10 md:pt-24"
