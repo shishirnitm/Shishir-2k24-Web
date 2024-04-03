@@ -432,7 +432,7 @@ export default function Home() {
             className="w-[25vw] h-auto translate-x-4 md:translate-x-0 md:w-[10vw] "
           />
         </div>
-        <div
+        {/* <div
           id="home"
           className="pt-5 flex flex-row justify-start md:justify-start pl-[8vw] md:pl-[10vw]"
         >
@@ -443,6 +443,9 @@ export default function Home() {
             sizes="100vw"
             className="w-[85vw] h-auto sm:w-[40vw] md:w-[25vw]"
           />
+        </div> */}
+        <div className="text-[#E03932] font-bernier text-[100px]  mb-[-2px] mt-4 pl-[8vw] md:pl-[10vw] leading-[90px]">
+MEET OUR SPECIAL ARTISTS
         </div>
         <div
           id="home"
