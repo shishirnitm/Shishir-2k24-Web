@@ -20,8 +20,8 @@ export default function home() {
             {" "}
             <i>
               {" "}
-              Shihir wouldn't be the celebration it is without the far-out
-              support of our sponsors! Let's give a big round of applause to
+              Shihir wouldn&apos;t be the celebration it is without the far-out
+              support of our sponsors! Let&apos;s give a big round of applause to
               these righteous Organizations who are helping us make this a
               festival to remember~{" "}
             </i>
